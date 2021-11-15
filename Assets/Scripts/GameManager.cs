@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using System;
+using Photon.Pun;
 
 public class GameManager : MonoBehaviour {
 
@@ -15,10 +16,22 @@ public class GameManager : MonoBehaviour {
     public List<GameObject> wordBlockList = new List<GameObject>();
 
     public static int NextNumber = 1;
+    float t = 0;
+    bool isFinished = false;
 
     // Start is called before the first frame update
     void Start() {
         GenerateBlock(3,3);
+    }
+    void Update() {
+        if(!isFinished) {
+            t += Time.deltaTime;
+            Debug.Log(t);
+        } else {
+            PhotonNetwork.LocalPlayer.SetScore(t);
+        }
+
+        if(NextNumber > 9) isFinished = true;
     }
 
     public static bool CheckNumber(int num) {        
