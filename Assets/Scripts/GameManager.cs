@@ -8,7 +8,6 @@ using System;
 public class GameManager : MonoBehaviour {
 
     public GameObject block;
-    //public GameObject wordTextPrefab;
     public GameObject canvas;
     public float initBlockPositionX;
     public float initBlockPositionY;
