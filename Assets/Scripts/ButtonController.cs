@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour {
-    int number;
+    string word;
 
     // Start is called before the first frame update
     void Start() {
@@ -13,9 +13,9 @@ public class ButtonController : MonoBehaviour {
 
     public void OnClick() {
 
-        Debug.Log(GameManager.CheckNumber(number));
-
-        if(GameManager.CheckNumber(number)){
+        //Debug.Log(GameManager.CheckNumber(word));
+        
+        if(GameManager.CheckNumber(word)){
             //正しい番号なら数字を進める
             GameManager.ChangeNextValue();
             Destroy(gameObject);
@@ -26,8 +26,8 @@ public class ButtonController : MonoBehaviour {
     }
 
     //ボタンにナンバーを設定
-    public void SetButtonInfo(int allocatedNumber) {
-        number = allocatedNumber;
+    public void SetButtonInfo(string allocatedWord) {
+        word = allocatedWord;
     }
 
 
