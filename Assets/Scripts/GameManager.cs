@@ -11,7 +11,10 @@ using Random = UnityEngine.Random;
 public class GameManager : MonoBehaviour {
 
     public GameObject block;
+    public GameObject blocks;
+    public GameObject WinOrLoseText;
     public GameObject canvas;
+    public GameObject[] clearBlocks;
     public List<GameObject> ClearStageBlockList = new List<GameObject>();
 
     public float initBlockPositionXForNineBlock;
@@ -50,15 +53,33 @@ public class GameManager : MonoBehaviour {
 
     private int stageNum;
 
+    public GameObject countDownText;
+    static public GameObject sCountDownText;
+    bool isWin = false;
+    public static bool isIndexOne = false;
+    static public string playerName = "かまきり";
+
+    void Awake() {
+        sCountDownText = countDownText;
+    }
+
     // Start is called before the first frame update
     void Start() {
         
-        
-
-
-       
     }
     void Update() {
+
+
+        if(NetworkManager.isJoined) {
+            if (PhotonNetwork.CurrentRoom.PlayerCount == PhotonNetwork.CurrentRoom.MaxPlayers) {
+                if(PhotonNetwork.LocalPlayer.ActorNumber == 1) isIndexOne = true;
+                EnableCountDown();
+                EnableOtherClearStageBlocks();
+                JudgeWinOrLose();
+            }
+            //Debug.Log(PhotonNetwork.LocalPlayer.GetPlayerIsFinished());
+            //Debug.Log(PhotonNetwork.PlayerList[0].GetScore());
+        }   
 
         if(isGameStart){
 
@@ -72,7 +93,8 @@ public class GameManager : MonoBehaviour {
                 t += Time.deltaTime;
                 //Debug.Log(t);
             } else {
-                //PhotonNetwork.LocalPlayer.SetScore(t);
+                PhotonNetwork.LocalPlayer.SetPlayerIsFinished();
+                PhotonNetwork.LocalPlayer.SetScore(t);
             }          
 
 
@@ -104,7 +126,11 @@ public class GameManager : MonoBehaviour {
         if(nextListNumber>=16){
 
             if(!isThirdStageFinished){
-                GenerateStageClearBlock(1,95f);
+                //GenerateStageClearBlock(1,95f);
+                clearBlocks[2].SetActive(true);
+
+                PhotonNetwork.LocalPlayer.SetStageClearCount(3);
+
                 nextListNumber = 0;
                 isThirdStageFinished = true;
                 Debug.Log("第三ステージを" + t + "秒で完了");
@@ -113,18 +139,27 @@ public class GameManager : MonoBehaviour {
                 GenerateBlock(4,4);
 
             }else if(!isFourthStageFinished){
-                GenerateStageClearBlock(1,110f);
+                //GenerateStageClearBlock(1,110f);
+                clearBlocks[3].SetActive(true);
+                
+                PhotonNetwork.LocalPlayer.SetStageClearCount(4);
+
                 nextListNumber = 0;
                 isThirdStageFinished = true;
                 Debug.Log("第四ステージを" + t + "秒で完了");
                 getCharacterList.Clear();
+                isFinished = true;
             }
         }   
 
         else if(nextListNumber>=9){
             
             if(!isFirstStageFinished){
-                GenerateStageClearBlock(0,0f);
+                //GenerateStageClearBlock(0,0f);
+                clearBlocks[0].SetActive(true);
+
+                PhotonNetwork.LocalPlayer.SetStageClearCount(1);
+                
                 nextListNumber = 0;
                 isFirstStageFinished = true;
                 Debug.Log("第一ステージを" + t + "秒で完了");
@@ -133,14 +168,22 @@ public class GameManager : MonoBehaviour {
                 GenerateBlock(3,3);
 
             }else if(!isSecondStageFinished){
-                GenerateStageClearBlock(0,80f);
+                // GenerateStageClearBlock(0,80f);
+                clearBlocks[1].SetActive(true);
+
+                PhotonNetwork.LocalPlayer.SetStageClearCount(2);
+
                 nextListNumber = 0;
                 isSecondStageFinished = true;
                 Debug.Log("第二ステージを" + t + "秒で完了");
                 getCharacterList.Clear();
                 stageNum++;
                 GenerateBlock(4,4);
-            
+
+                // isFinished = true;
+                // isThirdStageFinished = true;
+                // isFourthStageFinished = true;
+
             }
                 
         }
@@ -234,11 +277,93 @@ public class GameManager : MonoBehaviour {
                 
                 wordBlock.transform.localPosition = new Vector2(xPos,yPos);
                 
-                wordBlock.transform.SetParent(canvas.transform, false);
+                wordBlock.transform.SetParent(blocks.transform, false);
                 
             }
 
         }        
         
     }
+
+    //カウントダウン機能をオンにするメソッド
+    static public void EnableCountDown() {
+        if(!sCountDownText.GetComponent<CountDownPlayer>().enabled) sCountDownText.GetComponent<CountDownPlayer>().enabled = true;
+    }
+
+    //勝敗を判断するメソッド
+    public void JudgeWinOrLose() {
+
+        bool isJudged = false;
+
+        if(isIndexOne) {
+            if(PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && !PhotonNetwork.PlayerList[1].GetPlayerIsFinished()) {
+                isWin = true;
+                isJudged = true;
+                Debug.Log("勝ち");
+            } else if(!PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && PhotonNetwork.PlayerList[1].GetPlayerIsFinished()) {
+                isWin = false;
+                isJudged = true;
+                Debug.Log("負け");
+            } 
+        } else {
+            if(PhotonNetwork.PlayerList[1].GetPlayerIsFinished() && !PhotonNetwork.PlayerList[0].GetPlayerIsFinished()) {
+                isWin = true;
+                isJudged = true;
+                Debug.Log("勝ち");
+            } else if(!PhotonNetwork.PlayerList[1].GetPlayerIsFinished() && PhotonNetwork.PlayerList[0].GetPlayerIsFinished()) {
+                isWin = false;
+                isJudged = true;
+                Debug.Log("負け");
+            }
+        }
+
+        if(isJudged) {
+            if(isWin) {
+                WinOrLoseText.GetComponent<Text>().text = "かち";
+            } else {
+                WinOrLoseText.GetComponent<Text>().text = "まけ";
+            }
+
+            blocks.SetActive(false);
+            WinOrLoseText.SetActive(true);
+        }
+    
+        
+        // else if(PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && PhotonNetwork.PlayerList[1].GetPlayerIsFinished()) {
+        //     if(PhotonNetwork.PlayerList[0].GetScore() > PhotonNetwork.PlayerList[1].GetScore()) {
+        //         kachi 
+        //     } else if(PhotonNetwork.PlayerList[0].GetScore() < PhotonNetwork.PlayerList[1].GetScore()) {
+        //         make
+        //     } else {
+        //         hikiwake
+        //     }
+        // }
+    }
+
+    public void EnableOtherClearStageBlocks() {
+
+        if(isIndexOne) {
+
+            for(int i = 1; i < 5; i++) if(PhotonNetwork.PlayerList[1].GetStageClearCount() == i) clearBlocks[3 + i].SetActive(true);
+            
+        } else {
+            
+            for(int i = 1; i < 5; i++) if(PhotonNetwork.PlayerList[0].GetStageClearCount() == i) clearBlocks[3 + i].SetActive(true);
+        }
+
+        // if(PhotonNetwork.PlayerList[1].GetStageClearCount() == 1) {
+        //     clearBlocks[4].SetActive(true);
+        // } else if(PhotonNetwork.PlayerList[1].GetStageClearCount() == 2) {
+        //     clearBlocks[5].SetActive(true);
+        // } else if(PhotonNetwork.PlayerList[1].GetStageClearCount() == 3) {
+        //     clearBlocks[6].SetActive(true);
+        // } else if(PhotonNetwork.PlayerList[1].GetStageClearCount() == 4) {
+        //     clearBlocks[7].SetActive(true);
+        // }
+
+        // }
+
+
+    }
+
 }

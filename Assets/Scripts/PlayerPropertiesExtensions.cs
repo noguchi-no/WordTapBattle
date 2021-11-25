@@ -4,6 +4,8 @@ using Photon.Realtime;
 public static class PlayerPropertiesExtensions
 {
     private const string ScoreKey = "Score";
+    private const string IsFinishedKey = "IsFinished";
+    private const string StageClearCountKey = "StageClearCount";
 
     private static readonly Hashtable propsToSet = new Hashtable();
 
@@ -14,6 +16,27 @@ public static class PlayerPropertiesExtensions
 
     public static void SetScore(this Player player, float value) {
         propsToSet[ScoreKey] = value;
+        player.SetCustomProperties(propsToSet);
+        propsToSet.Clear();
+    }
+
+    //プレイヤーがクリアしたかの情報
+    public static bool GetPlayerIsFinished(this Player player) {
+        return (player.CustomProperties[IsFinishedKey] is bool isFinished) ? isFinished : false;
+    }
+
+    public static void SetPlayerIsFinished(this Player player) {
+        propsToSet[IsFinishedKey] = true;
+        player.SetCustomProperties(propsToSet);
+        propsToSet.Clear();
+    }
+
+    public static float GetStageClearCount(this Player player) {
+        return (player.CustomProperties[StageClearCountKey] is int stageClearCount) ? stageClearCount : 0;
+    }
+
+    public static void SetStageClearCount(this Player player, int value) {
+        propsToSet[StageClearCountKey] = value;
         player.SetCustomProperties(propsToSet);
         propsToSet.Clear();
     }
