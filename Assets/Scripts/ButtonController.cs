@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour {
     string word;
+    
 
     // Start is called before the first frame update
     void Start() {
+        Application.targetFrameRate = 60;
         //this.GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
@@ -18,7 +20,8 @@ public class ButtonController : MonoBehaviour {
         if(GameManager.CheckNumber(word)){
             //正しい番号なら数字を進める
             GameManager.ChangeNextValue();
-            Destroy(gameObject);
+            this.GetComponent<DeleteAnimation>().DisAppearAni();
+            //Destroy(gameObject);
 
         } else {
             Debug.Log("damn it!");

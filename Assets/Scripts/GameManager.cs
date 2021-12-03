@@ -6,7 +6,7 @@ using System.Linq;
 using System;
 using Photon.Pun;
 using Random = UnityEngine.Random;
-//using DG.Tweening;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour {
 
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour {
     public static bool isGameStart = false; 
     bool isFirstBlockGenerated = false;
 
-    string getCharacterString;
+    static string getCharacterString;
 
     static List<string> shuffledCharacterList = new List<string>();
     static List<string> getCharacterList = new List<string>();
@@ -59,18 +59,27 @@ public class GameManager : MonoBehaviour {
     public static bool isIndexOne = false;
     static public string playerName = "かまきり";
 
+    static Text staticOdaiText;
+    static string st;
+
     void Awake() {
+        Application.targetFrameRate = 60;
         sCountDownText = countDownText;
     }
 
     // Start is called before the first frame update
     void Start() {
+        //↓カウントダウンなくすため、最後に消して
+        isGameStart = true;
         
+        staticOdaiText = OdaiText;
+
+        nextListNumber = 0;
     }
     void Update() {
+        
 
-
-        if(NetworkManager.isJoined) {
+        /*if(NetworkManager.isJoined) {
             if (PhotonNetwork.CurrentRoom.PlayerCount == PhotonNetwork.CurrentRoom.MaxPlayers) {
                 if(PhotonNetwork.LocalPlayer.ActorNumber == 1) isIndexOne = true;
                 EnableCountDown();
@@ -79,10 +88,10 @@ public class GameManager : MonoBehaviour {
             }
             //Debug.Log(PhotonNetwork.LocalPlayer.GetPlayerIsFinished());
             //Debug.Log(PhotonNetwork.PlayerList[0].GetScore());
-        }   
+        }   */
 
         if(isGameStart){
-
+            
             if(!isFirstBlockGenerated){
                 stageNum++;
                 GenerateBlock(3,3);
@@ -93,8 +102,8 @@ public class GameManager : MonoBehaviour {
                 t += Time.deltaTime;
                 //Debug.Log(t);
             } else {
-                PhotonNetwork.LocalPlayer.SetPlayerIsFinished();
-                PhotonNetwork.LocalPlayer.SetScore(t);
+                //PhotonNetwork.LocalPlayer.SetPlayerIsFinished();
+                //PhotonNetwork.LocalPlayer.SetScore(t);
             }          
 
 
@@ -104,7 +113,6 @@ public class GameManager : MonoBehaviour {
         //↓常に呼んでたらダメ？
         ChangeStage();
     }
-
     void GenerateStageClearBlock(int blockListNum, float distance){
         
         Vector2 stageClearBlockPos = ClearStageBlockList[blockListNum].transform.position;
@@ -129,20 +137,21 @@ public class GameManager : MonoBehaviour {
                 //GenerateStageClearBlock(1,95f);
                 clearBlocks[2].SetActive(true);
 
-                PhotonNetwork.LocalPlayer.SetStageClearCount(3);
+                //PhotonNetwork.LocalPlayer.SetStageClearCount(3);
 
                 nextListNumber = 0;
                 isThirdStageFinished = true;
                 Debug.Log("第三ステージを" + t + "秒で完了");
                 getCharacterList.Clear();
                 stageNum++;
+                DestroyBlock();
                 GenerateBlock(4,4);
 
             }else if(!isFourthStageFinished){
                 //GenerateStageClearBlock(1,110f);
                 clearBlocks[3].SetActive(true);
                 
-                PhotonNetwork.LocalPlayer.SetStageClearCount(4);
+                //PhotonNetwork.LocalPlayer.SetStageClearCount(4);
 
                 nextListNumber = 0;
                 isThirdStageFinished = true;
@@ -155,30 +164,34 @@ public class GameManager : MonoBehaviour {
         else if(nextListNumber>=9){
             
             if(!isFirstStageFinished){
+                
                 //GenerateStageClearBlock(0,0f);
                 clearBlocks[0].SetActive(true);
 
-                PhotonNetwork.LocalPlayer.SetStageClearCount(1);
+                //PhotonNetwork.LocalPlayer.SetStageClearCount(1);
                 
                 nextListNumber = 0;
                 isFirstStageFinished = true;
                 Debug.Log("第一ステージを" + t + "秒で完了");
                 getCharacterList.Clear();
                 stageNum++;
+                DestroyBlock();
                 GenerateBlock(3,3);
 
             }else if(!isSecondStageFinished){
                 // GenerateStageClearBlock(0,80f);
                 clearBlocks[1].SetActive(true);
 
-                PhotonNetwork.LocalPlayer.SetStageClearCount(2);
+                //PhotonNetwork.LocalPlayer.SetStageClearCount(2);
 
                 nextListNumber = 0;
                 isSecondStageFinished = true;
                 Debug.Log("第二ステージを" + t + "秒で完了");
                 getCharacterList.Clear();
                 stageNum++;
+                DestroyBlock();
                 GenerateBlock(4,4);
+                
 
                 // isFinished = true;
                 // isThirdStageFinished = true;
@@ -190,22 +203,42 @@ public class GameManager : MonoBehaviour {
         
     }
 
-    
+    void DestroyBlock(){
+        
+        foreach(Transform child in blocks.transform){
+        Destroy(child.gameObject);
+        wordBlockList.Clear();
+
+}
+
+    }
 
     public static bool CheckNumber(string _word) {
         
-        NextWord = getCharacterList[nextListNumber];       
+        
+        NextWord = getCharacterList[nextListNumber];
         return _word == NextWord; 
         
     }
 
+    //CheckNumber()がstaticなので、start()でTextのpublicをstaticに変化させる
+    public static void ChangeColor(){
+
+        staticOdaiText.text = "<color=#b8b8b8>" + getCharacterString.Substring(0, nextListNumber+1) + "</color>" + getCharacterString.Substring(nextListNumber+1);
+        
+    }
+
     public static void ChangeNextValue() {
+        ChangeColor();
         nextListNumber++;
         Debug.Log(nextListNumber);
         
     }
 
     void GenerateBlock(int rowCount, int colCount) {
+
+        //st = staticOdaiText.text.ToString();
+        
 
         int arrayNumber = 0;
         
@@ -237,7 +270,11 @@ public class GameManager : MonoBehaviour {
         }
 
         //上にお題とステージ番号をを表示
+        float positionX = OdaiText.rectTransform.anchoredPosition.x;
         OdaiText.text = getCharacterString;
+        OdaiText.rectTransform.DOAnchorPosX(positionX -150, 1.0f).From(true);
+        OdaiText.DOFade(1.0f, 1.0f);
+        
         stageNumberText.text = "ステージ" + stageNum.ToString();
 
         blockDistance = blockWidth + 60f;
@@ -282,6 +319,11 @@ public class GameManager : MonoBehaviour {
             }
 
         }        
+        /*ブロックフェード案
+        for(int g = 0; g < wordBlockList.Count; g++){
+             wordBlockList[g].GetComponent<Image>().DOFade(1f, 0.5f);
+        }*/
+       
         
     }
 
