@@ -2,9 +2,18 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ButtonController
+    - ClearBlockNum
     - CountDownPlayer
+    - DeleteAnimation
+    - FadeManager
     - GameManager
+    - InputManager
     - NetworkManager
+    - SoundSlider
+    - StageClearBlockAnimation
+    - TitleManager
+    - ToGame
+    - nkjzm.PopButton
     DOTween.dll:
     - DG.Tweening.Core.DOTweenSettings
     PhotonUnityNetworking.Demos.dll:
@@ -59,11 +68,79 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Game.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1496}
+    - Class: 114
+      Script: {instanceID: 1498}
+    - Class: 114
+      Script: {instanceID: 1864}
+    - Class: 114
+      Script: {instanceID: 1914}
+    - Class: 114
+      Script: {instanceID: 2490}
+    - Class: 114
+      Script: {instanceID: 2816}
+    - Class: 114
+      Script: {instanceID: 2988}
+    - Class: 114
+      Script: {instanceID: 3038}
+    - Class: 114
+      Script: {instanceID: 3116}
+    - Class: 114
+      Script: {instanceID: 3142}
+    - Class: 114
+      Script: {instanceID: 3224}
+    - Class: 114
+      Script: {instanceID: 3498}
+    - Class: 114
+      Script: {instanceID: 3618}
+    - Class: 114
+      Script: {instanceID: 4740}
+    - Class: 114
+      Script: {instanceID: 5820}
+    - Class: 114
+      Script: {instanceID: 5918}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    Assets/Scenes/Title.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -92,6 +169,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -107,65 +188,69 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 1788}
+      Script: {instanceID: 1668}
     - Class: 114
-      Script: {instanceID: 1824}
+      Script: {instanceID: 1790}
     - Class: 114
-      Script: {instanceID: 1828}
+      Script: {instanceID: 1826}
     - Class: 114
-      Script: {instanceID: 1862}
+      Script: {instanceID: 1830}
     - Class: 114
-      Script: {instanceID: 1912}
+      Script: {instanceID: 1914}
     - Class: 114
-      Script: {instanceID: 2326}
+      Script: {instanceID: 2134}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2330}
     - Class: 114
-      Script: {instanceID: 2532}
+      Script: {instanceID: 2468}
     - Class: 114
-      Script: {instanceID: 2806}
+      Script: {instanceID: 2540}
     - Class: 114
-      Script: {instanceID: 2978}
+      Script: {instanceID: 2700}
     - Class: 114
-      Script: {instanceID: 3028}
+      Script: {instanceID: 2816}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 2988}
     - Class: 114
-      Script: {instanceID: 3132}
+      Script: {instanceID: 3224}
     - Class: 114
-      Script: {instanceID: 3214}
-    - Class: 114
-      Script: {instanceID: 3478}
+      Script: {instanceID: 3286}
     - Class: 114
       Script: {instanceID: 3488}
     - Class: 114
-      Script: {instanceID: 3490}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 3606}
+      Script: {instanceID: 3500}
     - Class: 114
-      Script: {instanceID: 4096}
+      Script: {instanceID: 3548}
     - Class: 114
-      Script: {instanceID: 4232}
+      Script: {instanceID: 3618}
     - Class: 114
-      Script: {instanceID: 4658}
+      Script: {instanceID: 4056}
     - Class: 114
-      Script: {instanceID: 4664}
+      Script: {instanceID: 4110}
     - Class: 114
-      Script: {instanceID: 4896}
+      Script: {instanceID: 4246}
     - Class: 114
-      Script: {instanceID: 4962}
+      Script: {instanceID: 4672}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 4678}
     - Class: 114
-      Script: {instanceID: 5516}
+      Script: {instanceID: 4718}
     - Class: 114
-      Script: {instanceID: 5518}
+      Script: {instanceID: 4914}
     - Class: 114
-      Script: {instanceID: 5700}
+      Script: {instanceID: 4980}
     - Class: 114
-      Script: {instanceID: 5802}
+      Script: {instanceID: 5128}
     - Class: 114
-      Script: {instanceID: 6138}
+      Script: {instanceID: 5534}
+    - Class: 114
+      Script: {instanceID: 5536}
+    - Class: 114
+      Script: {instanceID: 5718}
+    - Class: 114
+      Script: {instanceID: 6158}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -199,16 +284,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
-  - hash:
-      serializedVersion: 2
       Hash: 699619b86d9359741a4f58540298c80b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: bcaee4c2a83047257b5f47d6ed264b75
@@ -275,6 +360,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.SlotRacer.Utils
     className: Line
+  - hash:
+      serializedVersion: 2
+      Hash: 4ce15e99c635d2567873d27549d1f16f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InputManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -445,6 +536,12 @@ ScriptsOnlyBuild:
     className: GameManager
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ToGame
+  - hash:
+      serializedVersion: 2
       Hash: ba160f8fe96116c81151a9a24d7d9f4f
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -481,6 +578,12 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FadeSample
+  - hash:
+      serializedVersion: 2
       Hash: 7221ab9307aaa6b66a416e2e4561f420
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -503,6 +606,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.SlotRacer
     className: PlayerControl
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeleteAnimation
   - hash:
       serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
@@ -569,6 +678,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
     className: PhotonHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TitleManager
   - hash:
       serializedVersion: 2
       Hash: b25c2463ba9144686d18d7707733226b
@@ -823,6 +938,12 @@ ScriptsOnlyBuild:
     className: CurrentRoomNameProperty
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundSlider
+  - hash:
+      serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -953,6 +1074,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 69415240821be7986b27e72bf9609a30
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: nkjzm
+    className: PopButton
   - hash:
       serializedVersion: 2
       Hash: cba6cca6bb3290c4c00d709cf63843db
@@ -1183,10 +1310,22 @@ ScriptsOnlyBuild:
     className: LobbyMainPanel
   - hash:
       serializedVersion: 2
+      Hash: 11a7fcf5335e8c4857ac112ae0f5347e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FadeManager
+  - hash:
+      serializedVersion: 2
       Hash: 74c875e0f15c48e0a55f06093aa93e15
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: LayoutElementMatchSize
+  - hash:
+      serializedVersion: 2
+      Hash: d74eee734c34f6cf8491092878bd783d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClearBlockNum
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -1555,6 +1694,12 @@ ScriptsOnlyBuild:
     className: AppVersionProperty
   - hash:
       serializedVersion: 2
+      Hash: d74eee734c34f6cf8491092878bd783d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StageClearBlockAnimation
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1639,5 +1784,6 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   platform: 19
   scenePathNames:
+  - Assets/Scenes/Title.unity
   - Assets/Scenes/Game.unity
   playerPath: C:/Users/nagan/Desktop/game/WordBattle.exe

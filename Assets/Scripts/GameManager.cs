@@ -68,10 +68,8 @@ public class GameManager : MonoBehaviour {
     }
 
     // Start is called before the first frame update
-    void Start() {
-        //↓カウントダウンなくすため、最後に消して
-        isGameStart = true;
-        
+    void Start() {  
+                
         staticOdaiText = OdaiText;
 
         nextListNumber = 0;
@@ -79,7 +77,13 @@ public class GameManager : MonoBehaviour {
     void Update() {
         
 
-        /*if(NetworkManager.isJoined) {
+        if(NetworkManager.isJoined) {
+            // Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties["stage1"]);
+            // Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties["stage2"]);
+            // Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties["stage3"]);
+            // Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties["stage4"]);
+
+
             if (PhotonNetwork.CurrentRoom.PlayerCount == PhotonNetwork.CurrentRoom.MaxPlayers) {
                 if(PhotonNetwork.LocalPlayer.ActorNumber == 1) isIndexOne = true;
                 EnableCountDown();
@@ -88,7 +92,7 @@ public class GameManager : MonoBehaviour {
             }
             //Debug.Log(PhotonNetwork.LocalPlayer.GetPlayerIsFinished());
             //Debug.Log(PhotonNetwork.PlayerList[0].GetScore());
-        }   */
+        } 
 
         if(isGameStart){
             
@@ -102,8 +106,8 @@ public class GameManager : MonoBehaviour {
                 t += Time.deltaTime;
                 //Debug.Log(t);
             } else {
-                //PhotonNetwork.LocalPlayer.SetPlayerIsFinished();
-                //PhotonNetwork.LocalPlayer.SetScore(t);
+                PhotonNetwork.LocalPlayer.SetPlayerIsFinished();
+                PhotonNetwork.LocalPlayer.SetScore(t);
             }          
 
 
@@ -137,7 +141,7 @@ public class GameManager : MonoBehaviour {
                 //GenerateStageClearBlock(1,95f);
                 clearBlocks[2].SetActive(true);
 
-                //PhotonNetwork.LocalPlayer.SetStageClearCount(3);
+                PhotonNetwork.LocalPlayer.SetStageClearCount(3);
 
                 nextListNumber = 0;
                 isThirdStageFinished = true;
@@ -151,7 +155,7 @@ public class GameManager : MonoBehaviour {
                 //GenerateStageClearBlock(1,110f);
                 clearBlocks[3].SetActive(true);
                 
-                //PhotonNetwork.LocalPlayer.SetStageClearCount(4);
+                PhotonNetwork.LocalPlayer.SetStageClearCount(4);
 
                 nextListNumber = 0;
                 isThirdStageFinished = true;
@@ -168,7 +172,7 @@ public class GameManager : MonoBehaviour {
                 //GenerateStageClearBlock(0,0f);
                 clearBlocks[0].SetActive(true);
 
-                //PhotonNetwork.LocalPlayer.SetStageClearCount(1);
+                PhotonNetwork.LocalPlayer.SetStageClearCount(1);
                 
                 nextListNumber = 0;
                 isFirstStageFinished = true;
@@ -182,7 +186,7 @@ public class GameManager : MonoBehaviour {
                 // GenerateStageClearBlock(0,80f);
                 clearBlocks[1].SetActive(true);
 
-                //PhotonNetwork.LocalPlayer.SetStageClearCount(2);
+                PhotonNetwork.LocalPlayer.SetStageClearCount(2);
 
                 nextListNumber = 0;
                 isSecondStageFinished = true;
@@ -249,12 +253,16 @@ public class GameManager : MonoBehaviour {
             initBlockPosition = new Vector2(initBlockPositionXForNineBlock, initBlockPositionYForNineBlock);
             
             //9文字列のリストをシャッフルして上の方の1文字列ゲット、お題が被らないようにする。
-            var numbers = Enumerable.Range(1, WordList.wordListNine.Count).OrderBy(i => Guid.NewGuid()).ToArray();
-            int number = numbers[arrayNumber++];
-            getCharacterString = WordList.wordListNine[number];
+            int roomProperties;
+            if(isFirstStageFinished) {
+                roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage2"];
+            } else {
+                roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage1"];
+            }
 
-            //int randomNumForWordList = Random.Range(0,WordList.wordListNine.Count);
-            //WordList.wordListNine.RemoveAt(randomNumForWordList);
+            //var numbers = Enumerable.Range(roomProperties, roomProperties).OrderBy(i => Guid.NewGuid()).ToArray();
+            //int number = numbers[arrayNumber++];
+            getCharacterString = WordList.wordListNine[roomProperties];
         }
         else{
             
@@ -264,9 +272,16 @@ public class GameManager : MonoBehaviour {
             initBlockPosition = new Vector2(initBlockPositionXForSixteenBlock, initBlockPositionYForSixteenBlock);
             
             //16文字列のリストから1文字列ゲット
-            var numbers = Enumerable.Range(1, WordList.wordListSixteen.Count).OrderBy(i => Guid.NewGuid()).ToArray();      
-            int number = numbers[arrayNumber++];
-            getCharacterString = WordList.wordListSixteen[number];
+            int roomProperties;
+            if(isThirdStageFinished) {
+                roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage4"];
+            } else {
+                roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage3"];
+            }
+
+            // var numbers = Enumerable.Range(roomProperties, roomProperties).OrderBy(i => Guid.NewGuid()).ToArray();
+            // int number = numbers[arrayNumber++];
+            getCharacterString = WordList.wordListSixteen[roomProperties];
         }
 
         //上にお題とステージ番号をを表示
