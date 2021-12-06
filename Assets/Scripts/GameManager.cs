@@ -7,6 +7,7 @@ using System;
 using Photon.Pun;
 using Random = UnityEngine.Random;
 using DG.Tweening;
+using TMPro;
 
 public class GameManager : MonoBehaviour {
 
@@ -16,6 +17,11 @@ public class GameManager : MonoBehaviour {
     public GameObject canvas;
     public GameObject[] clearBlocks;
     public List<GameObject> ClearStageBlockList = new List<GameObject>();
+    public GameObject playerNameText;
+    public GameObject otherPlayerNameText;
+    public GameObject countDownText;
+    public GameObject matchMakingNowText;
+    public GameObject GameOverButtons;
 
     public float initBlockPositionXForNineBlock;
     public float initBlockPositionYForNineBlock;
@@ -39,7 +45,7 @@ public class GameManager : MonoBehaviour {
     static string getCharacterString;
 
     static List<string> shuffledCharacterList = new List<string>();
-    static List<string> getCharacterList = new List<string>();
+    public static List<string> getCharacterList = new List<string>();
 
     float blockDistance;
     float blockWidth;
@@ -53,18 +59,15 @@ public class GameManager : MonoBehaviour {
 
     private int stageNum;
 
-    public GameObject countDownText;
-    static public GameObject sCountDownText;
     bool isWin = false;
     public static bool isIndexOne = false;
-    static public string playerName = "かまきり";
+    static public string playerName = "owan";
 
     static Text staticOdaiText;
     static string st;
 
     void Awake() {
         Application.targetFrameRate = 60;
-        sCountDownText = countDownText;
     }
 
     // Start is called before the first frame update
@@ -73,22 +76,28 @@ public class GameManager : MonoBehaviour {
         staticOdaiText = OdaiText;
 
         nextListNumber = 0;
+
     }
     void Update() {
         
 
         if(NetworkManager.isJoined) {
-            // Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties["stage1"]);
-            // Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties["stage2"]);
-            // Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties["stage3"]);
-            // Debug.Log(PhotonNetwork.CurrentRoom.CustomProperties["stage4"]);
-
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == PhotonNetwork.CurrentRoom.MaxPlayers) {
-                if(PhotonNetwork.LocalPlayer.ActorNumber == 1) isIndexOne = true;
+                
+                if(PhotonNetwork.LocalPlayer.ActorNumber == 1) {
+                    isIndexOne = true;
+                    otherPlayerNameText.GetComponent<TextMeshProUGUI>().text = PhotonNetwork.PlayerList[1].NickName;
+                } else {
+                    otherPlayerNameText.GetComponent<TextMeshProUGUI>().text = PhotonNetwork.PlayerList[0].NickName;
+                }
                 EnableCountDown();
                 EnableOtherClearStageBlocks();
                 JudgeWinOrLose();
+
+                playerNameText.GetComponent<TextMeshProUGUI>().text = playerName;
+                playerNameText.SetActive(true);
+                otherPlayerNameText.SetActive(true);
             }
             //Debug.Log(PhotonNetwork.LocalPlayer.GetPlayerIsFinished());
             //Debug.Log(PhotonNetwork.PlayerList[0].GetScore());
@@ -106,7 +115,7 @@ public class GameManager : MonoBehaviour {
                 t += Time.deltaTime;
                 //Debug.Log(t);
             } else {
-                PhotonNetwork.LocalPlayer.SetPlayerIsFinished();
+                PhotonNetwork.LocalPlayer.SetPlayerIsFinished(true);
                 PhotonNetwork.LocalPlayer.SetScore(t);
             }          
 
@@ -219,8 +228,10 @@ public class GameManager : MonoBehaviour {
 
     public static bool CheckNumber(string _word) {
         
-        
         NextWord = getCharacterList[nextListNumber];
+        
+        Debug.Log(NextWord);
+
         return _word == NextWord; 
         
     }
@@ -260,9 +271,12 @@ public class GameManager : MonoBehaviour {
                 roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage1"];
             }
 
-            //var numbers = Enumerable.Range(roomProperties, roomProperties).OrderBy(i => Guid.NewGuid()).ToArray();
+            //var numbers = Enumerable.Range(0, WordList.wordListNine.Count).OrderBy(i => Guid.NewGuid()).ToArray();
             //int number = numbers[arrayNumber++];
+            Debug.Log(roomProperties);
             getCharacterString = WordList.wordListNine[roomProperties];
+            //getCharacterString = WordList.wordListNine[number];
+
         }
         else{
             
@@ -279,9 +293,12 @@ public class GameManager : MonoBehaviour {
                 roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage3"];
             }
 
-            // var numbers = Enumerable.Range(roomProperties, roomProperties).OrderBy(i => Guid.NewGuid()).ToArray();
-            // int number = numbers[arrayNumber++];
+            //var numbers = Enumerable.Range(0, WordList.wordListSixteen.Count).OrderBy(i => Guid.NewGuid()).ToArray();
+            //int number = numbers[arrayNumber++];
+            Debug.Log(roomProperties);
             getCharacterString = WordList.wordListSixteen[roomProperties];
+            //getCharacterString = WordList.wordListSixteen[number];
+
         }
 
         //上にお題とステージ番号をを表示
@@ -343,8 +360,9 @@ public class GameManager : MonoBehaviour {
     }
 
     //カウントダウン機能をオンにするメソッド
-    static public void EnableCountDown() {
-        if(!sCountDownText.GetComponent<CountDownPlayer>().enabled) sCountDownText.GetComponent<CountDownPlayer>().enabled = true;
+    public void EnableCountDown() {
+        countDownText.SetActive(true);
+        matchMakingNowText.SetActive(false);
     }
 
     //勝敗を判断するメソッド
@@ -383,6 +401,7 @@ public class GameManager : MonoBehaviour {
 
             blocks.SetActive(false);
             WinOrLoseText.SetActive(true);
+            GameOverButtons.SetActive(true);
         }
     
         

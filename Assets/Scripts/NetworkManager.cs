@@ -74,14 +74,16 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
 
         ExitGames.Client.Photon.Hashtable customRoomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
         customRoomProperties["stage1"] = (int)Random.Range(0, WordList.wordListNine.Count/2);
-        customRoomProperties["stage2"] = (int)Random.Range(WordList.wordListNine.Count/2 + 1, WordList.wordListNine.Count);
+        customRoomProperties["stage2"] = (int)Random.Range(WordList.wordListNine.Count/2 + 1, WordList.wordListNine.Count-0.99f);
         customRoomProperties["stage3"] = (int)Random.Range(0, WordList.wordListSixteen.Count/2);
-        customRoomProperties["stage4"] = (int)Random.Range(WordList.wordListSixteen.Count + 1, WordList.wordListSixteen.Count);
+        customRoomProperties["stage4"] = (int)Random.Range(WordList.wordListSixteen.Count/2+1, WordList.wordListSixteen.Count-1);
 
         PhotonNetwork.CurrentRoom.SetCustomProperties(customRoomProperties);
 
     }
 
-
+    public override void OnPlayerLeftRoom(Player otherPlayer) {
+        Debug.Log($"{otherPlayer.NickName}が退出しました");
+    }
 
 }
