@@ -21,6 +21,7 @@ public class ButtonController : MonoBehaviour {
             //正しい番号なら数字を進める
             GameManager.ChangeNextValue();
             this.GetComponent<DeleteAnimation>().DisAppearAni();
+            this.GetComponent<Button>().interactable = false;
             //Destroy(gameObject);
 
         } else {
