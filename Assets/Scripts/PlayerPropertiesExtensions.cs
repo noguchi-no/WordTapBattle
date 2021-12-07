@@ -25,8 +25,8 @@ public static class PlayerPropertiesExtensions
         return (player.CustomProperties[IsFinishedKey] is bool isFinished) ? isFinished : false;
     }
 
-    public static void SetPlayerIsFinished(this Player player) {
-        propsToSet[IsFinishedKey] = true;
+    public static void SetPlayerIsFinished(this Player player, bool t) {
+        propsToSet[IsFinishedKey] = t;
         player.SetCustomProperties(propsToSet);
         propsToSet.Clear();
     }

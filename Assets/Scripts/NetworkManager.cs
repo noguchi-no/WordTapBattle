@@ -22,7 +22,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
 
         //ログインの状態を画面上に出力
         GUILayout.Label(PhotonNetwork.NetworkClientState.ToString());
-
         GUILayout.Label(GameManager.isIndexOne.ToString());
 
         foreach (var player in PhotonNetwork.PlayerList) {
@@ -46,6 +45,17 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
         var roomOptions = new RoomOptions();
         roomOptions.MaxPlayers = 2;
 
+        // ルームオプションにカスタムプロパティを設定
+        ExitGames.Client.Photon.Hashtable customRoomProperties = new ExitGames.Client.Photon.Hashtable
+        {
+            { "stage1", 1 },
+            { "stage2", 1 },
+            { "stage3", 1 },
+            { "stage4", 1 },
+
+        };
+        roomOptions.CustomRoomProperties = customRoomProperties;
+
         PhotonNetwork.CreateRoom(null, roomOptions);
     }
 
@@ -60,12 +70,20 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
         // ルームが満員になったら、以降そのルームへの参加を不許可にする
         if (PhotonNetwork.CurrentRoom.PlayerCount == PhotonNetwork.CurrentRoom.MaxPlayers) {
             PhotonNetwork.CurrentRoom.IsOpen = false;
-            //GameManager.EnableCountDown();
          }
+
+        ExitGames.Client.Photon.Hashtable customRoomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
+        customRoomProperties["stage1"] = (int)Random.Range(0, WordList.wordListNine.Count/2);
+        customRoomProperties["stage2"] = (int)Random.Range(WordList.wordListNine.Count/2 + 1, WordList.wordListNine.Count-0.99f);
+        customRoomProperties["stage3"] = (int)Random.Range(0, WordList.wordListSixteen.Count/2);
+        customRoomProperties["stage4"] = (int)Random.Range(WordList.wordListSixteen.Count/2+1, WordList.wordListSixteen.Count-1);
+
+        PhotonNetwork.CurrentRoom.SetCustomProperties(customRoomProperties);
+
     }
 
-    void Update() {
-         
+    public override void OnPlayerLeftRoom(Player otherPlayer) {
+        Debug.Log($"{otherPlayer.NickName}が退出しました");
     }
 
 }
