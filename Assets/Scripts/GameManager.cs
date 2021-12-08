@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviour {
     public GameObject otherPlayerNameText;
     public GameObject countDownText;
     public GameObject matchMakingNowText;
-    public GameObject GameOverButtons;
+    public GameObject gameOverButtons;
+    public GameObject playerCards;
 
     public float initBlockPositionXForNineBlock;
     public float initBlockPositionYForNineBlock;
@@ -91,7 +92,13 @@ public class GameManager : MonoBehaviour {
                 } else {
                     otherPlayerNameText.GetComponent<TextMeshProUGUI>().text = PhotonNetwork.PlayerList[0].NickName;
                 }
-                EnableCountDown();
+
+                if(!isGameStart) {
+                    EnableCountDown();
+                } else {
+                    playerCards.SetActive(false);
+                }
+                
                 EnableOtherClearStageBlocks();
                 JudgeWinOrLose();
 
@@ -361,6 +368,7 @@ public class GameManager : MonoBehaviour {
 
     //カウントダウン機能をオンにするメソッド
     public void EnableCountDown() {
+        playerCards.SetActive(true);
         countDownText.SetActive(true);
         matchMakingNowText.SetActive(false);
     }
@@ -401,7 +409,7 @@ public class GameManager : MonoBehaviour {
 
             blocks.SetActive(false);
             WinOrLoseText.SetActive(true);
-            GameOverButtons.SetActive(true);
+            gameOverButtons.SetActive(true);
         }
     
         

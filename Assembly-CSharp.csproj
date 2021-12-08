@@ -64,11 +64,13 @@
      <Compile Include="Assets\Scripts\ClearBlockNum.cs" />
      <Compile Include="Assets\Scripts\WordList.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
+     <Compile Include="Assets\Scripts\ToTitle.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
      <Compile Include="Assets\Scripts\CountDownPlayer.cs" />
      <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
      <Compile Include="Assets\Scripts\StageClearBlockAnimation.cs" />
-     <Compile Include="Assets\Scripts\ToTitle.cs" />
+     <Compile Include="Assets\Scripts\PlayerCards.cs" />
+     <Compile Include="Assets\Scripts\NameChanger.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

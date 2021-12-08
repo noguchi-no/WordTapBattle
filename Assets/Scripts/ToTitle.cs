@@ -12,7 +12,7 @@ public class ToTitle : MonoBehaviour {
         PhotonNetwork.LocalPlayer.SetPlayerIsFinished(false);
         PhotonNetwork.LocalPlayer.SetScore(0.0f);
         PhotonNetwork.LocalPlayer.SetStageClearCount(0);
-        PhotonNetwork.LeaveLobby();
-        FadeManager.Instance.LoadScene ("Title", 0.3f);
+        PhotonNetwork. Disconnect();
+        FadeManager.Instance.LoadScene ("Title", 0.1f);
     }
 }

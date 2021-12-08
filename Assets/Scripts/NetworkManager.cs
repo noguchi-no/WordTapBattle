@@ -86,4 +86,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
         Debug.Log($"{otherPlayer.NickName}が退出しました");
     }
 
+    public override void OnLeftLobby() {
+        Debug.Log("ロビーから退出しました");
+    }
+
 }

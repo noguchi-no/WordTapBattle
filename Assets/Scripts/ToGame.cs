@@ -6,7 +6,6 @@ using Photon.Realtime;
 public class ToGame : MonoBehaviour
 {
     public void OnClick() {
-        
         FadeManager.Instance.LoadScene ("Game", 0.3f);
     }
 
