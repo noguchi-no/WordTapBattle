@@ -17,7 +17,7 @@ public class DeleteAnimation : MonoBehaviour
     public void DisAppearAni()
     {
         //float positionY = block.rectTransform.anchoredPosition.y;
-        block.DOColor(Color.grey,0.1f);
+        block.DOColor(new Color(0.2f,0.2f,0.2f),0.1f);
         transform.DOLocalRotate(new Vector3(0, 0, 200), 0.3f).From(true);  
         transform.DOLocalMove(new Vector3(0, 70, 0), 0.3f).From(true);
         transform.DOScale(new Vector3(1.2f, 1.2f, 1), 0.3f).From(true);

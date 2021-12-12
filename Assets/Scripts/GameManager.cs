@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour {
     public static List<string> getCharacterList = new List<string>();
 
     float blockDistance;
-    float blockWidth;
+    public float blockWidth;
 
     Vector2 initBlockPosition;
 
@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour {
     public Text stageNumberText;
 
     public int charSizeForSixteen;
+    public int charSizeForNine;
 
     private int stageNum;
 
@@ -67,7 +68,10 @@ public class GameManager : MonoBehaviour {
     static Text staticOdaiText;
     static string st;
 
+    public Ease ease_type;
+
     void Awake() {
+        isGameStart = true;
         Application.targetFrameRate = 60;
     }
 
@@ -80,8 +84,14 @@ public class GameManager : MonoBehaviour {
 
     }
     void Update() {
-        
 
+        //消して↓
+        if(!isGameStart) {
+                    EnableCountDown();
+                } else {
+                    playerCards.SetActive(false);
+        }
+        /*
         if(NetworkManager.isJoined) {
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == PhotonNetwork.CurrentRoom.MaxPlayers) {
@@ -108,7 +118,7 @@ public class GameManager : MonoBehaviour {
             }
             //Debug.Log(PhotonNetwork.LocalPlayer.GetPlayerIsFinished());
             //Debug.Log(PhotonNetwork.PlayerList[0].GetScore());
-        } 
+        } */
 
         if(isGameStart){
             
@@ -122,8 +132,8 @@ public class GameManager : MonoBehaviour {
                 t += Time.deltaTime;
                 //Debug.Log(t);
             } else {
-                PhotonNetwork.LocalPlayer.SetPlayerIsFinished(true);
-                PhotonNetwork.LocalPlayer.SetScore(t);
+                //PhotonNetwork.LocalPlayer.SetPlayerIsFinished(true);
+                //PhotonNetwork.LocalPlayer.SetScore(t);
             }          
 
 
@@ -229,7 +239,7 @@ public class GameManager : MonoBehaviour {
         Destroy(child.gameObject);
         wordBlockList.Clear();
 
-}
+        }
 
     }
 
@@ -266,57 +276,61 @@ public class GameManager : MonoBehaviour {
         
         if(!isSecondStageFinished){
             
-            blockWidth = 220;
+            blockWidth = 280;
             block.GetComponent<RectTransform>().sizeDelta = new Vector2(blockWidth, blockWidth);
+            block.transform.GetChild(0).gameObject.GetComponent<Text>().fontSize = charSizeForNine;
             initBlockPosition = new Vector2(initBlockPositionXForNineBlock, initBlockPositionYForNineBlock);
             
             //9文字列のリストをシャッフルして上の方の1文字列ゲット、お題が被らないようにする。
+            /*
             int roomProperties;
             if(isFirstStageFinished) {
                 roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage2"];
             } else {
                 roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage1"];
-            }
+            }*/
 
-            //var numbers = Enumerable.Range(0, WordList.wordListNine.Count).OrderBy(i => Guid.NewGuid()).ToArray();
-            //int number = numbers[arrayNumber++];
-            Debug.Log(roomProperties);
-            getCharacterString = WordList.wordListNine[roomProperties];
-            //getCharacterString = WordList.wordListNine[number];
-
+            var numbers = Enumerable.Range(0, WordList.wordListNine.Count).OrderBy(i => Guid.NewGuid()).ToArray();
+            int number = numbers[arrayNumber++];
+            //Debug.Log(roomProperties);
+            //getCharacterString = WordList.wordListNine[roomProperties];
+            getCharacterString = WordList.wordListNine[number];
+    
         }
         else{
+
             
-            blockWidth = 180;
+            blockWidth = 240;
             block.GetComponent<RectTransform>().sizeDelta = new Vector2(blockWidth, blockWidth);
             block.transform.GetChild(0).gameObject.GetComponent<Text>().fontSize = charSizeForSixteen;
             initBlockPosition = new Vector2(initBlockPositionXForSixteenBlock, initBlockPositionYForSixteenBlock);
             
             //16文字列のリストから1文字列ゲット
+            /*
             int roomProperties;
             if(isThirdStageFinished) {
                 roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage4"];
             } else {
                 roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage3"];
-            }
+            }*/
 
-            //var numbers = Enumerable.Range(0, WordList.wordListSixteen.Count).OrderBy(i => Guid.NewGuid()).ToArray();
-            //int number = numbers[arrayNumber++];
-            Debug.Log(roomProperties);
-            getCharacterString = WordList.wordListSixteen[roomProperties];
-            //getCharacterString = WordList.wordListSixteen[number];
+            var numbers = Enumerable.Range(0, WordList.wordListSixteen.Count).OrderBy(i => Guid.NewGuid()).ToArray();
+            int number = numbers[arrayNumber++];
+            //Debug.Log(roomProperties);
+            //getCharacterString = WordList.wordListSixteen[roomProperties];
+            getCharacterString = WordList.wordListSixteen[number];
 
         }
 
         //上にお題とステージ番号をを表示
         float positionX = OdaiText.rectTransform.anchoredPosition.x;
         OdaiText.text = getCharacterString;
-        OdaiText.rectTransform.DOAnchorPosX(positionX -150, 1.0f).From(true);
+        //OdaiText.rectTransform.DOAnchorPosX(positionX -150, 1.0f).From(true);
         OdaiText.DOFade(1.0f, 1.0f);
         
         stageNumberText.text = "ステージ" + stageNum.ToString();
 
-        blockDistance = blockWidth + 60f;
+        blockDistance = blockWidth - 10f;
         int index = 0;
         //int indexZ = 0;
 
@@ -358,10 +372,12 @@ public class GameManager : MonoBehaviour {
             }
 
         }        
-        /*ブロックフェード案
+        //ブロックが出てくるアニメーション
         for(int g = 0; g < wordBlockList.Count; g++){
-             wordBlockList[g].GetComponent<Image>().DOFade(1f, 0.5f);
-        }*/
+             //wordBlockList[g].GetComponent<Image>().DOFade(1f, 0.5f);
+             wordBlockList[g].GetComponent<Transform>().DOMove(new Vector3(500, 0, 0), 0.8f).SetEase(ease_type).From(true);
+
+        }
        
         
     }
@@ -374,6 +390,7 @@ public class GameManager : MonoBehaviour {
     }
 
     //勝敗を判断するメソッド
+    /*
     public void JudgeWinOrLose() {
 
         bool isJudged = false;
@@ -402,9 +419,11 @@ public class GameManager : MonoBehaviour {
 
         if(isJudged) {
             if(isWin) {
-                WinOrLoseText.GetComponent<Text>().text = "かち";
+                WinOrLoseText.GetComponent<Text>().text = "YOU WIN!!!";
+                WinOrLoseText.transform.DOScale(new Vector2(1f,1f), 0.5f);
             } else {
-                WinOrLoseText.GetComponent<Text>().text = "まけ";
+                WinOrLoseText.GetComponent<Text>().text = "YOU LOSE...";
+                WinOrLoseText.DOFade(1f, 0.5f);
             }
 
             blocks.SetActive(false);
@@ -422,8 +441,9 @@ public class GameManager : MonoBehaviour {
         //         hikiwake
         //     }
         // }
-    }
+    }*/
 
+    
     public void EnableOtherClearStageBlocks() {
 
         if(isIndexOne) {
