@@ -19,8 +19,16 @@ public class InputManager : MonoBehaviour
     public void InputLogger() {
 
         inputValue = playerNameInputField.text;
+        
+        if(inputValue.IncludeAny(NGWords.ngWords)) {
+            inputValue = "***";
+        }
 
         Debug.Log(inputValue);
+
+        //Prefsで名前を保存
+        PlayerPrefs.SetString("name", inputValue);
+        PlayerPrefs.Save();
 
         InitInputField();
     }
@@ -28,8 +36,6 @@ public class InputManager : MonoBehaviour
     void InitInputField() {
         //値をリセットする
         playerNameInputField.text = "";
-        //常にフォーカス
-        playerNameInputField.ActivateInputField();
     }
     
     public void OnValueChanged()
@@ -41,6 +47,7 @@ public class InputManager : MonoBehaviour
             value = value.Replace("\r", "").Replace("\n", "");
             this.GetComponent<InputField>().text = value;
         }
+
     }
 
     // Update is called once per frame

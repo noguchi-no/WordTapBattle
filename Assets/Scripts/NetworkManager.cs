@@ -11,23 +11,23 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
     // Start is called before the first frame update
     void Start() {
         PhotonNetwork.ConnectUsingSettings();
-        PhotonNetwork.NickName = GameManager.playerName;
+        PhotonNetwork.NickName = PlayerPrefs.GetString("name", "no name");
 
     }
 
-    void OnGUI() {
+    // void OnGUI() {
 
-        GUI.skin.label.fontSize = 48;
+    //     GUI.skin.label.fontSize = 48;
 
 
-        //ログインの状態を画面上に出力
-        GUILayout.Label(PhotonNetwork.NetworkClientState.ToString());
-        GUILayout.Label(GameManager.isIndexOne.ToString());
+    //     //ログインの状態を画面上に出力
+    //     GUILayout.Label(PhotonNetwork.NetworkClientState.ToString());
+    //     GUILayout.Label(GameManager.isIndexOne.ToString());
 
-        foreach (var player in PhotonNetwork.PlayerList) {
-            GUILayout.Label($"{player.NickName}({player.ActorNumber}) - {player.GetScore()} - {player.GetPlayerIsFinished()}");
-        }
-    }
+    //     foreach (var player in PhotonNetwork.PlayerList) {
+    //         GUILayout.Label($"{player.NickName}({player.ActorNumber}) - {player.GetScore()} - {player.GetPlayerIsFinished()}");
+    //     }
+    // }
 
     //ルームに入室前に呼び出される
     public override void OnConnectedToMaster() {
@@ -80,6 +80,17 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
 
         PhotonNetwork.CurrentRoom.SetCustomProperties(customRoomProperties);
 
+    }
+
+    public override void OnDisconnected(DisconnectCause cause) {
+        NetworkManager.isJoined = false;
+        GameManager.isGameStart = false;
+        GameManager.getCharacterList.Clear();
+
+        PhotonNetwork.LocalPlayer.SetPlayerIsFinished(false);
+        PhotonNetwork.LocalPlayer.SetScore(0.0f);
+        PhotonNetwork.LocalPlayer.SetStageClearCount(0);
+        FadeManager.Instance.LoadScene ("Title", 0.1f);
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer) {

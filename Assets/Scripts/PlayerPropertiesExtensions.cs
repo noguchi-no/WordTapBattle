@@ -6,6 +6,8 @@ public static class PlayerPropertiesExtensions
     private const string ScoreKey = "Score";
     private const string IsFinishedKey = "IsFinished";
     private const string StageClearCountKey = "StageClearCount";
+    private const string WinCountKey = "WinCount";
+    private const string LoseCountKey = "LoseCount";
 
     private static readonly Hashtable propsToSet = new Hashtable();
 
@@ -16,6 +18,26 @@ public static class PlayerPropertiesExtensions
 
     public static void SetScore(this Player player, float value) {
         propsToSet[ScoreKey] = value;
+        player.SetCustomProperties(propsToSet);
+        propsToSet.Clear();
+    }
+
+    public static int GetWinCount(this Player player) {
+        return (player.CustomProperties[WinCountKey] is int score) ? score : 0;
+    }
+
+    public static void SetWinCount(this Player player, int value) {
+        propsToSet[WinCountKey] = value;
+        player.SetCustomProperties(propsToSet);
+        propsToSet.Clear();
+    }
+
+    public static int GetLoseCount(this Player player) {
+        return (player.CustomProperties[LoseCountKey] is int score) ? score : 0;
+    }
+
+    public static void SetLoseCount(this Player player, int value) {
+        propsToSet[LoseCountKey] = value;
         player.SetCustomProperties(propsToSet);
         propsToSet.Clear();
     }

@@ -12,6 +12,7 @@ public class ClearBlockNum : MonoBehaviour
     void Start()
     {
         Anime();
+        
     }
 
     void Anime()
