@@ -238,6 +238,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AudioSource_get_volume();
 		Register_UnityEngine_AudioSource_get_volume();
 
+		//System.Void UnityEngine.AudioSource::PlayOneShotHelper(UnityEngine.AudioSource,UnityEngine.AudioClip,System.Single)
+		void Register_UnityEngine_AudioSource_PlayOneShotHelper();
+		Register_UnityEngine_AudioSource_PlayOneShotHelper();
+
 		//System.Void UnityEngine.AudioSource::SetPitch(UnityEngine.AudioSource,System.Single)
 		void Register_UnityEngine_AudioSource_SetPitch();
 		Register_UnityEngine_AudioSource_SetPitch();
@@ -926,6 +930,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_get_layer();
 		Register_UnityEngine_GameObject_get_layer();
 
+		//System.String UnityEngine.GameObject::get_tag()
+		void Register_UnityEngine_GameObject_get_tag();
+		Register_UnityEngine_GameObject_get_tag();
+
 		//System.Void UnityEngine.GameObject::GetComponentFastPath(System.Type,System.IntPtr)
 		void Register_UnityEngine_GameObject_GetComponentFastPath();
 		Register_UnityEngine_GameObject_GetComponentFastPath();
@@ -1538,6 +1546,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Material_set_renderQueue();
 		Register_UnityEngine_Material_set_renderQueue();
 
+		//UnityEngine.Shader UnityEngine.Material::get_shader()
+		void Register_UnityEngine_Material_get_shader();
+		Register_UnityEngine_Material_get_shader();
+
 		//UnityEngine.Texture UnityEngine.Material::GetTextureImpl(System.Int32)
 		void Register_UnityEngine_Material_GetTextureImpl();
 		Register_UnityEngine_Material_GetTextureImpl();
@@ -1778,6 +1790,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.ParticleSystem
 
+		//System.Int32 UnityEngine.ParticleSystem::GetParticles(UnityEngine.ParticleSystem/Particle[],System.Int32,System.Int32)
+		void Register_UnityEngine_ParticleSystem_GetParticles();
+		Register_UnityEngine_ParticleSystem_GetParticles();
+
+		//System.Single UnityEngine.ParticleSystem::GetParticleCurrentSize(UnityEngine.ParticleSystem/Particle&)
+		void Register_UnityEngine_ParticleSystem_GetParticleCurrentSize();
+		Register_UnityEngine_ParticleSystem_GetParticleCurrentSize();
+
 		//System.Void UnityEngine.ParticleSystem::EmitOld_Internal(UnityEngine.ParticleSystem/Particle&)
 		void Register_UnityEngine_ParticleSystem_EmitOld_Internal();
 		Register_UnityEngine_ParticleSystem_EmitOld_Internal();
@@ -1790,15 +1810,83 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_ParticleSystem_Emit_Internal();
 		Register_UnityEngine_ParticleSystem_Emit_Internal();
 
+		//System.Void UnityEngine.ParticleSystem::GetParticleCurrentColor_Injected(UnityEngine.ParticleSystem/Particle&,UnityEngine.Color32&)
+		void Register_UnityEngine_ParticleSystem_GetParticleCurrentColor_Injected();
+		Register_UnityEngine_ParticleSystem_GetParticleCurrentColor_Injected();
+
 		//System.Void UnityEngine.ParticleSystem::Play(System.Boolean)
 		void Register_UnityEngine_ParticleSystem_Play();
 		Register_UnityEngine_ParticleSystem_Play();
+
+		//System.Void UnityEngine.ParticleSystem::Simulate(System.Single,System.Boolean,System.Boolean,System.Boolean)
+		void Register_UnityEngine_ParticleSystem_Simulate();
+		Register_UnityEngine_ParticleSystem_Simulate();
 
 		//System.Void UnityEngine.ParticleSystem::Stop(System.Boolean,UnityEngine.ParticleSystemStopBehavior)
 		void Register_UnityEngine_ParticleSystem_Stop();
 		Register_UnityEngine_ParticleSystem_Stop();
 
 	//End Registrations for type : UnityEngine.ParticleSystem
+
+	//Start Registrations for type : UnityEngine.ParticleSystem/MainModule
+
+		//System.Boolean UnityEngine.ParticleSystem/MainModule::get_playOnAwake_Injected(UnityEngine.ParticleSystem/MainModule&)
+		void Register_UnityEngine_ParticleSystem_MainModule_get_playOnAwake_Injected();
+		Register_UnityEngine_ParticleSystem_MainModule_get_playOnAwake_Injected();
+
+		//System.Int32 UnityEngine.ParticleSystem/MainModule::get_maxParticles_Injected(UnityEngine.ParticleSystem/MainModule&)
+		void Register_UnityEngine_ParticleSystem_MainModule_get_maxParticles_Injected();
+		Register_UnityEngine_ParticleSystem_MainModule_get_maxParticles_Injected();
+
+		//System.Void UnityEngine.ParticleSystem/MainModule::set_maxParticles_Injected(UnityEngine.ParticleSystem/MainModule&,System.Int32)
+		void Register_UnityEngine_ParticleSystem_MainModule_set_maxParticles_Injected();
+		Register_UnityEngine_ParticleSystem_MainModule_set_maxParticles_Injected();
+
+		//System.Void UnityEngine.ParticleSystem/MainModule::set_scalingMode_Injected(UnityEngine.ParticleSystem/MainModule&,UnityEngine.ParticleSystemScalingMode)
+		void Register_UnityEngine_ParticleSystem_MainModule_set_scalingMode_Injected();
+		Register_UnityEngine_ParticleSystem_MainModule_set_scalingMode_Injected();
+
+		//UnityEngine.ParticleSystemScalingMode UnityEngine.ParticleSystem/MainModule::get_scalingMode_Injected(UnityEngine.ParticleSystem/MainModule&)
+		void Register_UnityEngine_ParticleSystem_MainModule_get_scalingMode_Injected();
+		Register_UnityEngine_ParticleSystem_MainModule_get_scalingMode_Injected();
+
+		//UnityEngine.ParticleSystemSimulationSpace UnityEngine.ParticleSystem/MainModule::get_simulationSpace_Injected(UnityEngine.ParticleSystem/MainModule&)
+		void Register_UnityEngine_ParticleSystem_MainModule_get_simulationSpace_Injected();
+		Register_UnityEngine_ParticleSystem_MainModule_get_simulationSpace_Injected();
+
+	//End Registrations for type : UnityEngine.ParticleSystem/MainModule
+
+	//Start Registrations for type : UnityEngine.ParticleSystem/TextureSheetAnimationModule
+
+		//System.Boolean UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_enabled_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
+		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_enabled_Injected();
+		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_enabled_Injected();
+
+		//System.Int32 UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_cycleCount_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
+		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_cycleCount_Injected();
+		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_cycleCount_Injected();
+
+		//System.Int32 UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_numTilesX_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
+		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_numTilesX_Injected();
+		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_numTilesX_Injected();
+
+		//System.Int32 UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_numTilesY_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
+		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_numTilesY_Injected();
+		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_numTilesY_Injected();
+
+		//System.Int32 UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_rowIndex_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
+		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_rowIndex_Injected();
+		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_rowIndex_Injected();
+
+		//System.Void UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_frameOverTime_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&,UnityEngine.ParticleSystem/MinMaxCurve&)
+		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_frameOverTime_Injected();
+		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_frameOverTime_Injected();
+
+		//UnityEngine.ParticleSystemAnimationType UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_animation_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
+		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_animation_Injected();
+		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_animation_Injected();
+
+	//End Registrations for type : UnityEngine.ParticleSystem/TextureSheetAnimationModule
 
 	//Start Registrations for type : UnityEngine.ParticleSystemRenderer
 
@@ -1930,9 +2018,25 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_PlayerPrefs_HasKey();
 		Register_UnityEngine_PlayerPrefs_HasKey();
 
+		//System.Boolean UnityEngine.PlayerPrefs::TrySetFloat(System.String,System.Single)
+		void Register_UnityEngine_PlayerPrefs_TrySetFloat();
+		Register_UnityEngine_PlayerPrefs_TrySetFloat();
+
+		//System.Boolean UnityEngine.PlayerPrefs::TrySetInt(System.String,System.Int32)
+		void Register_UnityEngine_PlayerPrefs_TrySetInt();
+		Register_UnityEngine_PlayerPrefs_TrySetInt();
+
 		//System.Boolean UnityEngine.PlayerPrefs::TrySetSetString(System.String,System.String)
 		void Register_UnityEngine_PlayerPrefs_TrySetSetString();
 		Register_UnityEngine_PlayerPrefs_TrySetSetString();
+
+		//System.Int32 UnityEngine.PlayerPrefs::GetInt(System.String,System.Int32)
+		void Register_UnityEngine_PlayerPrefs_GetInt();
+		Register_UnityEngine_PlayerPrefs_GetInt();
+
+		//System.Single UnityEngine.PlayerPrefs::GetFloat(System.String,System.Single)
+		void Register_UnityEngine_PlayerPrefs_GetFloat();
+		Register_UnityEngine_PlayerPrefs_GetFloat();
 
 		//System.String UnityEngine.PlayerPrefs::GetString(System.String,System.String)
 		void Register_UnityEngine_PlayerPrefs_GetString();
@@ -1941,6 +2045,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.PlayerPrefs::DeleteKey(System.String)
 		void Register_UnityEngine_PlayerPrefs_DeleteKey();
 		Register_UnityEngine_PlayerPrefs_DeleteKey();
+
+		//System.Void UnityEngine.PlayerPrefs::Save()
+		void Register_UnityEngine_PlayerPrefs_Save();
+		Register_UnityEngine_PlayerPrefs_Save();
 
 	//End Registrations for type : UnityEngine.PlayerPrefs
 

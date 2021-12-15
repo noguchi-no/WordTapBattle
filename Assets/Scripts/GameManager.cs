@@ -63,15 +63,22 @@ public class GameManager : MonoBehaviour {
 
     bool isWin = false;
     public static bool isIndexOne = false;
-    static public string playerName = "owan";
+    static public string playerName;
 
     static Text staticOdaiText;
     static string st;
 
     public Ease ease_type;
+    public GameObject matchingObjects;
+    public GameObject toTitleButton;
+    bool isJudged = false;
+    bool isAnimeted = false;
+    int winCount;
+    int loseCount;
+    public int oWinCount;
+    public int oLoseCount;
 
     void Awake() {
-        isGameStart = true;
         Application.targetFrameRate = 60;
     }
 
@@ -82,46 +89,62 @@ public class GameManager : MonoBehaviour {
 
         nextListNumber = 0;
 
+        playerName = PlayerPrefs.GetString("name", "no name");
+        winCount = PlayerPrefs.GetInt("wincount", 0);
+        loseCount = PlayerPrefs.GetInt("losecount", 0);
+
+        isAnimeted = false;
+
     }
     void Update() {
-
-        //消して↓
-        if(!isGameStart) {
-                    EnableCountDown();
-                } else {
-                    playerCards.SetActive(false);
-        }
-        /*
+        
         if(NetworkManager.isJoined) {
 
             if (PhotonNetwork.CurrentRoom.PlayerCount == PhotonNetwork.CurrentRoom.MaxPlayers) {
                 
+                PhotonNetwork.LocalPlayer.SetWinCount(winCount);
+                PhotonNetwork.LocalPlayer.SetLoseCount(loseCount);
+
                 if(PhotonNetwork.LocalPlayer.ActorNumber == 1) {
                     isIndexOne = true;
-                    otherPlayerNameText.GetComponent<TextMeshProUGUI>().text = PhotonNetwork.PlayerList[1].NickName;
+                    otherPlayerNameText.GetComponent<Text>().text = PhotonNetwork.PlayerList[1].NickName;
+                    oWinCount = PhotonNetwork.PlayerList[1].GetWinCount();
+                    oLoseCount = PhotonNetwork.PlayerList[1].GetLoseCount();
+
                 } else {
-                    otherPlayerNameText.GetComponent<TextMeshProUGUI>().text = PhotonNetwork.PlayerList[0].NickName;
+                    otherPlayerNameText.GetComponent<Text>().text = PhotonNetwork.PlayerList[0].NickName;
+                    oWinCount = PhotonNetwork.PlayerList[0].GetWinCount();
+                    oLoseCount = PhotonNetwork.PlayerList[0].GetLoseCount();
                 }
 
                 if(!isGameStart) {
-                    EnableCountDown();
+                    playerCards.SetActive(true);
+                    matchMakingNowText.SetActive(false);
+
+                    toTitleButton.SetActive(false);
+
+                    MatchingObjectsManager.nextListNumber = 0;
+                    MatchingObjectsManager.getCharacterList.Clear();
+                    Destroy(matchingObjects);
+
                 } else {
                     playerCards.SetActive(false);
+                    
+                    playerNameText.GetComponent<Text>().text = playerName;
+                    playerNameText.SetActive(true);
+                    otherPlayerNameText.SetActive(true);
                 }
-                
+
                 EnableOtherClearStageBlocks();
-                JudgeWinOrLose();
 
-                playerNameText.GetComponent<TextMeshProUGUI>().text = playerName;
-                playerNameText.SetActive(true);
-                otherPlayerNameText.SetActive(true);
             }
-            //Debug.Log(PhotonNetwork.LocalPlayer.GetPlayerIsFinished());
-            //Debug.Log(PhotonNetwork.PlayerList[0].GetScore());
-        } */
 
-        if(isGameStart){
+        } 
+
+        if(isGameStart) { 
             
+            JudgeWinOrLose();
+
             if(!isFirstBlockGenerated){
                 stageNum++;
                 GenerateBlock(3,3);
@@ -130,13 +153,10 @@ public class GameManager : MonoBehaviour {
 
             if(!isFinished) {
                 t += Time.deltaTime;
-                //Debug.Log(t);
             } else {
-                //PhotonNetwork.LocalPlayer.SetPlayerIsFinished(true);
-                //PhotonNetwork.LocalPlayer.SetScore(t);
+                PhotonNetwork.LocalPlayer.SetPlayerIsFinished(true);
+                PhotonNetwork.LocalPlayer.SetScore(t);
             }          
-
-
         }
 
         //if(NextWord > 9) isFinished = true;
@@ -176,6 +196,7 @@ public class GameManager : MonoBehaviour {
                 stageNum++;
                 DestroyBlock();
                 GenerateBlock(4,4);
+                SEManager.PlayNextStage();
 
             }else if(!isFourthStageFinished){
                 //GenerateStageClearBlock(1,110f);
@@ -207,6 +228,7 @@ public class GameManager : MonoBehaviour {
                 stageNum++;
                 DestroyBlock();
                 GenerateBlock(3,3);
+                SEManager.PlayNextStage();
 
             }else if(!isSecondStageFinished){
                 // GenerateStageClearBlock(0,80f);
@@ -221,11 +243,7 @@ public class GameManager : MonoBehaviour {
                 stageNum++;
                 DestroyBlock();
                 GenerateBlock(4,4);
-                
-
-                // isFinished = true;
-                // isThirdStageFinished = true;
-                // isFourthStageFinished = true;
+                SEManager.PlayNextStage();
 
             }
                 
@@ -267,10 +285,7 @@ public class GameManager : MonoBehaviour {
         
     }
 
-    void GenerateBlock(int rowCount, int colCount) {
-
-        //st = staticOdaiText.text.ToString();
-        
+    void GenerateBlock(int rowCount, int colCount) {        
 
         int arrayNumber = 0;
         
@@ -282,22 +297,20 @@ public class GameManager : MonoBehaviour {
             initBlockPosition = new Vector2(initBlockPositionXForNineBlock, initBlockPositionYForNineBlock);
             
             //9文字列のリストをシャッフルして上の方の1文字列ゲット、お題が被らないようにする。
-            /*
             int roomProperties;
             if(isFirstStageFinished) {
                 roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage2"];
             } else {
                 roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage1"];
-            }*/
+            }
 
-            var numbers = Enumerable.Range(0, WordList.wordListNine.Count).OrderBy(i => Guid.NewGuid()).ToArray();
-            int number = numbers[arrayNumber++];
+            //var numbers = Enumerable.Range(0, WordList.wordListNine.Count).OrderBy(i => Guid.NewGuid()).ToArray();
+            //int number = numbers[arrayNumber++];
             //Debug.Log(roomProperties);
-            //getCharacterString = WordList.wordListNine[roomProperties];
-            getCharacterString = WordList.wordListNine[number];
+            getCharacterString = WordList.wordListNine[roomProperties];
+            //getCharacterString = WordList.wordListNine[number];
     
-        }
-        else{
+        } else{
 
             
             blockWidth = 240;
@@ -306,19 +319,18 @@ public class GameManager : MonoBehaviour {
             initBlockPosition = new Vector2(initBlockPositionXForSixteenBlock, initBlockPositionYForSixteenBlock);
             
             //16文字列のリストから1文字列ゲット
-            /*
             int roomProperties;
             if(isThirdStageFinished) {
                 roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage4"];
             } else {
                 roomProperties = (int)PhotonNetwork.CurrentRoom.CustomProperties["stage3"];
-            }*/
+            }
 
-            var numbers = Enumerable.Range(0, WordList.wordListSixteen.Count).OrderBy(i => Guid.NewGuid()).ToArray();
-            int number = numbers[arrayNumber++];
+            //var numbers = Enumerable.Range(0, WordList.wordListSixteen.Count).OrderBy(i => Guid.NewGuid()).ToArray();
+            //int number = numbers[arrayNumber++];
             //Debug.Log(roomProperties);
-            //getCharacterString = WordList.wordListSixteen[roomProperties];
-            getCharacterString = WordList.wordListSixteen[number];
+            getCharacterString = WordList.wordListSixteen[roomProperties];
+            //getCharacterString = WordList.wordListSixteen[number];
 
         }
 
@@ -384,64 +396,79 @@ public class GameManager : MonoBehaviour {
 
     //カウントダウン機能をオンにするメソッド
     public void EnableCountDown() {
-        playerCards.SetActive(true);
         countDownText.SetActive(true);
-        matchMakingNowText.SetActive(false);
     }
 
     //勝敗を判断するメソッド
-    /*
     public void JudgeWinOrLose() {
 
-        bool isJudged = false;
+        if(PhotonNetwork.CurrentRoom.PlayerCount == 1) {
+                isWin = true;
+                isJudged = true;
+                Debug.Log("勝ち");
+        }
 
-        if(isIndexOne) {
-            if(PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && !PhotonNetwork.PlayerList[1].GetPlayerIsFinished()) {
-                isWin = true;
-                isJudged = true;
-                Debug.Log("勝ち");
-            } else if(!PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && PhotonNetwork.PlayerList[1].GetPlayerIsFinished()) {
-                isWin = false;
-                isJudged = true;
-                Debug.Log("負け");
+        if(!isJudged) {
+            if(isIndexOne) {
+                if(PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && !PhotonNetwork.PlayerList[1].GetPlayerIsFinished()) {
+                    isWin = true;
+                    isJudged = true;
+                    Debug.Log("勝ち");
+                } else if(!PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && PhotonNetwork.PlayerList[1].GetPlayerIsFinished()) {
+                    isWin = false;
+                    isJudged = true;
+                    Debug.Log("負け");
+                } 
+            } else if(!isIndexOne) {
+                if(PhotonNetwork.PlayerList[1].GetPlayerIsFinished() && !PhotonNetwork.PlayerList[0].GetPlayerIsFinished()) {
+                    isWin = true;
+                    isJudged = true;
+                    Debug.Log("勝ち");
+                } else if(!PhotonNetwork.PlayerList[1].GetPlayerIsFinished() && PhotonNetwork.PlayerList[0].GetPlayerIsFinished()) {
+                    isWin = false;
+                    isJudged = true;
+                    Debug.Log("負け");
+                } 
             } 
-        } else {
-            if(PhotonNetwork.PlayerList[1].GetPlayerIsFinished() && !PhotonNetwork.PlayerList[0].GetPlayerIsFinished()) {
-                isWin = true;
-                isJudged = true;
-                Debug.Log("勝ち");
-            } else if(!PhotonNetwork.PlayerList[1].GetPlayerIsFinished() && PhotonNetwork.PlayerList[0].GetPlayerIsFinished()) {
-                isWin = false;
-                isJudged = true;
-                Debug.Log("負け");
-            }
         }
 
         if(isJudged) {
             if(isWin) {
                 WinOrLoseText.GetComponent<Text>().text = "YOU WIN!!!";
-                WinOrLoseText.transform.DOScale(new Vector2(1f,1f), 0.5f);
+                WinOrLoseText.GetComponent<Text>().color = new Color(1.0f, 0.2f, 0.2f, 1.0f);
+
+                if(!isAnimeted) {
+                    WinOrLoseText.GetComponent<RectTransform>().DOScale(1f, 0.6f).SetEase(Ease.OutBack, 5f);
+                    isAnimeted = true;
+                    SEManager.PlayWin();
+
+                    PlayerPrefs.SetInt("wincount", winCount++);
+                    PlayerPrefs.Save();
+                }
+
             } else {
                 WinOrLoseText.GetComponent<Text>().text = "YOU LOSE...";
-                WinOrLoseText.DOFade(1f, 0.5f);
+                WinOrLoseText.GetComponent<Text>().color = new Color(0.2f, 0.2f, 1.0f, 1.0f);
+
+                if(!isAnimeted) {
+                    WinOrLoseText.GetComponent<RectTransform>().DOLocalRotate(new Vector3(0, 0, -10.0f), 
+                                                                              2f,
+                                                                              RotateMode.FastBeyond360)
+                                                                              .SetEase(Ease.OutCubic);
+                    isAnimeted = true;
+                    SEManager.PlayLose();
+
+                    PlayerPrefs.SetInt("losecount", loseCount++);
+                    PlayerPrefs.Save();
+
+                }
             }
 
             blocks.SetActive(false);
             WinOrLoseText.SetActive(true);
             gameOverButtons.SetActive(true);
         }
-    
-        
-        // else if(PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && PhotonNetwork.PlayerList[1].GetPlayerIsFinished()) {
-        //     if(PhotonNetwork.PlayerList[0].GetScore() > PhotonNetwork.PlayerList[1].GetScore()) {
-        //         kachi 
-        //     } else if(PhotonNetwork.PlayerList[0].GetScore() < PhotonNetwork.PlayerList[1].GetScore()) {
-        //         make
-        //     } else {
-        //         hikiwake
-        //     }
-        // }
-    }*/
+    }
 
     
     public void EnableOtherClearStageBlocks() {
@@ -454,19 +481,6 @@ public class GameManager : MonoBehaviour {
             
             for(int i = 1; i < 5; i++) if(PhotonNetwork.PlayerList[0].GetStageClearCount() == i) clearBlocks[3 + i].SetActive(true);
         }
-
-        // if(PhotonNetwork.PlayerList[1].GetStageClearCount() == 1) {
-        //     clearBlocks[4].SetActive(true);
-        // } else if(PhotonNetwork.PlayerList[1].GetStageClearCount() == 2) {
-        //     clearBlocks[5].SetActive(true);
-        // } else if(PhotonNetwork.PlayerList[1].GetStageClearCount() == 3) {
-        //     clearBlocks[6].SetActive(true);
-        // } else if(PhotonNetwork.PlayerList[1].GetStageClearCount() == 4) {
-        //     clearBlocks[7].SetActive(true);
-        // }
-
-        // }
-
 
     }
 
