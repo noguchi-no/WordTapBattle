@@ -73,11 +73,11 @@ public class SEManager : MonoBehaviour {
     }
 
     public static void PlayIncorrect() {
-        audioSource.PlayOneShot(s_incorrect, 0.7f);
+        audioSource.PlayOneShot(s_incorrect, 0.5f);
     }
 
     public static void PlayNextStage() {
-        audioSource.PlayOneShot(s_nextStage, 0.8f);
+        audioSource.PlayOneShot(s_nextStage, 0.4f);
     }
 
     public static void PlayEnemyBlock() {

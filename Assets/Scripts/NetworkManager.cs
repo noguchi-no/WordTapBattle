@@ -15,19 +15,18 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
 
     }
 
-    // void OnGUI() {
+     void OnGUI() {
 
-    //     GUI.skin.label.fontSize = 48;
+         GUI.skin.label.fontSize = 48;
 
 
-    //     //ログインの状態を画面上に出力
-    //     GUILayout.Label(PhotonNetwork.NetworkClientState.ToString());
-    //     GUILayout.Label(GameManager.isIndexOne.ToString());
-
-    //     foreach (var player in PhotonNetwork.PlayerList) {
-    //         GUILayout.Label($"{player.NickName}({player.ActorNumber}) - {player.GetScore()} - {player.GetPlayerIsFinished()}");
-    //     }
-    // }
+         //ログインの状態を画面上に出力
+         GUILayout.Label(PhotonNetwork.NetworkClientState.ToString());
+         GUILayout.Label(GameManager.isIndexOne.ToString());
+         foreach (var player in PhotonNetwork.PlayerList) {
+             GUILayout.Label($"{player.NickName}({player.ActorNumber}) - {player.GetScore()} - {player.GetPlayerIsFinished()}");
+         }
+     }
 
     //ルームに入室前に呼び出される
     public override void OnConnectedToMaster() {

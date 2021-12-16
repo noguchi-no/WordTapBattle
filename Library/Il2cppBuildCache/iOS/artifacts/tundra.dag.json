@@ -20,50 +20,56 @@
       "DebugActionIndex": 0
     },
     {
-      "Annotation": "Il2Cpp C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat",
-      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2020.3.19f1\\Editor\\Data\\il2cpp/build/deploy/netcoreapp3.1/il2cpp.exe\" --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=\"unityaot\" --additional-cpp=C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp --additional-cpp=C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp --incremental-g-c-time-slice=3 --avoid-dynamic-library-copy --profiler-report --map-file-parser=\"C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/Tools/MapFileParser/MapFileParser.exe\" --directory=C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed --generatedcppdir=C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/il2cppOutput",
+      "Annotation": "Il2Cpp /Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat",
+      "Action": "\"/Applications/Unity/Hub/Editor/2020.3.19f1/Unity.app/Contents/il2cpp/build/deploy/netcoreapp3.1/il2cpp\" --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=\"unityaot\" --additional-cpp=\"/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" --additional-cpp=\"/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" --incremental-g-c-time-slice=3 --avoid-dynamic-library-copy --profiler-report --map-file-parser=\"/Applications/Unity/Hub/Editor/2020.3.19f1/Unity.app/Contents/Tools/MapFileParser/MapFileParser\" --directory=\"/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed\" --generatedcppdir=\"/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput\"",
       "Inputs": [
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/Assembly-CSharp-firstpass.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/DOTween.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/Mono.Security.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/mscorlib.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/Photon3Unity3D.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/PhotonChat.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/PhotonRealtime.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/PhotonUnityNetworking.Demos.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/PhotonUnityNetworking.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/PhotonUnityNetworking.Utilities.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/System.Configuration.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/System.Core.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/System.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/System.Numerics.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/System.Xml.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/Unity.2D.IK.Runtime.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/Unity.TextMeshPro.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.GameCenterModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.GridModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.TextCoreModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll",
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Temp/StagingArea/Data/Managed/UnityEngine.UIModule.dll",
-        "\"C:/Program Files/Unity/Hub/Editor/2020.3.19f1/Editor/Data/il2cpp/build/deploy/netcoreapp3.1/il2cpp.exe\""
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/Assembly-CSharp-firstpass.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/DOTween.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/GoogleMobileAds.Common.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/GoogleMobileAds.Core.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/GoogleMobileAds.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/GoogleMobileAds.iOS.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/Mono.Security.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/Photon3Unity3D.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/PhotonChat.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/PhotonRealtime.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/PhotonUnityNetworking.Demos.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/PhotonUnityNetworking.Utilities.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/PhotonUnityNetworking.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/System.Configuration.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/System.Core.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/System.Numerics.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/System.Xml.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/System.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/Unity.2D.IK.Runtime.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/Unity.TextMeshPro.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.GameCenterModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.GridModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.ImageConversionModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.ScreenCaptureModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.TextCoreModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.UIModule.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/UnityEngine.dll",
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Temp/StagingArea/Data/Managed/mscorlib.dll",
+        "\"/Applications/Unity/Hub/Editor/2020.3.19f1/Unity.app/Contents/il2cpp/build/deploy/netcoreapp3.1/il2cpp\""
       ],
       "Outputs": [
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat"
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput/Data/Metadata/global-metadata.dat"
       ],
       "TargetDirectories": [],
       "PassIndex": 0,
@@ -76,13 +82,13 @@
       "DebugActionIndex": 1
     },
     {
-      "Annotation": "Copy Additional C++ File C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp",
-      "Action": "copy \"C:\\Users\\nagan\\Documents\\works\\Unity\\WordTapBattle\\Library\\Il2cppBuildCache\\iOS\\additionalCppFiles\\UnityClassRegistration.cpp\" \"C:\\Users\\nagan\\Documents\\works\\Unity\\WordTapBattle\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityClassRegistration.cpp\" && copy /b \"C:\\Users\\nagan\\Documents\\works\\Unity\\WordTapBattle\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityClassRegistration.cpp\" +,, \"C:\\Users\\nagan\\Documents\\works\\Unity\\WordTapBattle\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityClassRegistration.cpp\" ",
+      "Annotation": "Copy Additional C++ File /Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp",
+      "Action": "TMPFILE=$(mktemp \"/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp.tmpXXXXX\") && cp -af \"/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp\" \"${TMPFILE}\" && touch -h -c \"${TMPFILE}\" && mv -f \"${TMPFILE}\" \"/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp\" ",
       "Inputs": [
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp"
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityClassRegistration.cpp"
       ],
       "Outputs": [
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp"
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityClassRegistration.cpp"
       ],
       "TargetDirectories": [],
       "PassIndex": 0,
@@ -99,13 +105,13 @@
       "DebugActionIndex": 2
     },
     {
-      "Annotation": "Copy Additional C++ File C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp",
-      "Action": "copy \"C:\\Users\\nagan\\Documents\\works\\Unity\\WordTapBattle\\Library\\Il2cppBuildCache\\iOS\\additionalCppFiles\\UnityICallRegistration.cpp\" \"C:\\Users\\nagan\\Documents\\works\\Unity\\WordTapBattle\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityICallRegistration.cpp\" && copy /b \"C:\\Users\\nagan\\Documents\\works\\Unity\\WordTapBattle\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityICallRegistration.cpp\" +,, \"C:\\Users\\nagan\\Documents\\works\\Unity\\WordTapBattle\\Library\\Il2cppBuildCache\\iOS\\il2cppOutput\\UnityICallRegistration.cpp\" ",
+      "Annotation": "Copy Additional C++ File /Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp",
+      "Action": "TMPFILE=$(mktemp \"/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp.tmpXXXXX\") && cp -af \"/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp\" \"${TMPFILE}\" && touch -h -c \"${TMPFILE}\" && mv -f \"${TMPFILE}\" \"/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp\" ",
       "Inputs": [
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp"
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/additionalCppFiles/UnityICallRegistration.cpp"
       ],
       "Outputs": [
-        "C:/Users/nagan/Documents/works/Unity/WordTapBattle/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp"
+        "/Users/noguchiatsushi/Downloads/WordTapBattle-master/Library/Il2cppBuildCache/iOS/il2cppOutput/UnityICallRegistration.cpp"
       ],
       "TargetDirectories": [],
       "PassIndex": 0,
@@ -123,6 +129,9 @@
     }
   ],
   "FileSignatures": [
+    {
+      "File": "../../../../../Library"
+    },
     {
       "File": "../../../Temp/StagingArea/Data/Managed"
     },

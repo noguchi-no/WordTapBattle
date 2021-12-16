@@ -6,10 +6,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_Unity_Collections_LowLevel_Unsafe_UnsafeUtility_Free();
 		Register_Unity_Collections_LowLevel_Unsafe_UnsafeUtility_Free();
 
-		//System.Void Unity.Collections.LowLevel.Unsafe.UnsafeUtility::MemCpy(System.Void*,System.Void*,System.Int64)
-		void Register_Unity_Collections_LowLevel_Unsafe_UnsafeUtility_MemCpy();
-		Register_Unity_Collections_LowLevel_Unsafe_UnsafeUtility_MemCpy();
-
 	//End Registrations for type : Unity.Collections.LowLevel.Unsafe.UnsafeUtility
 
 	//Start Registrations for type : Unity.Jobs.JobHandle
@@ -25,14 +21,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.IntPtr Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::CreateMarker(System.String,System.UInt16,Unity.Profiling.LowLevel.MarkerFlags,System.Int32)
 		void Register_Unity_Profiling_LowLevel_Unsafe_ProfilerUnsafeUtility_CreateMarker();
 		Register_Unity_Profiling_LowLevel_Unsafe_ProfilerUnsafeUtility_CreateMarker();
-
-		//System.Void Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::BeginSample(System.IntPtr)
-		void Register_Unity_Profiling_LowLevel_Unsafe_ProfilerUnsafeUtility_BeginSample();
-		Register_Unity_Profiling_LowLevel_Unsafe_ProfilerUnsafeUtility_BeginSample();
-
-		//System.Void Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::EndSample(System.IntPtr)
-		void Register_Unity_Profiling_LowLevel_Unsafe_ProfilerUnsafeUtility_EndSample();
-		Register_Unity_Profiling_LowLevel_Unsafe_ProfilerUnsafeUtility_EndSample();
 
 	//End Registrations for type : Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility
 
@@ -1292,6 +1280,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.GUIUtility
 
+	//Start Registrations for type : UnityEngine.ImageConversion
+
+		//System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[],System.Boolean)
+		void Register_UnityEngine_ImageConversion_LoadImage();
+		Register_UnityEngine_ImageConversion_LoadImage();
+
+	//End Registrations for type : UnityEngine.ImageConversion
+
 	//Start Registrations for type : UnityEngine.Input
 
 		//System.Boolean UnityEngine.Input::GetButton(System.String)
@@ -1546,10 +1542,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Material_set_renderQueue();
 		Register_UnityEngine_Material_set_renderQueue();
 
-		//UnityEngine.Shader UnityEngine.Material::get_shader()
-		void Register_UnityEngine_Material_get_shader();
-		Register_UnityEngine_Material_get_shader();
-
 		//UnityEngine.Texture UnityEngine.Material::GetTextureImpl(System.Int32)
 		void Register_UnityEngine_Material_GetTextureImpl();
 		Register_UnityEngine_Material_GetTextureImpl();
@@ -1790,14 +1782,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.ParticleSystem
 
-		//System.Int32 UnityEngine.ParticleSystem::GetParticles(UnityEngine.ParticleSystem/Particle[],System.Int32,System.Int32)
-		void Register_UnityEngine_ParticleSystem_GetParticles();
-		Register_UnityEngine_ParticleSystem_GetParticles();
-
-		//System.Single UnityEngine.ParticleSystem::GetParticleCurrentSize(UnityEngine.ParticleSystem/Particle&)
-		void Register_UnityEngine_ParticleSystem_GetParticleCurrentSize();
-		Register_UnityEngine_ParticleSystem_GetParticleCurrentSize();
-
 		//System.Void UnityEngine.ParticleSystem::EmitOld_Internal(UnityEngine.ParticleSystem/Particle&)
 		void Register_UnityEngine_ParticleSystem_EmitOld_Internal();
 		Register_UnityEngine_ParticleSystem_EmitOld_Internal();
@@ -1810,83 +1794,15 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_ParticleSystem_Emit_Internal();
 		Register_UnityEngine_ParticleSystem_Emit_Internal();
 
-		//System.Void UnityEngine.ParticleSystem::GetParticleCurrentColor_Injected(UnityEngine.ParticleSystem/Particle&,UnityEngine.Color32&)
-		void Register_UnityEngine_ParticleSystem_GetParticleCurrentColor_Injected();
-		Register_UnityEngine_ParticleSystem_GetParticleCurrentColor_Injected();
-
 		//System.Void UnityEngine.ParticleSystem::Play(System.Boolean)
 		void Register_UnityEngine_ParticleSystem_Play();
 		Register_UnityEngine_ParticleSystem_Play();
-
-		//System.Void UnityEngine.ParticleSystem::Simulate(System.Single,System.Boolean,System.Boolean,System.Boolean)
-		void Register_UnityEngine_ParticleSystem_Simulate();
-		Register_UnityEngine_ParticleSystem_Simulate();
 
 		//System.Void UnityEngine.ParticleSystem::Stop(System.Boolean,UnityEngine.ParticleSystemStopBehavior)
 		void Register_UnityEngine_ParticleSystem_Stop();
 		Register_UnityEngine_ParticleSystem_Stop();
 
 	//End Registrations for type : UnityEngine.ParticleSystem
-
-	//Start Registrations for type : UnityEngine.ParticleSystem/MainModule
-
-		//System.Boolean UnityEngine.ParticleSystem/MainModule::get_playOnAwake_Injected(UnityEngine.ParticleSystem/MainModule&)
-		void Register_UnityEngine_ParticleSystem_MainModule_get_playOnAwake_Injected();
-		Register_UnityEngine_ParticleSystem_MainModule_get_playOnAwake_Injected();
-
-		//System.Int32 UnityEngine.ParticleSystem/MainModule::get_maxParticles_Injected(UnityEngine.ParticleSystem/MainModule&)
-		void Register_UnityEngine_ParticleSystem_MainModule_get_maxParticles_Injected();
-		Register_UnityEngine_ParticleSystem_MainModule_get_maxParticles_Injected();
-
-		//System.Void UnityEngine.ParticleSystem/MainModule::set_maxParticles_Injected(UnityEngine.ParticleSystem/MainModule&,System.Int32)
-		void Register_UnityEngine_ParticleSystem_MainModule_set_maxParticles_Injected();
-		Register_UnityEngine_ParticleSystem_MainModule_set_maxParticles_Injected();
-
-		//System.Void UnityEngine.ParticleSystem/MainModule::set_scalingMode_Injected(UnityEngine.ParticleSystem/MainModule&,UnityEngine.ParticleSystemScalingMode)
-		void Register_UnityEngine_ParticleSystem_MainModule_set_scalingMode_Injected();
-		Register_UnityEngine_ParticleSystem_MainModule_set_scalingMode_Injected();
-
-		//UnityEngine.ParticleSystemScalingMode UnityEngine.ParticleSystem/MainModule::get_scalingMode_Injected(UnityEngine.ParticleSystem/MainModule&)
-		void Register_UnityEngine_ParticleSystem_MainModule_get_scalingMode_Injected();
-		Register_UnityEngine_ParticleSystem_MainModule_get_scalingMode_Injected();
-
-		//UnityEngine.ParticleSystemSimulationSpace UnityEngine.ParticleSystem/MainModule::get_simulationSpace_Injected(UnityEngine.ParticleSystem/MainModule&)
-		void Register_UnityEngine_ParticleSystem_MainModule_get_simulationSpace_Injected();
-		Register_UnityEngine_ParticleSystem_MainModule_get_simulationSpace_Injected();
-
-	//End Registrations for type : UnityEngine.ParticleSystem/MainModule
-
-	//Start Registrations for type : UnityEngine.ParticleSystem/TextureSheetAnimationModule
-
-		//System.Boolean UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_enabled_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
-		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_enabled_Injected();
-		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_enabled_Injected();
-
-		//System.Int32 UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_cycleCount_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
-		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_cycleCount_Injected();
-		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_cycleCount_Injected();
-
-		//System.Int32 UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_numTilesX_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
-		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_numTilesX_Injected();
-		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_numTilesX_Injected();
-
-		//System.Int32 UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_numTilesY_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
-		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_numTilesY_Injected();
-		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_numTilesY_Injected();
-
-		//System.Int32 UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_rowIndex_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
-		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_rowIndex_Injected();
-		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_rowIndex_Injected();
-
-		//System.Void UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_frameOverTime_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&,UnityEngine.ParticleSystem/MinMaxCurve&)
-		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_frameOverTime_Injected();
-		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_frameOverTime_Injected();
-
-		//UnityEngine.ParticleSystemAnimationType UnityEngine.ParticleSystem/TextureSheetAnimationModule::get_animation_Injected(UnityEngine.ParticleSystem/TextureSheetAnimationModule&)
-		void Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_animation_Injected();
-		Register_UnityEngine_ParticleSystem_TextureSheetAnimationModule_get_animation_Injected();
-
-	//End Registrations for type : UnityEngine.ParticleSystem/TextureSheetAnimationModule
 
 	//Start Registrations for type : UnityEngine.ParticleSystemRenderer
 
@@ -2555,6 +2471,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Screen_get_fullScreenMode();
 
 	//End Registrations for type : UnityEngine.Screen
+
+	//Start Registrations for type : UnityEngine.ScreenCapture
+
+		//System.Void UnityEngine.ScreenCapture::CaptureScreenshot(System.String,System.Int32,UnityEngine.ScreenCapture/StereoScreenCaptureMode)
+		void Register_UnityEngine_ScreenCapture_CaptureScreenshot();
+		Register_UnityEngine_ScreenCapture_CaptureScreenshot();
+
+	//End Registrations for type : UnityEngine.ScreenCapture
 
 	//Start Registrations for type : UnityEngine.ScriptableObject
 

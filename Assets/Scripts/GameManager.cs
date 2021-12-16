@@ -78,8 +78,11 @@ public class GameManager : MonoBehaviour {
     public int oWinCount;
     public int oLoseCount;
 
+    public static int gameCount;
+
     void Awake() {
         Application.targetFrameRate = 60;
+        AdMobBanner.bannerView.Hide();
     }
 
     // Start is called before the first frame update
@@ -118,6 +121,7 @@ public class GameManager : MonoBehaviour {
                 }
 
                 if(!isGameStart) {
+                    AdMobBanner.bannerView.Hide();
                     playerCards.SetActive(true);
                     matchMakingNowText.SetActive(false);
 
@@ -467,6 +471,8 @@ public class GameManager : MonoBehaviour {
             blocks.SetActive(false);
             WinOrLoseText.SetActive(true);
             gameOverButtons.SetActive(true);
+            AdMobBanner.bannerView.Show();
+            gameCount++;
         }
     }
 

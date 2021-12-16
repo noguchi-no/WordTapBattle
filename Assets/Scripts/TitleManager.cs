@@ -25,6 +25,10 @@ public class TitleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(GameManager.gameCount >= 1){
+            AdMobInters._interstitial.Show();
+        }
+        Application.targetFrameRate = 60;
         nextListNumberForTitle = 0;
         block.transform.GetChild(0).gameObject.GetComponent<Text>().fontSize = 70;
         staticOdaiTextForTitle = OdaiText;

@@ -7,13 +7,17 @@ public class InputManager : MonoBehaviour
 {
     InputField playerNameInputField;
     public Text text;
+    public GameObject placeHolder;
+    private Text placeHolderText;
     //↓入れられたユーザー名を格納する変数
     public static string inputValue;
     // Start is called before the first frame update
     void Start()
     {
+        placeHolderText = placeHolder.GetComponent<Text>();
         playerNameInputField = GetComponent<InputField>();
         InitInputField();
+
     }
 
     public void InputLogger() {
@@ -31,6 +35,7 @@ public class InputManager : MonoBehaviour
         PlayerPrefs.Save();
 
         InitInputField();
+        placeHolderText.gameObject.SetActive(true);
     }
 
     void InitInputField() {
@@ -40,6 +45,7 @@ public class InputManager : MonoBehaviour
     
     public void OnValueChanged()
     {
+        placeHolderText.gameObject.SetActive(false);
         string value = this.GetComponent<InputField>().text;
         //改行無効
         if (value.IndexOf("\n") != -1)

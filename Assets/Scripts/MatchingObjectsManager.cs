@@ -41,16 +41,26 @@ public class MatchingObjectsManager : MonoBehaviour {
     public GameObject clearTimeTest;
     public GameObject GameOverButtons;
     bool isSaved = false;
+    public static int soloGameCount;
+    public GameObject currentTimeText;
+    public static float currentTime;
+    public Text BestScoreText;
 
     // Start is called before the first frame update
     void Start() {
-        
+        AdMobBanner.bannerView.Hide();
         staticOdaiText = OdaiText;
         nextListNumber = 0;
+        isClear = false;
+        clearCount = 0;
+        clearTime = 0;
+
     }
 
     // Update is called once per frame
     void Update() {
+
+        
 
         if(!isG) {
 
@@ -78,29 +88,55 @@ public class MatchingObjectsManager : MonoBehaviour {
                         maxLength = 9;
                         isG = true;
                     } else {
-                        GenerateBlock(4, 4);
-                        maxLength = 16;
+                        GenerateBlock(3, 3);
+                        maxLength = 9;
                         isG = true;
                     }
                 } else {
 
-                    if(!isClear) SEManager.PlayWin();
+                    if (!isClear){
+                        SEManager.PlayWin();
+                        soloGameCount++;
+                    }
 
                     isClear = true;
+                    BestScoreText.gameObject.SetActive(true);
                     clearTimeTest.SetActive(true);
+                    currentTimeText.SetActive(false);
                     GameOverButtons.SetActive(true);
+                    OdaiText.gameObject.SetActive(false);
+                    stageNumText.gameObject.SetActive(false);
                     
+                    AdMobBanner.bannerView.Show();
+                    currentTime = 0;
+                    
+                    
+                    if(soloGameCount >= 2){
+                        AdMobInters._interstitial.Show();
+                        soloGameCount = 0;
+                    }
+
                     if(clearTime < PlayerPrefs.GetFloat("besttime", 999.0f) && isSaved == false) {
                         PlayerPrefs.SetFloat("besttime", clearTime);
                         PlayerPrefs.Save();
                         isSaved = true;
                     }
-
+                    
                 }
             }
         }
 
-        if(!isClear) clearTime += Time.deltaTime;
+        if (!isClear){
+            if(BestScoreText!=null){
+                BestScoreText.gameObject.SetActive(false);
+                currentTimeText.SetActive(true);
+                
+            }
+        
+            
+            clearTime += Time.deltaTime;
+            currentTime += Time.deltaTime;
+        }
 
         if(nextListNumber >= maxLength) {
             isG = false;

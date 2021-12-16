@@ -285,7 +285,7 @@ MonoBehaviour:
   lose: {fileID: 0}
   button: {fileID: 8300000, guid: 657683d3b4ba22f4e8d4a566bf81bd85, type: 3}
   correct: {fileID: 8300000, guid: ac64f06d9d80506478a61538a7a8d57f, type: 3}
-  incorrect: {fileID: 8300000, guid: b4aac3ab6374a8f4383d2e5f94880c11, type: 3}
+  incorrect: {fileID: 0}
   enemyBlock: {fileID: 0}
   nextStage: {fileID: 0}
   matching: {fileID: 0}
@@ -653,7 +653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 564}
+  m_AnchoredPosition: {x: 0, y: 545}
   m_SizeDelta: {x: 1000, y: 141.4984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &192664039
@@ -712,6 +712,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192664037}
   m_CullTransparentMesh: 1
+--- !u!1 &208500550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 208500551}
+  - component: {fileID: 208500552}
+  m_Layer: 0
+  m_Name: GoogleMobileAdsInitializer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &208500551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208500550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 439.867, y: 1032.92, z: -49.1119}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &208500552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208500550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00ede9727b034a01adcbcc8547ff9aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &225726908
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InputField_ID
       objectReference: {fileID: 0}
+    - target: {fileID: 3887357970612123183, guid: ab2996372080e45b887668b4707a678e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3887357970607528902, guid: ab2996372080e45b887668b4707a678e, type: 3}
     - {fileID: 3887357969295146395, guid: ab2996372080e45b887668b4707a678e, type: 3}
@@ -1312,6 +1359,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594816083}
   m_CullTransparentMesh: 0
+--- !u!1 &662302471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 662302473}
+  - component: {fileID: 662302472}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &662302472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662302471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17557cba258347048a68113650f30c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &662302473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662302471}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1571.4524, y: 1325.503, z: -117.79774}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685237175 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3887357969295146397, guid: ab2996372080e45b887668b4707a678e, type: 3}
@@ -1339,7 +1429,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2cabaa79194414721adfbbaef1517a2d, type: 3}
-    m_FontSize: 50
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2014,6 +2104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 685237177}
+  placeHolder: {fileID: 498818830}
 --- !u!114 &898497369 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3887357970612123180, guid: ab2996372080e45b887668b4707a678e, type: 3}
@@ -2265,6 +2356,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Size: {x: 1080, y: 1920}
   AdjType: 0
+--- !u!1 &1038608662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1038608665}
+  - component: {fileID: 1038608664}
+  - component: {fileID: 1038608663}
+  m_Layer: 0
+  m_Name: Admob
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1038608663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038608662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab92705560b645b5b9b78268b1fe950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Android_Interstitial: 
+  ios_Interstitial: ca-app-pub-3940256099942544/4411468910
+--- !u!114 &1038608664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038608662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 638263379ffac4cbf9fdf513be9d3714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Android_Banner: 
+  ios_Banner: ca-app-pub-3940256099942544/2934735716
+--- !u!4 &1038608665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038608662}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 439.867, y: 1032.92, z: -49.1119}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1079760093
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,7 +2744,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2cabaa79194414721adfbbaef1517a2d, type: 3}
-    m_FontSize: 64
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -3198,7 +3349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.7764706, b: 0.06666667, a: 1}
+  m_Color: {r: 1, g: 0.6039216, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3207,11 +3358,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2cabaa79194414721adfbbaef1517a2d, type: 3}
-    m_FontSize: 64
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
-    m_MaxSize: 70
+    m_MinSize: 0
+    m_MaxSize: 79
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3414,7 +3565,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 756.2057}
+  m_AnchoredPosition: {x: 0, y: 700}
   m_SizeDelta: {x: 1000, y: 165.5886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1887065666
@@ -3532,7 +3683,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2cabaa79194414721adfbbaef1517a2d, type: 3}
-    m_FontSize: 64
+    m_FontSize: 66
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -3969,7 +4120,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2cabaa79194414721adfbbaef1517a2d, type: 3}
-    m_FontSize: 64
+    m_FontSize: 66
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
