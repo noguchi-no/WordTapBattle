@@ -522,3 +522,2165 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011989 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.870 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1872ms)
+		BeginReloadAssembly (265ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (160ms)
+		EndReloadAssembly (1522ms)
+			LoadAssemblies (167ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (511ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (557ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (183ms)
+				ProcessInitializeOnLoadAttributes (355ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Switching build target platform(2) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2378 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 227.6 MB.
+System memory in use after: 227.8 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 2900.
+Total: 3.743372 ms (FindLiveObjects: 0.364253 ms CreateObjectMapping: 0.117196 ms MarkObjects: 3.216564 ms  DeleteObjects: 0.042983 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6982.971083 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13ba50f621fef55ab8953ccc877a757b') in 0.015503 seconds 
+  Import took 0.022743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.361055 seconds.
+  path: Assets/Scenes/Title.unity
+  artifactKey: Guid(ffa476f3b4e8c4e7185c640f959e26b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Title.unity using Guid(ffa476f3b4e8c4e7185c640f959e26b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9b7035ed3c40b83c8248c7e510c535') in 0.003582 seconds 
+  Import took 0.013831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.540161 seconds.
+  path: Assets/Sprites/Btn_Rectangle00_n_Blue 1.png
+  artifactKey: Guid(6a5028facd74f4c07b9afdb88f22175a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Btn_Rectangle00_n_Blue 1.png using Guid(6a5028facd74f4c07b9afdb88f22175a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7552bf31c14ffefc0977cd8728aa23') in 0.211189 seconds 
+  Import took 0.216374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Sprites/Btn_Rectangle04_Green 3.png
+  artifactKey: Guid(6e97e3a13a5b743ed9d0dbe007139489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Btn_Rectangle04_Green 3.png using Guid(6e97e3a13a5b743ed9d0dbe007139489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21378a44da824c667ee4c1d21d0488bc') in 0.015623 seconds 
+  Import took 0.020850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_attach.png
+  artifactKey: Guid(71603f5fbab924d5f8f4971cbb4c5987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_attach.png using Guid(71603f5fbab924d5f8f4971cbb4c5987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba584b85c55ffa11aeb13d5de0084e5b') in 0.019838 seconds 
+  Import took 0.025133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Sprites/Btn_Rectangle00_n_Yellow.png
+  artifactKey: Guid(dd1c2602e2c0c4dff8b5137f1cc5d044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Btn_Rectangle00_n_Yellow.png using Guid(dd1c2602e2c0c4dff8b5137f1cc5d044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ab688588d12716986c197acb2eba60') in 0.016506 seconds 
+  Import took 0.021657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001309 seconds.
+  path: Assets/Sprites/Btn_Rectangle04_Green 4.png
+  artifactKey: Guid(fa1af4a79db07416aab0ee76e928cd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Btn_Rectangle04_Green 4.png using Guid(fa1af4a79db07416aab0ee76e928cd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39bb3175217bac49a8f1f68bec711261') in 0.016109 seconds 
+  Import took 0.020614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000497 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Rectangle02.png
+  artifactKey: Guid(21122ae12d9494586afa95bcdb64e78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Rectangle02.png using Guid(21122ae12d9494586afa95bcdb64e78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a0e4e29994f12524b0c49faffbf6d3') in 0.016979 seconds 
+  Import took 0.022315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000736 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Rectangle00_n_Red.png
+  artifactKey: Guid(2b6fd6e07c6814cdabae7ffd3443cb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Rectangle00_n_Red.png using Guid(2b6fd6e07c6814cdabae7ffd3443cb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68838bd09d94f643b2bde8c7b545b56e') in 0.056048 seconds 
+  Import took 0.060690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Rectangle01.png
+  artifactKey: Guid(b8885a6bd706a465fbd517a040f7d6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Rectangle01.png using Guid(b8885a6bd706a465fbd517a040f7d6e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e437b805b7ba888b4358981139876904') in 0.028908 seconds 
+  Import took 0.033612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000638 seconds.
+  path: Assets/Sprites/Btn_Rectangle04_Green 2.png
+  artifactKey: Guid(fa2dc118cc50c4bf49cefe90f4ddb164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Btn_Rectangle04_Green 2.png using Guid(fa2dc118cc50c4bf49cefe90f4ddb164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16bb12e4b5d67918d50ab69d7158d365') in 0.016597 seconds 
+  Import took 0.020981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.994033 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_backward.png
+  artifactKey: Guid(14dff448177d14a06b9e187e5185575f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_backward.png using Guid(14dff448177d14a06b9e187e5185575f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d78d6a2047c9ee2cb00477e907beb5a') in 0.023594 seconds 
+  Import took 0.030307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_bomb.png
+  artifactKey: Guid(4817855c8b86944aabfd1a4d99c4015e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_bomb.png using Guid(4817855c8b86944aabfd1a4d99c4015e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2859db9a56b8e7c092aa712ee537fcb') in 0.027751 seconds 
+  Import took 0.035611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.361090 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_bookmark.png
+  artifactKey: Guid(df23e5fd9f33d4eb59efffefce803526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_bookmark.png using Guid(df23e5fd9f33d4eb59efffefce803526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f82d361371e99902ea92b2ca789933ad') in 0.019751 seconds 
+  Import took 0.027014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_calendar.png
+  artifactKey: Guid(acddbd6e35bb54d5d8d5c699597cee58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_calendar.png using Guid(acddbd6e35bb54d5d8d5c699597cee58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd987be5740aad7109eb7de493b244705') in 0.017458 seconds 
+  Import took 0.022968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.046716 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_call.png
+  artifactKey: Guid(77838b83aaf0e41d1b8e7195fce80d5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_call.png using Guid(77838b83aaf0e41d1b8e7195fce80d5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07cb66a3ddb5d4ae7196e089ee159e50') in 0.023416 seconds 
+  Import took 0.029809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001351 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_camera.png
+  artifactKey: Guid(07f617d308cfe40dc9c873dd6a5b53f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_camera.png using Guid(07f617d308cfe40dc9c873dd6a5b53f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403df66753741514bc7ccc9c7714f9b1') in 0.022769 seconds 
+  Import took 0.028418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_chest.png
+  artifactKey: Guid(2731cfec901ee4a8cb13b7321a3f09f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_chest.png using Guid(2731cfec901ee4a8cb13b7321a3f09f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c9327ee3a70679ed2170dcadd9f9cb') in 0.024340 seconds 
+  Import took 0.033582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_category.png
+  artifactKey: Guid(1ee52131990c24c6ebbf53e732afdd3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_category.png using Guid(1ee52131990c24c6ebbf53e732afdd3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0414608df131b29c8b651157945484d') in 0.023232 seconds 
+  Import took 0.030026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000963 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_check.png
+  artifactKey: Guid(a26bbd070a01841eeb386506814697bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_check.png using Guid(a26bbd070a01841eeb386506814697bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd924b20e03b1b0a8aa111df76aa361') in 0.054095 seconds 
+  Import took 0.059357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000503 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_cart.png
+  artifactKey: Guid(1e818c1e3520048669432c51fd40a43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_cart.png using Guid(1e818c1e3520048669432c51fd40a43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '466389f4451863b6db1793a20cbcceed') in 0.028151 seconds 
+  Import took 0.034812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.116575 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_close.png
+  artifactKey: Guid(eb4bb3755e8bf4d03aaea3d5fe32349f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_close.png using Guid(eb4bb3755e8bf4d03aaea3d5fe32349f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b07a16a507be34d833a3e093f71a93') in 0.031349 seconds 
+  Import took 0.038509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_coin.png
+  artifactKey: Guid(58f95819d8ded48e5803af7736ae0228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_coin.png using Guid(58f95819d8ded48e5803af7736ae0228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f6a6c067516b8ea9a450a58531f237') in 0.029154 seconds 
+  Import took 0.034720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004009 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_dollar.png
+  artifactKey: Guid(b2758724a793e4cb2a328c4622590f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_dollar.png using Guid(b2758724a793e4cb2a328c4622590f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d28198a4b7ad60cde8c634c8a03ad6') in 0.031446 seconds 
+  Import took 0.040414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056009 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_down.png
+  artifactKey: Guid(57a28eca97c774714af6b3e13dcdf158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_down.png using Guid(57a28eca97c774714af6b3e13dcdf158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287f57f6e41ae09b7aee61add2a39b12') in 0.024973 seconds 
+  Import took 0.033444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065746 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_download.png
+  artifactKey: Guid(f5e56830ef022414589db5319372a139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_download.png using Guid(f5e56830ef022414589db5319372a139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e619bd0a84442c3dc0856a9eaf1dd03') in 0.024455 seconds 
+  Import took 0.032095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001751 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_edit.png
+  artifactKey: Guid(cccc55dee4c1c4602a7e7970ae17d83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_edit.png using Guid(cccc55dee4c1c4602a7e7970ae17d83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1dbfe6ec2e34a12dfe6d144513509f9') in 0.030569 seconds 
+  Import took 0.037305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.140733 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_energy.png
+  artifactKey: Guid(04720141280cf410c8960a565bf36e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_energy.png using Guid(04720141280cf410c8960a565bf36e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3a65d1ed264363e9711838dba8c113e') in 0.020683 seconds 
+  Import took 0.026513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_exit.png
+  artifactKey: Guid(719d8340d4fd3462a90583dcc6a802dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_exit.png using Guid(719d8340d4fd3462a90583dcc6a802dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '524bec2fc38d02d91062d708c4b331d1') in 0.023942 seconds 
+  Import took 0.030197 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012374 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_export.png
+  artifactKey: Guid(8426aa45237ab4bb5bd8a0238dd89907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_export.png using Guid(8426aa45237ab4bb5bd8a0238dd89907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836e7e0d9848a7655227074f12470134') in 0.021516 seconds 
+  Import took 0.029618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000504 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_flag.png
+  artifactKey: Guid(16470b671338e4f95be795b1febf590c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_flag.png using Guid(16470b671338e4f95be795b1febf590c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05633be503d32db41a0a67ce622595ea') in 0.025030 seconds 
+  Import took 0.032041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007819 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_forward.png
+  artifactKey: Guid(b98dfad221d5b4f1d84f05b233a33f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_forward.png using Guid(b98dfad221d5b4f1d84f05b233a33f8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fed2fbf8236514fa5ff54acfc9c3eaaa') in 0.024317 seconds 
+  Import took 0.030000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_friend.png
+  artifactKey: Guid(68ab4d52dcf7b45b3846884623ee0aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_friend.png using Guid(68ab4d52dcf7b45b3846884623ee0aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33983bf0358cac27e05813be713cdf60') in 0.035101 seconds 
+  Import took 0.040142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_gem.png
+  artifactKey: Guid(65bd71429055b4c4b922695e3cc33b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_gem.png using Guid(65bd71429055b4c4b922695e3cc33b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '917e39b06405d056737e89b8a80ec07b') in 0.025615 seconds 
+  Import took 0.031481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000617 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_gift.png
+  artifactKey: Guid(ff7122d8a532845dda9913429125b4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_gift.png using Guid(ff7122d8a532845dda9913429125b4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10618a16d627014962922c209fecf7e3') in 0.032623 seconds 
+  Import took 0.039063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.209714 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_hammer.png
+  artifactKey: Guid(ae1f18362cd604af086d4f725d8b76d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_hammer.png using Guid(ae1f18362cd604af086d4f725d8b76d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a68652d1501ed64bdb32abda00d5a0') in 0.016936 seconds 
+  Import took 0.023085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_home.png
+  artifactKey: Guid(bb357934cadfe4272a871f53eea1ab90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_home.png using Guid(bb357934cadfe4272a871f53eea1ab90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c9ad426ece096339bf5847c5c516d19') in 0.035042 seconds 
+  Import took 0.040376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.056568 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_info.png
+  artifactKey: Guid(b3674a22b351d43a7ace047b7546c743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_info.png using Guid(b3674a22b351d43a7ace047b7546c743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a6551fe0e1d9c4058d6424688f302a5') in 0.030516 seconds 
+  Import took 0.037467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001408 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_list.png
+  artifactKey: Guid(02df042dc61864fdcb8767b4a216a6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_list.png using Guid(02df042dc61864fdcb8767b4a216a6c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e98223319c5765ccc427f0e2ed1db3d') in 0.018608 seconds 
+  Import took 0.025708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000663 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_life.png
+  artifactKey: Guid(012f28b7da677420d873fec262f59dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_life.png using Guid(012f28b7da677420d873fec262f59dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5264bdeacd95323abe8646e200e1ed') in 0.046555 seconds 
+  Import took 0.052890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002768 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_mail.png
+  artifactKey: Guid(8e08333a964f0478093bf1f5cf80b15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_mail.png using Guid(8e08333a964f0478093bf1f5cf80b15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed7c6c1c4ef1ac78c85698199ba2911b') in 0.031988 seconds 
+  Import took 0.038000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_key.png
+  artifactKey: Guid(6ceff883b6bca4887a228a3012337f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_key.png using Guid(6ceff883b6bca4887a228a3012337f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e47440dd0c92109b4a7b8e2cc6abb25') in 0.023499 seconds 
+  Import took 0.032318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_minus.png
+  artifactKey: Guid(1a013f0fbfc5a41f3bfa3555f3c09443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_minus.png using Guid(1a013f0fbfc5a41f3bfa3555f3c09443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eab7d3ceaf5d1efcbe3bdd9b63ef2b0') in 0.023940 seconds 
+  Import took 0.030227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_medal.png
+  artifactKey: Guid(70f2a1a4e3e87464fa0ec6c133ca8bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_medal.png using Guid(70f2a1a4e3e87464fa0ec6c133ca8bb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '350302c2177fc9b4b5be6fbf62b02dcd') in 0.030022 seconds 
+  Import took 0.036769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000493 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_lock.png
+  artifactKey: Guid(54495babc2b754a468d22cf19211b8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_lock.png using Guid(54495babc2b754a468d22cf19211b8f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8df042fe47c5f0eeebc7a6bc5b334c71') in 0.025416 seconds 
+  Import took 0.030518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_magnetic.png
+  artifactKey: Guid(b804423f7c7784e76bf8937df5bcbf88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_magnetic.png using Guid(b804423f7c7784e76bf8937df5bcbf88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e3b3669c53cfbc009c8979f477c3b10') in 0.034289 seconds 
+  Import took 0.039010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000519 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_money.png
+  artifactKey: Guid(b7e9457dbed2e4ad9b8c6c167096cf60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_money.png using Guid(b7e9457dbed2e4ad9b8c6c167096cf60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d6f691f87e9ea56a7521034c4d4450') in 0.021234 seconds 
+  Import took 0.027494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_message.png
+  artifactKey: Guid(1b082419d1ccc4081a7a68bf57679812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_message.png using Guid(1b082419d1ccc4081a7a68bf57679812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c60ee82710e3f7025fbbbd783e3bdc6d') in 0.038302 seconds 
+  Import took 0.045782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_pause.png
+  artifactKey: Guid(826c49af1c86e48158f5d128dc912237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_pause.png using Guid(826c49af1c86e48158f5d128dc912237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83238097e5e8376695e1cc71ed6b8cb0') in 0.019971 seconds 
+  Import took 0.026824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_mute.png
+  artifactKey: Guid(47c41af27c60d40a0bb5da239f32d306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_mute.png using Guid(47c41af27c60d40a0bb5da239f32d306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708c5b7390f305205e022bdfd2777d4d') in 0.021700 seconds 
+  Import took 0.030217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_notification.png
+  artifactKey: Guid(081cab0b6b24f461291cdce91850349f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_notification.png using Guid(081cab0b6b24f461291cdce91850349f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70c5b74942232a6d5a79186398b7d93') in 0.028531 seconds 
+  Import took 0.035072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000487 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_picture.png
+  artifactKey: Guid(85e58365dab214ae5be50c69aaca0c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_picture.png using Guid(85e58365dab214ae5be50c69aaca0c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf524d700b17dd3f97a5962b6271159e') in 0.023225 seconds 
+  Import took 0.030996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_play.png
+  artifactKey: Guid(88849a4903540476ebba7b10f2deb5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_play.png using Guid(88849a4903540476ebba7b10f2deb5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec083b3058379d272fb0882777d677c') in 0.020271 seconds 
+  Import took 0.026542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_prev.png
+  artifactKey: Guid(6e39d650e14584fa08f4b373503a36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_prev.png using Guid(6e39d650e14584fa08f4b373503a36d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34788091130cef71bbf552351dcb92fe') in 0.029184 seconds 
+  Import took 0.036443 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_ranking.png
+  artifactKey: Guid(69fa290cc016942e9adbbdc1df3476bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_ranking.png using Guid(69fa290cc016942e9adbbdc1df3476bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097c94956967c1631b2b53bf344c3e90') in 0.021905 seconds 
+  Import took 0.028584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_question.png
+  artifactKey: Guid(d4ee5fda22e8548c29ffeccfb63b5520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_question.png using Guid(d4ee5fda22e8548c29ffeccfb63b5520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd686ebf134438d7707166b978db84ef2') in 0.034948 seconds 
+  Import took 0.041205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001408 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_potion.png
+  artifactKey: Guid(c57cf39d47b4d499b8825801580bc334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_potion.png using Guid(c57cf39d47b4d499b8825801580bc334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa31a0b4cecd8c23a724d7030962e60f') in 0.023394 seconds 
+  Import took 0.031215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000517 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_next.png
+  artifactKey: Guid(56508d05f08a545369fce5d02d84551c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_next.png using Guid(56508d05f08a545369fce5d02d84551c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48facfdaaed31518059edff8883a56a') in 0.033852 seconds 
+  Import took 0.041727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000867 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_music.png
+  artifactKey: Guid(fce4ea83eb0a54bc596ba95a6063593f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_music.png using Guid(fce4ea83eb0a54bc596ba95a6063593f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f892b28d43b8e890064c89e53e4d6c3c') in 0.128605 seconds 
+  Import took 0.135207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021214 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_plus.png
+  artifactKey: Guid(2311bef4702e54509a041a65f41ee431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_plus.png using Guid(2311bef4702e54509a041a65f41ee431) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6095b1bcee00d931bb66c61c21aff031') in 0.025976 seconds 
+  Import took 0.036143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001093 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_menu.png
+  artifactKey: Guid(d45d366a84d164591aea0a51f406274a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_menu.png using Guid(d45d366a84d164591aea0a51f406274a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a1bbfbc4c5ac0118584cd6805ea0f0') in 0.044750 seconds 
+  Import took 0.052053 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_movie.png
+  artifactKey: Guid(e348a10d7435b46aa949edd4679652d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_movie.png using Guid(e348a10d7435b46aa949edd4679652d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93941cd391fe62e831a5a12eab47e33') in 0.037630 seconds 
+  Import took 0.044259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005265 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_like.png
+  artifactKey: Guid(7a3b90879907c4f54aab139a31ee7902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/btn_red_like.png using Guid(7a3b90879907c4f54aab139a31ee7902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c96ddf081fcb373b32d9596f5abc3fc4') in 0.043482 seconds 
+  Import took 0.049662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.322780 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Oval00_Blue.png
+  artifactKey: Guid(f5852fa071b584ccca8915b2a6043e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Oval00_Blue.png using Guid(f5852fa071b584ccca8915b2a6043e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefbf82f3f09b1038adafcf0c49da6c2') in 0.021718 seconds 
+  Import took 0.028209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_user.png
+  artifactKey: Guid(1a12c11faf3964e16a66aaecd849b5eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_user.png using Guid(1a12c11faf3964e16a66aaecd849b5eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73518832c7cf27bfe527578813c0c062') in 0.021523 seconds 
+  Import took 0.026988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Rectangle00_n_Blue.png
+  artifactKey: Guid(bdedda3b8e35c441c8c6b211b80cedd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Rectangle00_n_Blue.png using Guid(bdedda3b8e35c441c8c6b211b80cedd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a68b1899c1e660303991eb51b3e6e4a') in 0.029391 seconds 
+  Import took 0.035442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_sword.png
+  artifactKey: Guid(15739b0b13b1d44aab97edf52599ef84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_sword.png using Guid(15739b0b13b1d44aab97edf52599ef84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22048ef8a88aff8ac7783d6ef0f73f5') in 0.025497 seconds 
+  Import took 0.032020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000437 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Oval00_Yellow.png
+  artifactKey: Guid(c8d5633bdb19d4edd9ed11e47af53e00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Oval00_Yellow.png using Guid(c8d5633bdb19d4edd9ed11e47af53e00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45771573a84ed452f19171f574f9ce38') in 0.028726 seconds 
+  Import took 0.033737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_skull.png
+  artifactKey: Guid(68adf083f3dd841258b14bf2e3f1b557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_skull.png using Guid(68adf083f3dd841258b14bf2e3f1b557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0d6b2318abacca6fbf7a4a4a530ef6') in 0.032015 seconds 
+  Import took 0.038719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_share.png
+  artifactKey: Guid(0c13d60b554dc4318ab708c642dce3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_share.png using Guid(0c13d60b554dc4318ab708c642dce3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '643492c48ab2af7d456d28bb91a2ccb0') in 0.024075 seconds 
+  Import took 0.031286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001286 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_star.png
+  artifactKey: Guid(fc8a85e44eddc40d59925b008be4d8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_star.png using Guid(fc8a85e44eddc40d59925b008be4d8a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73cee8a91477263d7595ade685f8d06') in 0.022134 seconds 
+  Import took 0.031107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_question.png
+  artifactKey: Guid(03711add72283410daa21f36096e8652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_question.png using Guid(03711add72283410daa21f36096e8652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e78218f981265498c53a742cf5085d') in 0.050243 seconds 
+  Import took 0.058334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003581 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_picture.png
+  artifactKey: Guid(0d2964a3f4e984cef80c3051ff73f053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_picture.png using Guid(0d2964a3f4e984cef80c3051ff73f053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63829dae7b9782f339b838bc3fa006d2') in 0.042694 seconds 
+  Import took 0.049831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000952 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_refresh.png
+  artifactKey: Guid(d06425879338e4383914ba6460aebed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_refresh.png using Guid(d06425879338e4383914ba6460aebed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b298b04fe00e232aea89b589f7decd5c') in 0.026641 seconds 
+  Import took 0.035160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_notification.png
+  artifactKey: Guid(c055f69405abd45c2b97a9228ca8115a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_notification.png using Guid(c055f69405abd45c2b97a9228ca8115a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee63d52570596c81dff150b069e5b5d') in 0.020585 seconds 
+  Import took 0.028412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_potion.png
+  artifactKey: Guid(cf7f8c7e2c43d4b70b5ad7e67323555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_potion.png using Guid(cf7f8c7e2c43d4b70b5ad7e67323555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '083eb24bddb8802713b4e074060d5112') in 0.042638 seconds 
+  Import took 0.049925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_prev.png
+  artifactKey: Guid(4f84a37d4493a4fe28f79a6ae1e0659a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_prev.png using Guid(4f84a37d4493a4fe28f79a6ae1e0659a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '564418391ae20a00b94a5e6ce9c6afcf') in 0.024527 seconds 
+  Import took 0.030313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Rectangle00_d.png
+  artifactKey: Guid(d2b6a5f346dc14adf83bcb6178e5940d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button/Btn_Rectangle00_d.png using Guid(d2b6a5f346dc14adf83bcb6178e5940d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc64f1318c2f07cdd62d52b2faddacd2') in 0.022226 seconds 
+  Import took 0.028832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000613 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_play.png
+  artifactKey: Guid(8c229b1a246864b6c89a9db559946a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_play.png using Guid(8c229b1a246864b6c89a9db559946a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c6985a3582965870d55f45b05dd672') in 0.044651 seconds 
+  Import took 0.052921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_ranking.png
+  artifactKey: Guid(668dab284f5bf4a6f87c548c02f11c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_ranking.png using Guid(668dab284f5bf4a6f87c548c02f11c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20fe6e72121eea4747200d3f24c2a416') in 0.022201 seconds 
+  Import took 0.029836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001536 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_pause.png
+  artifactKey: Guid(81f42b3b479194529af5b05d48bf8ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_pause.png using Guid(81f42b3b479194529af5b05d48bf8ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65df47f91af6fdb972aabb817d27e89e') in 0.021703 seconds 
+  Import took 0.029798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_trophy.png
+  artifactKey: Guid(cf50c7ca505f54b419cae7a21a0737f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_trophy.png using Guid(cf50c7ca505f54b419cae7a21a0737f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c853a0eb17c53d26c4ee922770e9020') in 0.045797 seconds 
+  Import took 0.053499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_next.png
+  artifactKey: Guid(8a403d3aa04cf4ee1be2042da0d01ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_next.png using Guid(8a403d3aa04cf4ee1be2042da0d01ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efd196549f48ec7a5fa4280ddf38909') in 0.020080 seconds 
+  Import took 0.025502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_music.png
+  artifactKey: Guid(01cb5ec1689d343a5871bb3261a80bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_music.png using Guid(01cb5ec1689d343a5871bb3261a80bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edaa267bb5db2ff12d6f0539d207fe3d') in 0.019622 seconds 
+  Import took 0.026246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_medal.png
+  artifactKey: Guid(be43a28a92f44402d800e528a5051b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_medal.png using Guid(be43a28a92f44402d800e528a5051b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5866b809207d8f9f3e968fadb6357db7') in 0.016898 seconds 
+  Import took 0.024205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000627 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_message.png
+  artifactKey: Guid(66b17f27b35574bc391a95b903518ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_message.png using Guid(66b17f27b35574bc391a95b903518ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3117c55c274fc59bb1acee52a14d67') in 0.024324 seconds 
+  Import took 0.031135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_friend.png
+  artifactKey: Guid(0a95fdde53a6e44968c7c88fd2693668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_friend.png using Guid(0a95fdde53a6e44968c7c88fd2693668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7cdc44a7367e3bf387369f27f7e8759') in 0.018265 seconds 
+  Import took 0.025292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000538 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_list.png
+  artifactKey: Guid(0c7756af4593b48029db11f5413a1a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_list.png using Guid(0c7756af4593b48029db11f5413a1a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7066a60cf621dd3c23f5d3200ad81823') in 0.022114 seconds 
+  Import took 0.029337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_life.png
+  artifactKey: Guid(1604ac1615d854b20b56f00e62179c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_life.png using Guid(1604ac1615d854b20b56f00e62179c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ca003f1139d7720cdaf6ba258cf0db') in 0.018215 seconds 
+  Import took 0.026127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002908 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_down.png
+  artifactKey: Guid(4b8ca3c5c79d14780ab3fa98f855bdcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_down.png using Guid(4b8ca3c5c79d14780ab3fa98f855bdcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a501652e9899e1ee361d7f8971891c0b') in 0.040041 seconds 
+  Import took 0.047453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000528 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_energy.png
+  artifactKey: Guid(e7613b1fb38b34fb59047b4166913086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_energy.png using Guid(e7613b1fb38b34fb59047b4166913086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e257e150c0256ac76328e452db8700fd') in 0.030989 seconds 
+  Import took 0.037184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000489 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_download.png
+  artifactKey: Guid(6e55cb1afae424955a39fb387b9e62ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_download.png using Guid(6e55cb1afae424955a39fb387b9e62ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39cd8696cc30c372056606c2d940911') in 0.028689 seconds 
+  Import took 0.035182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000466 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_backward.png
+  artifactKey: Guid(ce5efd5f3efa246b884221eaffb9737f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_backward.png using Guid(ce5efd5f3efa246b884221eaffb9737f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a08fc07a02333c7f7d71fbe5cd4920f') in 0.038625 seconds 
+  Import took 0.045485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_export.png
+  artifactKey: Guid(faa3da23a10ec40d2a14e5392c54c774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_export.png using Guid(faa3da23a10ec40d2a14e5392c54c774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c010914b702fdcb05b92d3cc1cd2caa') in 0.022271 seconds 
+  Import took 0.029394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000577 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_minus.png
+  artifactKey: Guid(aa9f25623cdea4d31b384ab29dc3af18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_minus.png using Guid(aa9f25623cdea4d31b384ab29dc3af18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0865fde38bf89c2a774118625f955953') in 0.022049 seconds 
+  Import took 0.028844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_gift.png
+  artifactKey: Guid(7ef909e27e4a04dcbbc4c9fbc1e818d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_gift.png using Guid(7ef909e27e4a04dcbbc4c9fbc1e818d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a093fd2f26259572a60945e17e56aac') in 0.025068 seconds 
+  Import took 0.030545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_movie.png
+  artifactKey: Guid(f698156648fe0466284a736235ceef34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_movie.png using Guid(f698156648fe0466284a736235ceef34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db877af74b36df84e31b8cad3eb77a8') in 0.034404 seconds 
+  Import took 0.040802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_gem.png
+  artifactKey: Guid(6b18957ad80bd4b83981526d264a0fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_gem.png using Guid(6b18957ad80bd4b83981526d264a0fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd623bb448afe9cea25645b24bf622860') in 0.033837 seconds 
+  Import took 0.039950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_forward.png
+  artifactKey: Guid(31a2d70337d984bf8b25099676ffd8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_forward.png using Guid(31a2d70337d984bf8b25099676ffd8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9052ca24b749aa07b197c8dd4e3e7af') in 0.026910 seconds 
+  Import took 0.032534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_edit.png
+  artifactKey: Guid(f6fd31b4a5f34483ebf82e425df728ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_edit.png using Guid(f6fd31b4a5f34483ebf82e425df728ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '951c200bc3014024111128410b28e50e') in 0.023593 seconds 
+  Import took 0.029733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002428 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_star.png
+  artifactKey: Guid(8821141b3ef4c4b8d8c00197c762edcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_star.png using Guid(8821141b3ef4c4b8d8c00197c762edcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b0bd2745d1bcc08bce3e1cbcca3dabc') in 0.019681 seconds 
+  Import took 0.028893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000591 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_call.png
+  artifactKey: Guid(5b0f3c7ecbae54c6fa6a98ec5b5f87f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_call.png using Guid(5b0f3c7ecbae54c6fa6a98ec5b5f87f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc82e70054557480d263505ee231394') in 0.023927 seconds 
+  Import took 0.031511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000618 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_sound.png
+  artifactKey: Guid(9ab485285d640466cbc743eb971badde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_sound.png using Guid(9ab485285d640466cbc743eb971badde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dacbe3cdcfb77fd4e2fe96a7b75b041') in 0.038578 seconds 
+  Import took 0.050180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000447 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_ranking.png
+  artifactKey: Guid(36ffb89c2f2f842359d217ff9d39718d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_ranking.png using Guid(36ffb89c2f2f842359d217ff9d39718d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce31ea6ea604555b97ad209fa9369492') in 0.027253 seconds 
+  Import took 0.034224 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000431 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_pause.png
+  artifactKey: Guid(6bcc5906ae2174745a7934cf5bf45711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_pause.png using Guid(6bcc5906ae2174745a7934cf5bf45711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a1027b2757a104e608c99012e10c1a8') in 0.061764 seconds 
+  Import took 0.068454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_lock.png
+  artifactKey: Guid(869a42e0b1b0742f2ab0564356dc7276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_lock.png using Guid(869a42e0b1b0742f2ab0564356dc7276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '471f9bed6462faab47853db65e0710af') in 0.041206 seconds 
+  Import took 0.046944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_gift.png
+  artifactKey: Guid(9f68e8e2ee34a4c53848cb4712ab4e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_gift.png using Guid(9f68e8e2ee34a4c53848cb4712ab4e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c285425d99488480ad837fcbe9e6e63') in 0.026957 seconds 
+  Import took 0.032617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_list.png
+  artifactKey: Guid(df2d7dbadb0c3448c8860dc5bf67c4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_list.png using Guid(df2d7dbadb0c3448c8860dc5bf67c4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc33b465bcf637bcfe0c3f68f23a716a') in 0.031489 seconds 
+  Import took 0.039042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_question.png
+  artifactKey: Guid(5d056f710cb804c38878e3fa5230423d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_question.png using Guid(5d056f710cb804c38878e3fa5230423d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0f93e926396c265acb1a20d7f88f4ae') in 0.021806 seconds 
+  Import took 0.027965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_exit.png
+  artifactKey: Guid(fbbb23fa8686541f0b5f88d0dc80ad14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_exit.png using Guid(fbbb23fa8686541f0b5f88d0dc80ad14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bac48f81b0cba14c4837f94449e1276') in 0.028260 seconds 
+  Import took 0.033424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_stopwatch.png
+  artifactKey: Guid(dfd5dc7fa7d4b4795b427e033d20d1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_stopwatch.png using Guid(dfd5dc7fa7d4b4795b427e033d20d1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4d67f7fce892559561a1c28eef2f9d') in 0.021696 seconds 
+  Import took 0.027694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_magnetic.png
+  artifactKey: Guid(aa9e3f31d797a4c0da131b38cecae04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_magnetic.png using Guid(aa9e3f31d797a4c0da131b38cecae04b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fda8ff8f7e90cb5ce2039d824754367') in 0.031693 seconds 
+  Import took 0.037171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_dollar.png
+  artifactKey: Guid(38925295c15424ea0a5b721869f38783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_dollar.png using Guid(38925295c15424ea0a5b721869f38783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9950b94bbf1d78feac7bf79ad302111') in 0.027379 seconds 
+  Import took 0.033971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_down.png
+  artifactKey: Guid(f77a8e00fa8d24fd4b99626ed276d1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_down.png using Guid(f77a8e00fa8d24fd4b99626ed276d1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da0d27544e5b217dc444a07be5510946') in 0.027914 seconds 
+  Import took 0.035318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000559 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_warning.png
+  artifactKey: Guid(88cf812cab3f84f2c96d3a393c902ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_warning.png using Guid(88cf812cab3f84f2c96d3a393c902ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce9f46fc95ae7a7135d4bc1ab4a3b71') in 0.030783 seconds 
+  Import took 0.038127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000515 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_home.png
+  artifactKey: Guid(c77045cf9daea4d4fa93d795889fd93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_home.png using Guid(c77045cf9daea4d4fa93d795889fd93b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0be20d5ebca169b2cd23d019934db8e') in 0.038053 seconds 
+  Import took 0.046389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001210 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_close.png
+  artifactKey: Guid(8a1b980b47729407895b9250a8870b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_close.png using Guid(8a1b980b47729407895b9250a8870b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3385f087442c42f51df9c307d1784483') in 0.022083 seconds 
+  Import took 0.028998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000879 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_shield.png
+  artifactKey: Guid(e7d81aec843114fc7a05139311b938d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_shield.png using Guid(e7d81aec843114fc7a05139311b938d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3e1f136de1b5bc1a15d6c64b3a442e8') in 0.026334 seconds 
+  Import took 0.040751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000532 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_flag.png
+  artifactKey: Guid(8b977e16abaaa421f80aa21972e0dd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_flag.png using Guid(8b977e16abaaa421f80aa21972e0dd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c74cc4949ccb6c9cf2ade8fc0c6e824') in 0.036286 seconds 
+  Import took 0.044103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000435 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_like.png
+  artifactKey: Guid(394bf7f9a668a41e5aedf95849ce98f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_like.png using Guid(394bf7f9a668a41e5aedf95849ce98f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91fd4cebc74ce97fca849c48fb93ec94') in 0.030904 seconds 
+  Import took 0.037971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_exit.png
+  artifactKey: Guid(1fb1de0fb5f654c7eb75b1aa03353847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_exit.png using Guid(1fb1de0fb5f654c7eb75b1aa03353847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d04d12db47abd7657389a983fafef91') in 0.018361 seconds 
+  Import took 0.025585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_call.png
+  artifactKey: Guid(6a30b20b1fcd44fb6bd9ad3fe9d4d45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_call.png using Guid(6a30b20b1fcd44fb6bd9ad3fe9d4d45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a82118ba3fe5df82cc1cacb949b51da') in 0.043363 seconds 
+  Import took 0.053233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000696 seconds.
+  path: Assets/Sprites/Btn_Basic_Square_White.png
+  artifactKey: Guid(690c7adcf8bcd44279eefcbad1ea4d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Btn_Basic_Square_White.png using Guid(690c7adcf8bcd44279eefcbad1ea4d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f78ea256714e441fdd4a5ad675aebfd8') in 0.029512 seconds 
+  Import took 0.036061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_chest.png
+  artifactKey: Guid(3e13b3b0e840d44978569f29119086d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_chest.png using Guid(3e13b3b0e840d44978569f29119086d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58eefde1fbe6ba597be0b74c91c808f8') in 0.030572 seconds 
+  Import took 0.036246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Yellow/BaseFrame_Yellow.png
+  artifactKey: Guid(6ce68d5638b2f4a4fa4acad1e346fc93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Yellow/BaseFrame_Yellow.png using Guid(6ce68d5638b2f4a4fa4acad1e346fc93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e87e5c13bcb1495f18cfb4bb5d64671') in 0.030386 seconds 
+  Import took 0.035845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002530 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_TimesUp_01.png
+  artifactKey: Guid(a91c36b76004b4b7a99cc38ec9ba7e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_TimesUp_01.png using Guid(a91c36b76004b4b7a99cc38ec9ba7e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04e0620145731079be8dbe32d4e0dc55') in 0.020611 seconds 
+  Import took 0.026599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000440 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_TimesUp_Deco_01.png
+  artifactKey: Guid(d8a198e4e4c0f4c3d8b34960129ea19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_TimesUp_Deco_01.png using Guid(d8a198e4e4c0f4c3d8b34960129ea19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '335c2e1cd0ebc7d46b8d05222ce2766b') in 0.024779 seconds 
+  Import took 0.031992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_attach.png
+  artifactKey: Guid(9a8c6687345ed49348154ef5d2904e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_attach.png using Guid(9a8c6687345ed49348154ef5d2904e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '620c69beeac3f80a25428f0277c60809') in 0.025151 seconds 
+  Import took 0.031213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_category.png
+  artifactKey: Guid(f44cc005798d2495f94753dbf7d15979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_category.png using Guid(f44cc005798d2495f94753dbf7d15979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16666d4fa390184328e269c3d23d2f74') in 0.023633 seconds 
+  Import took 0.029452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_sword.png
+  artifactKey: Guid(c9f784177495c47acbc5b94cdfde95cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_sword.png using Guid(c9f784177495c47acbc5b94cdfde95cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3a637510a2c7cfb713804874cc84d1') in 0.047703 seconds 
+  Import took 0.054021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_skull.png
+  artifactKey: Guid(7b6318c4aeaf34e2598b3431d5826bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_skull.png using Guid(7b6318c4aeaf34e2598b3431d5826bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d0c571587e3c38edb7a2f4c9554aa7') in 0.034482 seconds 
+  Import took 0.040304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_info.png
+  artifactKey: Guid(1e6ab76960d2a42558f458f0d1fee98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_info.png using Guid(1e6ab76960d2a42558f458f0d1fee98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a869665f05dcf456899d277fe8bb6e9') in 0.024313 seconds 
+  Import took 0.029722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_MissionClear_01.png
+  artifactKey: Guid(3095a2f07b1d1413a93ada63d2e0f41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_MissionClear_01.png using Guid(3095a2f07b1d1413a93ada63d2e0f41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb78d02b3eec0cc14d9dbd095cdcb12') in 0.042910 seconds 
+  Import took 0.050060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_MissionClear_Deco01.png
+  artifactKey: Guid(cb9c1245fc80342a0b18abbce243749d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_MissionClear_Deco01.png using Guid(cb9c1245fc80342a0b18abbce243749d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fccdb36c3a4fe769d10d95ae2fe1647') in 0.019708 seconds 
+  Import took 0.026317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_play.png
+  artifactKey: Guid(8d61d61ffb8ef490596f317e5e67f368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_play.png using Guid(8d61d61ffb8ef490596f317e5e67f368) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '166cfcbd1a5bb6269a2129e61a6e6f79') in 0.044278 seconds 
+  Import took 0.049565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Good.png
+  artifactKey: Guid(607413fcac8f74f91b96aa5b60a394b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Good.png using Guid(607413fcac8f74f91b96aa5b60a394b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dde39c989a9224f60a6efa3b074ad3a') in 0.034683 seconds 
+  Import took 0.041353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014020 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_bookmark.png
+  artifactKey: Guid(bb55db04fcee74be0a318d710d83914c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_bookmark.png using Guid(bb55db04fcee74be0a318d710d83914c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7453d80bbf5c1dca829f304ca2bfe3ae') in 0.023413 seconds 
+  Import took 0.031328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000549 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_4.png
+  artifactKey: Guid(624b2a9ee1e1143bc96c2c57f60ba839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_4.png using Guid(624b2a9ee1e1143bc96c2c57f60ba839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8405d626d0f115bbcd18859bf23c72e') in 0.035910 seconds 
+  Import took 0.042251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000915 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_potion.png
+  artifactKey: Guid(aaa0336bad91d451ea0f93385fe23f14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_potion.png using Guid(aaa0336bad91d451ea0f93385fe23f14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77cc6da8e1874f5e8face5a3fe976cca') in 0.029365 seconds 
+  Import took 0.036456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000923 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_check.png
+  artifactKey: Guid(be0f95f699c69408e9eb8091241ba9e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_check.png using Guid(be0f95f699c69408e9eb8091241ba9e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14171f97756321019e7476cc493e8025') in 0.025389 seconds 
+  Import took 0.031499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_gem.png
+  artifactKey: Guid(15e8be759c78b46c49cde60320a5aa27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_gem.png using Guid(15e8be759c78b46c49cde60320a5aa27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ab7d538600cbebdde365bf0bab8560') in 0.044246 seconds 
+  Import took 0.050493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_energy.png
+  artifactKey: Guid(49426d566673f4983b38f609cb6d4797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_energy.png using Guid(49426d566673f4983b38f609cb6d4797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9c9ccb59bd3e91095329df45314fcf') in 0.039161 seconds 
+  Import took 0.044931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006140 seconds.
+  path: Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/320x480.png
+  artifactKey: Guid(77d9c04b43d404f44ab60d7159b279bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/320x480.png using Guid(77d9c04b43d404f44ab60d7159b279bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83bff3dab9583f331511ed634bac4d6f') in 0.037556 seconds 
+  Import took 0.045083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001419 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/20_Popup.png
+  artifactKey: Guid(f93cf0ad431434d50b4dd44941220e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/20_Popup.png using Guid(f93cf0ad431434d50b4dd44941220e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67fa6b10ef97d6e841cbbfae3587fa7') in 0.065332 seconds 
+  Import took 0.070782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/480x320.png
+  artifactKey: Guid(d30303c99ba3f4b9b9924da34e6d742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/480x320.png using Guid(d30303c99ba3f4b9b9924da34e6d742d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef21fc16037ed3848f99afb092f471d') in 0.031957 seconds 
+  Import took 0.038916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/1024x768.png
+  artifactKey: Guid(4c69db43dbd474a2987be5807129b4cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/1024x768.png using Guid(4c69db43dbd474a2987be5807129b4cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70b860d079ff241ad0516471cc5c582c') in 0.060353 seconds 
+  Import took 0.070137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/21_Function_Button_Gray.png
+  artifactKey: Guid(2d28ccd1fe54547b0b0e75e15b53dd71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/21_Function_Button_Gray.png using Guid(2d28ccd1fe54547b0b0e75e15b53dd71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc564bcbbfcff70020455a90e3726a02') in 0.067501 seconds 
+  Import took 0.074682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/728x90.png
+  artifactKey: Guid(cfead63ff9d9d48e2b4ba3c2dee7cea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/728x90.png using Guid(cfead63ff9d9d48e2b4ba3c2dee7cea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf74120ab9d83ebd48fe18a3695e7a17') in 0.048252 seconds 
+  Import took 0.054340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000691 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/19_Function_Button_Yellow.png
+  artifactKey: Guid(cefe1d41a8e3b421e952f9c7992fe523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/19_Function_Button_Yellow.png using Guid(cefe1d41a8e3b421e952f9c7992fe523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afdfca0547b679523f8c5d40606bb9b9') in 0.326318 seconds 
+  Import took 0.340484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000752 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_time.png
+  artifactKey: Guid(5407beaccae144a0db3305c7a0f0f7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_time.png using Guid(5407beaccae144a0db3305c7a0f0f7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716f663a82673b2ec07ebd4f090d89c1') in 0.025833 seconds 
+  Import took 0.032078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.097671 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_warning.png
+  artifactKey: Guid(c04fad6a65fd74aae84df5d66e5c251d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_warning.png using Guid(c04fad6a65fd74aae84df5d66e5c251d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '092bd7bcc822627352b2d60187d74c67') in 0.051371 seconds 
+  Import took 0.062660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000645 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_store.png
+  artifactKey: Guid(5c3980296e34a4bfcbfd7c24fe0d4e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_store.png using Guid(5c3980296e34a4bfcbfd7c24fe0d4e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e2e5a45aca8be9bbcbb53f82cdf7eb3') in 0.033759 seconds 
+  Import took 0.044297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001498 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/19_Function_Button.png
+  artifactKey: Guid(d2624adceee29431eb920c9513ea6d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/19_Function_Button.png using Guid(d2624adceee29431eb920c9513ea6d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279ba780417776f6d8b4f18b14033545') in 0.135181 seconds 
+  Import took 0.142871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/16_Items.png
+  artifactKey: Guid(4d2e0fbbef00e4fe6b885ee172140421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/16_Items.png using Guid(4d2e0fbbef00e4fe6b885ee172140421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a32abaab46ada40b9ffb18823b8dd7') in 0.029149 seconds 
+  Import took 0.035265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/BaseFrame_Blue.png
+  artifactKey: Guid(34a018c159c22413aaa0d6ffbb52ebaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/BaseFrame_Blue.png using Guid(34a018c159c22413aaa0d6ffbb52ebaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2afc92ebb86e77e01d331e2276073d0b') in 0.027161 seconds 
+  Import took 0.033368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_minus.png
+  artifactKey: Guid(3e75e85500d574279b668e4512667726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_minus.png using Guid(3e75e85500d574279b668e4512667726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229bb95e65ebb0a9ac32767303390287') in 0.025504 seconds 
+  Import took 0.031452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/05_Complete.png
+  artifactKey: Guid(5c6dfeffb26f24142bed9d9c7b2cf895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/05_Complete.png using Guid(5c6dfeffb26f24142bed9d9c7b2cf895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea6dcd07fc0574dc2366f8efd580f4d') in 0.034486 seconds 
+  Import took 0.041377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/02_Login.png
+  artifactKey: Guid(e3ea02811987d4555bd5212b198a51cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/02_Login.png using Guid(e3ea02811987d4555bd5212b198a51cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e336c9e1aabd1027ed801547218d07') in 0.033694 seconds 
+  Import took 0.040146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000506 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_movie.png
+  artifactKey: Guid(6d6e6e0b2482a40fd8e31fb535f05e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_movie.png using Guid(6d6e6e0b2482a40fd8e31fb535f05e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '370a0c4ef977239889242b2d225172bc') in 0.025349 seconds 
+  Import took 0.031293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000737 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_stop.png
+  artifactKey: Guid(684fce0b2de484d4b81998c7d801aa71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_stop.png using Guid(684fce0b2de484d4b81998c7d801aa71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76b47be356004e5844b5fc0d64d08aa2') in 0.020544 seconds 
+  Import took 0.030502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000541 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_medal.png
+  artifactKey: Guid(b63265a58aadf42ad909f1c553255375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_medal.png using Guid(b63265a58aadf42ad909f1c553255375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6b50448db7069116333b42dc64db34') in 0.021795 seconds 
+  Import took 0.028429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_3.png
+  artifactKey: Guid(a0763070a38e2464db1bf122c3bdcd3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_3.png using Guid(a0763070a38e2464db1bf122c3bdcd3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607291648c78b9604a29aed78e62bbf8') in 0.024737 seconds 
+  Import took 0.030084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_mail.png
+  artifactKey: Guid(6bd3f1364e2b34ab689b5248b506ee51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_mail.png using Guid(6bd3f1364e2b34ab689b5248b506ee51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f86ba983ea0dea063ef5665fda43aa81') in 0.030695 seconds 
+  Import took 0.037872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000631 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo.png
+  artifactKey: Guid(79a02d0f544e64c2ebe7275ad7a44245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo.png using Guid(79a02d0f544e64c2ebe7275ad7a44245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b72cb88bd45490f1c43c8908db101c') in 0.029475 seconds 
+  Import took 0.038208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_5.png
+  artifactKey: Guid(ae97763c6dba0472fa16bf0dad2507ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_5.png using Guid(ae97763c6dba0472fa16bf0dad2507ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d53053c7f45ab9d3a98393ef2af6a3') in 0.026849 seconds 
+  Import took 0.033664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_menu.png
+  artifactKey: Guid(4614f7677a9144766b1a300f613b6055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_menu.png using Guid(4614f7677a9144766b1a300f613b6055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f16870760d736437ed1202444dcde4') in 0.040521 seconds 
+  Import took 0.054962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001313 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Perfect.png
+  artifactKey: Guid(525875b245b8f49929f8956b60c2a236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Perfect.png using Guid(525875b245b8f49929f8956b60c2a236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3250343891b793c5e05b1bd43ac77e') in 0.044635 seconds 
+  Import took 0.054463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019439 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/17_Components.png
+  artifactKey: Guid(8530e128082544a0bae8b71054e93d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/17_Components.png using Guid(8530e128082544a0bae8b71054e93d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3dc644b352a7799d1a847192b37a96') in 0.053073 seconds 
+  Import took 0.062365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010618 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Ready.png
+  artifactKey: Guid(e33adac4d7a634b6b9ffd212935d3c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Ready.png using Guid(e33adac4d7a634b6b9ffd212935d3c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4507cabcc7f352b0414ff4cdb88311ab') in 0.054082 seconds 
+  Import took 0.063480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_sound.png
+  artifactKey: Guid(e1be4f33f380743a5b36ba7d53265c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_sound.png using Guid(e1be4f33f380743a5b36ba7d53265c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b2a1de5935c5e69f1dce235d9d8ab8a') in 0.093926 seconds 
+  Import took 0.099155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000566 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_stopwatch.png
+  artifactKey: Guid(1e484ab6900864dc29cd27be67097587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_stopwatch.png using Guid(1e484ab6900864dc29cd27be67097587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd17f8762ec30a7057cdb56fddd82d498') in 0.025500 seconds 
+  Import took 0.034290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001022 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_calendar.png
+  artifactKey: Guid(b68369933c51045df936ba25d865d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_calendar.png using Guid(b68369933c51045df936ba25d865d8cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f79dbeab8a626d1b4889c529153db1b') in 0.028808 seconds 
+  Import took 0.035269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_backward.png
+  artifactKey: Guid(39ff93ed27111408b90c1a09c3971d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_backward.png using Guid(39ff93ed27111408b90c1a09c3971d87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53fbfabe687b8d8dbd725fd7c94e80e4') in 0.033317 seconds 
+  Import took 0.041205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007696 seconds.
+  path: Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/320x100.png
+  artifactKey: Guid(1a2723ddf964e4565a408007ab387283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/320x100.png using Guid(1a2723ddf964e4565a408007ab387283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96028550213e934014647bc99027e65') in 0.045178 seconds 
+  Import took 0.051814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.026870 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_2.png
+  artifactKey: Guid(104450c41bef44ffb963e57a6736e532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_2.png using Guid(104450c41bef44ffb963e57a6736e532) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61d29b719768e30c0e0bda836594e486') in 0.134221 seconds 
+  Import took 0.140811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_LevelUp_01.png
+  artifactKey: Guid(a0ce8f767cbf446d49f2ddab6373dfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_LevelUp_01.png using Guid(a0ce8f767cbf446d49f2ddab6373dfc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bcedce2a2c8b19f1ba1903acdcd5afa') in 0.024586 seconds 
+  Import took 0.031528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/BaseFrame_Red.png
+  artifactKey: Guid(37fcc48615bd740a68ea6dead3d9ab11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Red/BaseFrame_Red.png using Guid(37fcc48615bd740a68ea6dead3d9ab11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c67140e482e91cf92892339473d1df0') in 0.026954 seconds 
+  Import took 0.038080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_MissionClear_Deco02.png
+  artifactKey: Guid(df3b4a6f86a224fb79db20e2726dd11c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_MissionClear_Deco02.png using Guid(df3b4a6f86a224fb79db20e2726dd11c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '078c71a2221f7fa83d5f09a7c66ea3e9') in 0.020592 seconds 
+  Import took 0.027195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_prev.png
+  artifactKey: Guid(564374dec2eb54426961c56c9d32598d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_prev.png using Guid(564374dec2eb54426961c56c9d32598d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b668c5d3e941ff5cd072203ba18178b5') in 0.024635 seconds 
+  Import took 0.032734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000952 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_bomb.png
+  artifactKey: Guid(06176f551f3d8453690047a1f2cc9674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_bomb.png using Guid(06176f551f3d8453690047a1f2cc9674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68b4016ae49c606b7d1708e75db92a5a') in 0.042061 seconds 
+  Import took 0.047626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_1.png
+  artifactKey: Guid(8b2c881dab32b443c88e43bc260e5d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_1.png using Guid(8b2c881dab32b443c88e43bc260e5d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '190234150db971f0ad4f1e50f1737a4e') in 0.023695 seconds 
+  Import took 0.029665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001409 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_LevelUp_02.png
+  artifactKey: Guid(fb64ba278b32549cf96b4d4589ace3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_LevelUp_02.png using Guid(fb64ba278b32549cf96b4d4589ace3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553e583fd76b1312caa2f7e011c698d0') in 0.029387 seconds 
+  Import took 0.035070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Go.png
+  artifactKey: Guid(26948f695bff14af892a5685bdc4417a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Go.png using Guid(26948f695bff14af892a5685bdc4417a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cd2da6b50d08f2b384302924932b9cc') in 0.016322 seconds 
+  Import took 0.021062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/18_Action_Text.png
+  artifactKey: Guid(8632f37cfaf6341b3bf9cce58516e3f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/18_Action_Text.png using Guid(8632f37cfaf6341b3bf9cce58516e3f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324cac2376c21aa832276e2101a7f454') in 0.021999 seconds 
+  Import took 0.028697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/08_Shop_Coin.png
+  artifactKey: Guid(438dbb705e00643a6a43d2dc0d8b2dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/08_Shop_Coin.png using Guid(438dbb705e00643a6a43d2dc0d8b2dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b3127cf1c978745f777b425b22c4d1') in 0.045382 seconds 
+  Import took 0.051268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001404 seconds.
+  path: Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/300x250.png
+  artifactKey: Guid(898f886a39d714db5b90d2c36676c894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/300x250.png using Guid(898f886a39d714db5b90d2c36676c894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c29c5583543af40ce1b275c329a490e') in 0.035573 seconds 
+  Import took 0.041834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000519 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_cart.png
+  artifactKey: Guid(0aaa7316317c842c4b27d15d0c04fb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_cart.png using Guid(0aaa7316317c842c4b27d15d0c04fb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ee024c7e5397b73b65c6092aa7e954') in 0.028894 seconds 
+  Import took 0.038599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_BonusTime_Deco02.png
+  artifactKey: Guid(34aa86dce4b8f48efb450298ac6504a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_BonusTime_Deco02.png using Guid(34aa86dce4b8f48efb450298ac6504a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be9f395af22d3e3dc025b6f369de1f5') in 0.025599 seconds 
+  Import took 0.032924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_key.png
+  artifactKey: Guid(5479e96bcf64c46528ff04ab6ded01c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_key.png using Guid(5479e96bcf64c46528ff04ab6ded01c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2adc25aff2f214b54562a3b1d3369d3f') in 0.030554 seconds 
+  Import took 0.036700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000743 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_coin.png
+  artifactKey: Guid(601fb2ce87861447e89d4a5bf24589c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_coin.png using Guid(601fb2ce87861447e89d4a5bf24589c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71fadf38ed4232cbbeea8f2cf5d2ef0c') in 0.045512 seconds 
+  Import took 0.053475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015697 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_0.png
+  artifactKey: Guid(115dbc0ebe95e4e1ba3715d9414ae095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_0.png using Guid(115dbc0ebe95e4e1ba3715d9414ae095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf444311d10191a6e42c6cc3973fbca') in 0.035120 seconds 
+  Import took 0.042438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000635 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_money.png
+  artifactKey: Guid(5d8a2348919c4447d982f186cb247115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_money.png using Guid(5d8a2348919c4447d982f186cb247115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '882211a8d0f3ebeafeb52c808705530d') in 0.109197 seconds 
+  Import took 0.117265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_plus.png
+  artifactKey: Guid(5f215a2ff4c2a49498cfbaf60537c9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_plus.png using Guid(5f215a2ff4c2a49498cfbaf60537c9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f28c57406fec35a4725f389a0fbcd434') in 0.027602 seconds 
+  Import took 0.037844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001738 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Start.png
+  artifactKey: Guid(9f66b6b6e0828455da93e61fcf6e34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Start.png using Guid(9f66b6b6e0828455da93e61fcf6e34ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '165dc5aa4821f59f4b33ba7be369c0cf') in 0.032580 seconds 
+  Import took 0.040517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_download.png
+  artifactKey: Guid(41040ddbb5da3492db264999f532d745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_download.png using Guid(41040ddbb5da3492db264999f532d745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2302af45ef0aa9e917d7ecdc6e04698a') in 0.047590 seconds 
+  Import took 0.053635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/BaseFrame_Gray.png
+  artifactKey: Guid(b7f4d20ca13704a00a31c589db685011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/BaseFrame_Gray.png using Guid(b7f4d20ca13704a00a31c589db685011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda9a1578568fc220f7fcc35fbfdcc9f') in 0.025913 seconds 
+  Import took 0.032273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000944 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/19_Function_Button_Red.png
+  artifactKey: Guid(278f4c672264b4f779594c85778068d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/19_Function_Button_Red.png using Guid(278f4c672264b4f779594c85778068d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78abdc90df1d6194a9ce6a58dd6e3635') in 0.045360 seconds 
+  Import took 0.054365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/468x60.png
+  artifactKey: Guid(74358f5fb13a549aabac4a5a7ac76739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/468x60.png using Guid(74358f5fb13a549aabac4a5a7ac76739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a91947c6fc9d15bdaea4e0456db361') in 0.026833 seconds 
+  Import took 0.036578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001219 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Demo/Demo_Background/Background_Dimed.png
+  artifactKey: Guid(0c4ddabd7d50049e7be24c97227ef361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Demo/Demo_Background/Background_Dimed.png using Guid(0c4ddabd7d50049e7be24c97227ef361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da16ab65fb632f33f9138c6ea29befc0') in 0.021881 seconds 
+  Import took 0.030141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_camera.png
+  artifactKey: Guid(e910aac28859048c595a7cf0b39cec0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_camera.png using Guid(e910aac28859048c595a7cf0b39cec0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ebd867e547e5ba084cd19b9dbd6a859') in 0.027892 seconds 
+  Import took 0.036490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000466 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/03_Stage.png
+  artifactKey: Guid(9c35dafd49fcd42c892714a7d3d999f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/03_Stage.png using Guid(9c35dafd49fcd42c892714a7d3d999f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c6e8861b48be7f9ea419fab1357bab') in 0.057576 seconds 
+  Import took 0.072931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003044 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_menu.png
+  artifactKey: Guid(59c2d14210320477591952c205b8b8d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_menu.png using Guid(59c2d14210320477591952c205b8b8d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42159a1eab8143df71d03dc7f14b2642') in 0.028262 seconds 
+  Import took 0.035442 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001643 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_camera.png
+  artifactKey: Guid(81a344107afd1460ab5fafad2006f87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_camera.png using Guid(81a344107afd1460ab5fafad2006f87b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '463266aa68c97ad50f0b639be9613281') in 0.035575 seconds 
+  Import took 0.047914 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Great.png
+  artifactKey: Guid(28c33bc8017e64958a3393fdd9a6bef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Great.png using Guid(28c33bc8017e64958a3393fdd9a6bef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db088556d4316518250bb7cd15c0cd5b') in 0.041848 seconds 
+  Import took 0.051700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000590 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_remove.png
+  artifactKey: Guid(6e9a267edd1ec4eda88d6764b7bc89a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_remove.png using Guid(6e9a267edd1ec4eda88d6764b7bc89a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a5522343ae8a398cdcd388f900e053') in 0.037059 seconds 
+  Import took 0.044038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000758 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_store.png
+  artifactKey: Guid(db99d00f8e17040c79a0735e01df2958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_store.png using Guid(db99d00f8e17040c79a0735e01df2958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3729c1e6435054b335ada8ffd905caed') in 0.032728 seconds 
+  Import took 0.039125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_6.png
+  artifactKey: Guid(7d1a89cdbebf742c18821dc41cd1b633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Combo_Num_6.png using Guid(7d1a89cdbebf742c18821dc41cd1b633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24ebfb1ce245c40571c1fbf449df2db') in 0.036314 seconds 
+  Import took 0.042612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001950 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_mail.png
+  artifactKey: Guid(2120c025788314270b241bae66686f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_mail.png using Guid(2120c025788314270b241bae66686f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c9eecbae660d615b13d9e56a3abf8e') in 0.024855 seconds 
+  Import took 0.031476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_close.png
+  artifactKey: Guid(8567270cdca5449d28d53143c8c0add1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_close.png using Guid(8567270cdca5449d28d53143c8c0add1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e56d2010a8ea30200273ddd682b241f') in 0.027723 seconds 
+  Import took 0.033694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001191 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_flag.png
+  artifactKey: Guid(5e6c899c991db4ba8aa7a80f6acafbd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_flag.png using Guid(5e6c899c991db4ba8aa7a80f6acafbd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f401753f9dd2b093c0bb9c79eec6f3f') in 0.024615 seconds 
+  Import took 0.030272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_picture.png
+  artifactKey: Guid(18791e725acf34781aecc1f3e44e7e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_picture.png using Guid(18791e725acf34781aecc1f3e44e7e20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e44ea1f428cbc8ed1ec13bc1d8776c9') in 0.047649 seconds 
+  Import took 0.053445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003467 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_chest.png
+  artifactKey: Guid(b8ab01205e86749a7ac5be8472db42c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_chest.png using Guid(b8ab01205e86749a7ac5be8472db42c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961b7c148eb70fa5b3134c9880810d34') in 0.025295 seconds 
+  Import took 0.032491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/01_Title.png
+  artifactKey: Guid(cf81776b45c604bd481121e68037bab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/01_Title.png using Guid(cf81776b45c604bd481121e68037bab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '552cbdd5a1596023ba69e747090eb02b') in 0.035279 seconds 
+  Import took 0.041402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/768x1024.png
+  artifactKey: Guid(8a53f9c63a5e94b14a98698a7b07365b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/768x1024.png using Guid(8a53f9c63a5e94b14a98698a7b07365b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8719cea93c7a7e83f52aa4acd8908c9') in 0.037734 seconds 
+  Import took 0.043447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_key.png
+  artifactKey: Guid(1050116f677f64e4aa8b773d825c4142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_key.png using Guid(1050116f677f64e4aa8b773d825c4142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3474cb8f250247beb289c8a0a6610a') in 0.025050 seconds 
+  Import took 0.034342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_share.png
+  artifactKey: Guid(3d4cbb0fd52f842e393d08422b067364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_share.png using Guid(3d4cbb0fd52f842e393d08422b067364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d42793f86ab4a3a4f34dc1c74197421') in 0.037348 seconds 
+  Import took 0.043421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/04_Stage_start.png
+  artifactKey: Guid(356206d8a84d649a59845c955ce1772b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/04_Stage_start.png using Guid(356206d8a84d649a59845c955ce1772b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74ed74c793a8bf6b61bd2055c7e1a1ae') in 0.044873 seconds 
+  Import took 0.054613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/07_Mission.png
+  artifactKey: Guid(89ff821b7a4c341edb81ae43c5a8339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/07_Mission.png using Guid(89ff821b7a4c341edb81ae43c5a8339c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0977315de4e905c604e60aa7a779e96') in 0.057074 seconds 
+  Import took 0.063006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003573 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_edit.png
+  artifactKey: Guid(17fb2914ff8be4dbb93d70288b9efd37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_edit.png using Guid(17fb2914ff8be4dbb93d70288b9efd37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ed8cfa99abc40320efd65b28122853') in 0.027864 seconds 
+  Import took 0.037347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001690 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_hammer.png
+  artifactKey: Guid(0b2788a250c3e4ccaac59e21cf19dcff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_hammer.png using Guid(0b2788a250c3e4ccaac59e21cf19dcff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4e9bf913da82178efd0eb65efc456d') in 0.041780 seconds 
+  Import took 0.048033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_calendar.png
+  artifactKey: Guid(4975cd85f3370490ba4bcb0a33868683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_calendar.png using Guid(4975cd85f3370490ba4bcb0a33868683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de7689798efee2a634ed5d37550b4e33') in 0.034195 seconds 
+  Import took 0.041100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_TimesUp_02.png
+  artifactKey: Guid(45b4d99509a1e4e1dae128f1b3ef83f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_TimesUp_02.png using Guid(45b4d99509a1e4e1dae128f1b3ef83f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727295d24b76ac89f9f8330f344e6662') in 0.025635 seconds 
+  Import took 0.037537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000798 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_home.png
+  artifactKey: Guid(30202dab039fc4511a1442ecc65be832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_home.png using Guid(30202dab039fc4511a1442ecc65be832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8911f37c5019609f0c43f4296adb4c3d') in 0.031050 seconds 
+  Import took 0.040603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002380 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Demo/Demo_Background/Background_00.png
+  artifactKey: Guid(8812d89a56d0d4acabfd9ce96ec03fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Demo/Demo_Background/Background_00.png using Guid(8812d89a56d0d4acabfd9ce96ec03fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd3349a51c6681a7526c6a1d6f26b8fa') in 0.049466 seconds 
+  Import took 0.059645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014885 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_friend.png
+  artifactKey: Guid(d95e5492128dd40bcaf98903694d5365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_friend.png using Guid(d95e5492128dd40bcaf98903694d5365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f9b7c1138cdd0ecc3932014b68452e') in 0.026124 seconds 
+  Import took 0.032667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008374 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_MissionClear_02.png
+  artifactKey: Guid(6db59cf5e71c24988a95e7819d46cadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_MissionClear_02.png using Guid(6db59cf5e71c24988a95e7819d46cadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e8e2bb8e4eab85d3c415799b56a5c0') in 0.030437 seconds 
+  Import took 0.038489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001380 seconds.
+  path: Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/320x50.png
+  artifactKey: Guid(5a6531d4c9c484d679a2d6f9e6fefed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/320x50.png using Guid(5a6531d4c9c484d679a2d6f9e6fefed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c59635ef5eb1c995b1d773e59cef90') in 0.033074 seconds 
+  Import took 0.039596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002169 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Wow.png
+  artifactKey: Guid(590fb5370dddf41d3ac9caf52ad71326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Wow.png using Guid(590fb5370dddf41d3ac9caf52ad71326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4cb4282921801df9d80b8c760a30137') in 0.043608 seconds 
+  Import took 0.054727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_info.png
+  artifactKey: Guid(23a5530541699406286a90fc9f902232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_info.png using Guid(23a5530541699406286a90fc9f902232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5870b252af0e585e6cff0ada3ca8b7d') in 0.029414 seconds 
+  Import took 0.036615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_forward.png
+  artifactKey: Guid(a96904932256442a5b5b5344f8787a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_forward.png using Guid(a96904932256442a5b5b5344f8787a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2b7367b5f14591f09a944bbab5a98ad') in 0.023444 seconds 
+  Import took 0.028611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000692 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_TimesUp_Deco_02.png
+  artifactKey: Guid(6a0df73f01918437bb7614197df04ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_TimesUp_Deco_02.png using Guid(6a0df73f01918437bb7614197df04ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e01a41f51cd337a32f456c2d3e428e') in 0.041135 seconds 
+  Import took 0.047373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_bookmark.png
+  artifactKey: Guid(e66df515cfb1242e9a8f953a36da4515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_bookmark.png using Guid(e66df515cfb1242e9a8f953a36da4515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd4e1ac44a3c3cadf84c68e76e107c1') in 0.028903 seconds 
+  Import took 0.034269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000979 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_life.png
+  artifactKey: Guid(a87948d0eb7134f7dba916d0c37f8de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_life.png using Guid(a87948d0eb7134f7dba916d0c37f8de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e8990e02cf1900147aefc380697e5b') in 0.045194 seconds 
+  Import took 0.055571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000788 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_like.png
+  artifactKey: Guid(cb27edad7a09c4172b7dfcdfe504c41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_like.png using Guid(cb27edad7a09c4172b7dfcdfe504c41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ddc6f986aa1dbf0b52fad715c2051e1') in 0.027873 seconds 
+  Import took 0.035330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_magnetic.png
+  artifactKey: Guid(eb8d091093f3f4e49adb084c7f6e684c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_magnetic.png using Guid(eb8d091093f3f4e49adb084c7f6e684c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0137a80b09d0609ae809fcaf8b3cb3e3') in 0.024684 seconds 
+  Import took 0.032180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001602 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_check.png
+  artifactKey: Guid(d5cf783c01a8e4d57aab81749c2b9e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_check.png using Guid(d5cf783c01a8e4d57aab81749c2b9e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '439b0f01d9ae023a597826a51246191b') in 0.040367 seconds 
+  Import took 0.047633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001266 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_category.png
+  artifactKey: Guid(fb754a5da29e84570b0e27209ae4c528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_category.png using Guid(fb754a5da29e84570b0e27209ae4c528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c576bef02db836010683ce748324d4') in 0.026508 seconds 
+  Import took 0.032961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Awesome.png
+  artifactKey: Guid(2bb9d223ebe78423fa46d3645211e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Awesome.png using Guid(2bb9d223ebe78423fa46d3645211e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '597f7c7d32622433969ff28d34ab520f') in 0.030976 seconds 
+  Import took 0.039207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_mute.png
+  artifactKey: Guid(111e579f50e674327a7af9f7c321fcde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_mute.png using Guid(111e579f50e674327a7af9f7c321fcde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ce24b6d6680111c60345876304365c') in 0.144444 seconds 
+  Import took 0.150862 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000563 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_hammer.png
+  artifactKey: Guid(9abf0ec314cb4479dae7a0e667b97bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_hammer.png using Guid(9abf0ec314cb4479dae7a0e667b97bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f577a8eb60b235fb1e2d3b1c31be9062') in 0.059717 seconds 
+  Import took 0.064398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_trophy.png
+  artifactKey: Guid(edb4af0a37ad24e159a7a2e68f3aa036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_trophy.png using Guid(edb4af0a37ad24e159a7a2e68f3aa036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9766139fe568bee9f950222fff433d7d') in 0.029557 seconds 
+  Import took 0.035356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001821 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_message.png
+  artifactKey: Guid(822dca3c3c3bd4332af36e81ec91cc28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_message.png using Guid(822dca3c3c3bd4332af36e81ec91cc28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77ff64865eec654855ef302b46b1a42d') in 0.020050 seconds 
+  Import took 0.029300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_plus.png
+  artifactKey: Guid(5a7cdbdb534c745dd8b6ee4fcc423aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_plus.png using Guid(5a7cdbdb534c745dd8b6ee4fcc423aa3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172eb0dfd69157fb0782a11c3a2c4f60') in 0.045504 seconds 
+  Import took 0.052745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/06_Level_Up.png
+  artifactKey: Guid(87971a3dd5b4b46f7bc767eed5a08434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/06_Level_Up.png using Guid(87971a3dd5b4b46f7bc767eed5a08434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8040680bba09b95ff099fcf10b748a32') in 0.048316 seconds 
+  Import took 0.054830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000536 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_export.png
+  artifactKey: Guid(b2e968f7f8c544b4484a138b1112c9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_export.png using Guid(b2e968f7f8c544b4484a138b1112c9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7110411cbc6a39b851aceff53bb3e59e') in 0.022291 seconds 
+  Import took 0.028867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001450 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_stop.png
+  artifactKey: Guid(eafcc6bd80a1b41f79e9510230497578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_stop.png using Guid(eafcc6bd80a1b41f79e9510230497578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46a66154c319865d464a8f3397a2668') in 0.028026 seconds 
+  Import took 0.036469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000460 seconds.
+  path: Assets/Sprites/Background_00 1.png
+  artifactKey: Guid(f02add4e461294b5d83b79078aad538d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Background_00 1.png using Guid(f02add4e461294b5d83b79078aad538d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781fca73ca5340c3a8db344012943478') in 0.061311 seconds 
+  Import took 0.068966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020140 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_up.png
+  artifactKey: Guid(0f8dda090024e42d9b5c16b911b7c4e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_up.png using Guid(0f8dda090024e42d9b5c16b911b7c4e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0f308e62edd2e9df6b466fce9f478d') in 0.037622 seconds 
+  Import took 0.045237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009865 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_up.png
+  artifactKey: Guid(41c97ae8b217c4f72b3a5a6e28a56750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_up.png using Guid(41c97ae8b217c4f72b3a5a6e28a56750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e74f131cbbcb507452648abd0f0af5') in 0.053140 seconds 
+  Import took 0.060522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Nice.png
+  artifactKey: Guid(cb7c1528c2c36416aa539277047d0273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/ActionText/ActionText_Nice.png using Guid(cb7c1528c2c36416aa539277047d0273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdadee7fa88996a8242084c44e1df2e9') in 0.027729 seconds 
+  Import took 0.035202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000532 seconds.
+  path: Assets/Sprites/Btn_Basic_Square_Orange 1.png
+  artifactKey: Guid(d62d31d58f0964c8994510f9aa58196d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Btn_Basic_Square_Orange 1.png using Guid(d62d31d58f0964c8994510f9aa58196d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fbc9dde882fa526cc07db85383b488c') in 0.023737 seconds 
+  Import took 0.029494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_lock.png
+  artifactKey: Guid(f036dc91a261a4c89b4bff6ddc9cd4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_lock.png using Guid(f036dc91a261a4c89b4bff6ddc9cd4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade32056e306f8d62de756d49cfa6f3d') in 0.034460 seconds 
+  Import took 0.040056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/GUI Kit - Yellow Kid/Preview/21_Function_Button_Blue.png
+  artifactKey: Guid(e9a25d1c047e84759a65a8267124decb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/Preview/21_Function_Button_Blue.png using Guid(e9a25d1c047e84759a65a8267124decb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b549b866522f48e0ff9df0860a91937f') in 0.048603 seconds 
+  Import took 0.055277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002201 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_time.png
+  artifactKey: Guid(c4fed0039eb3b451788cf8d0efe4eb5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_time.png using Guid(c4fed0039eb3b451788cf8d0efe4eb5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65902c662d054f10716de4445649455') in 0.042815 seconds 
+  Import took 0.054023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000774 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_cart.png
+  artifactKey: Guid(b9bf6d8fd80d244dc9e88ac0a2fbe0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_cart.png using Guid(b9bf6d8fd80d244dc9e88ac0a2fbe0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '981f645733fda63218471afb44402a3e') in 0.038159 seconds 
+  Import took 0.046363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_shield.png
+  artifactKey: Guid(f34b3f5ce80e44ba592f880951b9ed19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_shield.png using Guid(f34b3f5ce80e44ba592f880951b9ed19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b8ebab3d692e4650fabdab4874314d') in 0.037482 seconds 
+  Import took 0.042586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003290 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_user.png
+  artifactKey: Guid(5f3866ec65a504b7a9ec21444788849b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_user.png using Guid(5f3866ec65a504b7a9ec21444788849b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a7d0174198910158bea201319bab4d') in 0.031543 seconds 
+  Import took 0.037471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003178 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_coin.png
+  artifactKey: Guid(8240ce9e0bbf041919aa7ebff12ff02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_coin.png using Guid(8240ce9e0bbf041919aa7ebff12ff02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b479e57286018129ad686e2c13679a4') in 0.025348 seconds 
+  Import took 0.032032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_bomb.png
+  artifactKey: Guid(a36f3335c9adc4b18b759e906377d75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Gray/btn_gray_bomb.png using Guid(a36f3335c9adc4b18b759e906377d75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd7573cad14257cae11018ad6ccb657a') in 0.024763 seconds 
+  Import took 0.030425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_notification.png
+  artifactKey: Guid(05368dcb8008e436a90f709fa96d179a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_notification.png using Guid(05368dcb8008e436a90f709fa96d179a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7909a4f92b272d457a0f859636b8968') in 0.025358 seconds 
+  Import took 0.031546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_attach.png
+  artifactKey: Guid(c1c271feda8f0478fbca0314055a8845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit - Yellow Kid/ResourcesData/Sprite/Component/Button_ButtonIcon/Blue/btn_blue_attach.png using Guid(c1c271feda8f0478fbca0314055a8845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd8ae77cfb0c4507122d588ace6afe15') in 0.039537 seconds 
+  Import took 0.046315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.664658 seconds.
+  path: Assets/Scenes/SoloGame.unity
+  artifactKey: Guid(f28636e95cabe477a91f0f2f57af0547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SoloGame.unity using Guid(f28636e95cabe477a91f0f2f57af0547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd34151cd29cf0cea68df5cf560044bd') in 0.002846 seconds 
+  Import took 0.009146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.389520 seconds.
+  path: Assets/Scenes/Title.unity
+  artifactKey: Guid(ffa476f3b4e8c4e7185c640f959e26b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Title.unity using Guid(ffa476f3b4e8c4e7185c640f959e26b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0049d0bb8b6b754ba431fdcde6e4c38') in 0.014362 seconds 
+  Import took 0.020467 seconds .
+
