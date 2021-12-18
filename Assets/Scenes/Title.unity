@@ -857,7 +857,19 @@ MonoBehaviour:
   m_Value: 0.331
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SoundSlider, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &362605134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,7 +1674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -446}
+  m_AnchoredPosition: {x: 0, y: -230}
   m_SizeDelta: {x: 700, y: 183.8638}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &734915133
@@ -2387,7 +2399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Android_Interstitial: 
-  ios_Interstitial: ca-app-pub-3940256099942544/4411468910
+  ios_Interstitial: 'ca-app-pub-5765387585482866/4489182450 '
 --- !u!114 &1038608664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2401,7 +2413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Android_Banner: 
-  ios_Banner: ca-app-pub-3940256099942544/2934735716
+  ios_Banner: ca-app-pub-5765387585482866/9741509131
 --- !u!4 &1038608665
 Transform:
   m_ObjectHideFlags: 0
@@ -3022,8 +3034,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -242}
-  m_SizeDelta: {x: 700, y: 180}
+  m_AnchoredPosition: {x: 0, y: -446}
+  m_SizeDelta: {x: 700, y: 183.8638}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364649574
 MonoBehaviour:

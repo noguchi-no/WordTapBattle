@@ -14,7 +14,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
         PhotonNetwork.NickName = PlayerPrefs.GetString("name", "no name");
 
     }
-
+    /*
      void OnGUI() {
 
          GUI.skin.label.fontSize = 48;
@@ -26,7 +26,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
          foreach (var player in PhotonNetwork.PlayerList) {
              GUILayout.Label($"{player.NickName}({player.ActorNumber}) - {player.GetScore()} - {player.GetPlayerIsFinished()}");
          }
-     }
+     }*/
 
     //ルームに入室前に呼び出される
     public override void OnConnectedToMaster() {

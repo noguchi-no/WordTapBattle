@@ -88,8 +88,8 @@ public class MatchingObjectsManager : MonoBehaviour {
                         maxLength = 9;
                         isG = true;
                     } else {
-                        GenerateBlock(3, 3);
-                        maxLength = 9;
+                        GenerateBlock(4, 4);
+                        maxLength = 16;
                         isG = true;
                     }
                 } else {
@@ -111,7 +111,7 @@ public class MatchingObjectsManager : MonoBehaviour {
                     currentTime = 0;
                     
                     
-                    if(soloGameCount >= 2){
+                    if(soloGameCount >= 4){
                         AdMobInters._interstitial.Show();
                         soloGameCount = 0;
                     }

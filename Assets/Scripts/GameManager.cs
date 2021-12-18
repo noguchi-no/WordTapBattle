@@ -446,7 +446,7 @@ public class GameManager : MonoBehaviour {
                     isAnimeted = true;
                     SEManager.PlayWin();
 
-                    PlayerPrefs.SetInt("wincount", winCount++);
+                    PlayerPrefs.SetInt("wincount", winCount+1);
                     PlayerPrefs.Save();
                 }
 
@@ -462,7 +462,7 @@ public class GameManager : MonoBehaviour {
                     isAnimeted = true;
                     SEManager.PlayLose();
 
-                    PlayerPrefs.SetInt("losecount", loseCount++);
+                    PlayerPrefs.SetInt("losecount", loseCount+1);
                     PlayerPrefs.Save();
 
                 }

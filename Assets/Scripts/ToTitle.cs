@@ -22,6 +22,6 @@ public class ToTitle : MonoBehaviour {
             PhotonNetwork.Disconnect();
         }
         
-        FadeManager.Instance.LoadScene ("Title", 0.1f);
+        FadeManager.Instance.LoadScene ("Title", 0.5f);
     }
 }

@@ -13271,8 +13271,8 @@ struct U3CU3Ec_t44229AAA42D089F609A0AF09DEA158679415A317_StaticFields
 public:
 	// SoundSlider/<>c SoundSlider/<>c::<>9
 	U3CU3Ec_t44229AAA42D089F609A0AF09DEA158679415A317 * ___U3CU3E9_0;
-	// UnityEngine.Events.UnityAction`1<System.Single> SoundSlider/<>c::<>9__3_0
-	UnityAction_1_t50101DC7058B3235A520FF57E827D51694843FBB * ___U3CU3E9__3_0_1;
+	// UnityEngine.Events.UnityAction`1<System.Single> SoundSlider/<>c::<>9__2_0
+	UnityAction_1_t50101DC7058B3235A520FF57E827D51694843FBB * ___U3CU3E9__2_0_1;
 
 public:
 	inline static int32_t get_offset_of_U3CU3E9_0() { return static_cast<int32_t>(offsetof(U3CU3Ec_t44229AAA42D089F609A0AF09DEA158679415A317_StaticFields, ___U3CU3E9_0)); }
@@ -13284,13 +13284,13 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E9_0), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_U3CU3E9__3_0_1() { return static_cast<int32_t>(offsetof(U3CU3Ec_t44229AAA42D089F609A0AF09DEA158679415A317_StaticFields, ___U3CU3E9__3_0_1)); }
-	inline UnityAction_1_t50101DC7058B3235A520FF57E827D51694843FBB * get_U3CU3E9__3_0_1() const { return ___U3CU3E9__3_0_1; }
-	inline UnityAction_1_t50101DC7058B3235A520FF57E827D51694843FBB ** get_address_of_U3CU3E9__3_0_1() { return &___U3CU3E9__3_0_1; }
-	inline void set_U3CU3E9__3_0_1(UnityAction_1_t50101DC7058B3235A520FF57E827D51694843FBB * value)
+	inline static int32_t get_offset_of_U3CU3E9__2_0_1() { return static_cast<int32_t>(offsetof(U3CU3Ec_t44229AAA42D089F609A0AF09DEA158679415A317_StaticFields, ___U3CU3E9__2_0_1)); }
+	inline UnityAction_1_t50101DC7058B3235A520FF57E827D51694843FBB * get_U3CU3E9__2_0_1() const { return ___U3CU3E9__2_0_1; }
+	inline UnityAction_1_t50101DC7058B3235A520FF57E827D51694843FBB ** get_address_of_U3CU3E9__2_0_1() { return &___U3CU3E9__2_0_1; }
+	inline void set_U3CU3E9__2_0_1(UnityAction_1_t50101DC7058B3235A520FF57E827D51694843FBB * value)
 	{
-		___U3CU3E9__3_0_1 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E9__3_0_1), (void*)value);
+		___U3CU3E9__2_0_1 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___U3CU3E9__2_0_1), (void*)value);
 	}
 };
 
@@ -44226,8 +44226,6 @@ struct SoundSlider_t18C432DFAC18F1C39D97E8A194ABD5ED5216342A  : public MonoBehav
 public:
 	// UnityEngine.UI.Slider SoundSlider::m_Slider
 	Slider_tBF39A11CC24CBD3F8BD728982ACAEAE43989B51A * ___m_Slider_4;
-	// System.Single SoundSlider::volume
-	float ___volume_5;
 
 public:
 	inline static int32_t get_offset_of_m_Slider_4() { return static_cast<int32_t>(offsetof(SoundSlider_t18C432DFAC18F1C39D97E8A194ABD5ED5216342A, ___m_Slider_4)); }
@@ -44237,14 +44235,6 @@ public:
 	{
 		___m_Slider_4 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___m_Slider_4), (void*)value);
-	}
-
-	inline static int32_t get_offset_of_volume_5() { return static_cast<int32_t>(offsetof(SoundSlider_t18C432DFAC18F1C39D97E8A194ABD5ED5216342A, ___volume_5)); }
-	inline float get_volume_5() const { return ___volume_5; }
-	inline float* get_address_of_volume_5() { return &___volume_5; }
-	inline void set_volume_5(float value)
-	{
-		___volume_5 = value;
 	}
 };
 
@@ -66642,12 +66632,11 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4498[19] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4501[2] = 
 {
 	U3CU3Ec_t44229AAA42D089F609A0AF09DEA158679415A317_StaticFields::get_offset_of_U3CU3E9_0(),
-	U3CU3Ec_t44229AAA42D089F609A0AF09DEA158679415A317_StaticFields::get_offset_of_U3CU3E9__3_0_1(),
+	U3CU3Ec_t44229AAA42D089F609A0AF09DEA158679415A317_StaticFields::get_offset_of_U3CU3E9__2_0_1(),
 };
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4502[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4502[1] = 
 {
 	SoundSlider_t18C432DFAC18F1C39D97E8A194ABD5ED5216342A::get_offset_of_m_Slider_4(),
-	SoundSlider_t18C432DFAC18F1C39D97E8A194ABD5ED5216342A::get_offset_of_volume_5(),
 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4503[3] = 
 {

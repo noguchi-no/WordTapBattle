@@ -12,7 +12,7 @@ public class BestScoreText : MonoBehaviour
     // Update is called once per frame
     void Update() {
 
-            GetComponent<Text>().text = "ベストスコア: " + PlayerPrefs.GetFloat("besttime", 999.00f).ToString("N2");
+            GetComponent<Text>().text = "ベストスコア: " + PlayerPrefs.GetFloat("besttime", 999.00f).ToString("N2") + "秒";
         
 
         
