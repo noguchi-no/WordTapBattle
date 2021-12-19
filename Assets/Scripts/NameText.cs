@@ -14,7 +14,7 @@ public class NameText : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        this.GetComponent<Text>().text = "プレイヤー名: " + PlayerPrefs.GetString("name", "no name");
+        this.GetComponent<Text>().text = "プレイヤー名: " + PlayerPrefs.GetString("name", "NO NAME");
         
     }
 }

@@ -45,9 +45,12 @@ public class MatchingObjectsManager : MonoBehaviour {
     public GameObject currentTimeText;
     public static float currentTime;
     public Text BestScoreText;
+    public Text newRecordText;
+    static bool isNewRecordText;
 
     // Start is called before the first frame update
     void Start() {
+        newRecordText.DOFade(0, 0f);
         AdMobBanner.bannerView.Hide();
         staticOdaiText = OdaiText;
         nextListNumber = 0;
@@ -66,7 +69,7 @@ public class MatchingObjectsManager : MonoBehaviour {
 
             if(SceneManager.GetActiveScene().name == "Game") {
 
-                SEManager.PlayNextStage();
+                //SEManager.PlayNextStage();
 
                 if(Random.Range(0.0f, 1.0f) < 0.5f) {
                     GenerateBlock(3, 3);
@@ -120,6 +123,15 @@ public class MatchingObjectsManager : MonoBehaviour {
                         PlayerPrefs.SetFloat("besttime", clearTime);
                         PlayerPrefs.Save();
                         isSaved = true;
+
+                        isNewRecordText = true;
+                        if(isNewRecordText){
+                            //newRecordText.gameObject.SetActive(true);
+                            float positionX = newRecordText.rectTransform.anchoredPosition.x;
+                            newRecordText.rectTransform.DOAnchorPosX(positionX - 200, 1.0f).From(true);
+                            newRecordText.DOFade(1.0f, 1.0f);
+                            
+                        }
                     }
                     
                 }
@@ -135,7 +147,7 @@ public class MatchingObjectsManager : MonoBehaviour {
         
             
             clearTime += Time.deltaTime;
-            currentTime += Time.deltaTime;
+            currentTime = clearTime;
         }
 
         if(nextListNumber >= maxLength) {

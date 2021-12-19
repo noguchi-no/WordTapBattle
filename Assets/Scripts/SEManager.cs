@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SEManager : MonoBehaviour {
 
@@ -32,7 +33,10 @@ public class SEManager : MonoBehaviour {
     static AudioClip s_matching;
 
     static AudioSource audioSource;
-
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
     void Start() {
         audioSource = GetComponent<AudioSource>();
         s_countDown = countDown;

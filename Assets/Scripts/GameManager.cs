@@ -62,6 +62,9 @@ public class GameManager : MonoBehaviour {
     private int stageNum;
 
     bool isWin = false;
+    bool isLose = false;
+
+    bool isJudgeWinOrLoseFunction = false;
     public static bool isIndexOne = false;
     static public string playerName;
 
@@ -147,7 +150,9 @@ public class GameManager : MonoBehaviour {
 
         if(isGameStart) { 
             
-            JudgeWinOrLose();
+                JudgeWinOrLose();
+            
+            
 
             if(!isFirstBlockGenerated){
                 stageNum++;
@@ -405,75 +410,107 @@ public class GameManager : MonoBehaviour {
 
     //勝敗を判断するメソッド
     public void JudgeWinOrLose() {
+        if (!isJudgeWinOrLoseFunction){
 
-        if(PhotonNetwork.CurrentRoom.PlayerCount == 1) {
+            if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
+            {
                 isWin = true;
                 isJudged = true;
                 Debug.Log("勝ち");
-        }
+                isJudgeWinOrLoseFunction = true;
+            }
 
-        if(!isJudged) {
-            if(isIndexOne) {
-                if(PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && !PhotonNetwork.PlayerList[1].GetPlayerIsFinished()) {
-                    isWin = true;
-                    isJudged = true;
-                    Debug.Log("勝ち");
-                } else if(!PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && PhotonNetwork.PlayerList[1].GetPlayerIsFinished()) {
-                    isWin = false;
-                    isJudged = true;
-                    Debug.Log("負け");
-                } 
-            } else if(!isIndexOne) {
-                if(PhotonNetwork.PlayerList[1].GetPlayerIsFinished() && !PhotonNetwork.PlayerList[0].GetPlayerIsFinished()) {
-                    isWin = true;
-                    isJudged = true;
-                    Debug.Log("勝ち");
-                } else if(!PhotonNetwork.PlayerList[1].GetPlayerIsFinished() && PhotonNetwork.PlayerList[0].GetPlayerIsFinished()) {
-                    isWin = false;
-                    isJudged = true;
-                    Debug.Log("負け");
-                } 
-            } 
-        }
-
-        if(isJudged) {
-            if(isWin) {
-                WinOrLoseText.GetComponent<Text>().text = "YOU WIN!!!";
-                WinOrLoseText.GetComponent<Text>().color = new Color(1.0f, 0.2f, 0.2f, 1.0f);
-
-                if(!isAnimeted) {
-                    WinOrLoseText.GetComponent<RectTransform>().DOScale(1f, 0.6f).SetEase(Ease.OutBack, 5f);
-                    isAnimeted = true;
-                    SEManager.PlayWin();
-
-                    PlayerPrefs.SetInt("wincount", winCount+1);
-                    PlayerPrefs.Save();
+            if (!isJudged)
+            {
+                if (isIndexOne)
+                {
+                    if (PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && !PhotonNetwork.PlayerList[1].GetPlayerIsFinished())
+                    {
+                        isWin = true;
+                        isJudged = true;
+                        //isLose = false;
+                        Debug.Log("勝ち");
+                        isJudgeWinOrLoseFunction = true;
+                    }
+                    else if (!PhotonNetwork.PlayerList[0].GetPlayerIsFinished() && PhotonNetwork.PlayerList[1].GetPlayerIsFinished())
+                    {
+                        isWin = false;
+                        isJudged = true;
+                        //isLose = true;
+                        Debug.Log("負け");
+                        isJudgeWinOrLoseFunction = true;
+                    }
                 }
-
-            } else {
-                WinOrLoseText.GetComponent<Text>().text = "YOU LOSE...";
-                WinOrLoseText.GetComponent<Text>().color = new Color(0.2f, 0.2f, 1.0f, 1.0f);
-
-                if(!isAnimeted) {
-                    WinOrLoseText.GetComponent<RectTransform>().DOLocalRotate(new Vector3(0, 0, -10.0f), 
-                                                                              2f,
-                                                                              RotateMode.FastBeyond360)
-                                                                              .SetEase(Ease.OutCubic);
-                    isAnimeted = true;
-                    SEManager.PlayLose();
-
-                    PlayerPrefs.SetInt("losecount", loseCount+1);
-                    PlayerPrefs.Save();
-
+                else if (!isIndexOne)
+                {
+                    if (PhotonNetwork.PlayerList[1].GetPlayerIsFinished() && !PhotonNetwork.PlayerList[0].GetPlayerIsFinished())
+                    {
+                        isWin = true;
+                        isJudged = true;
+                        //isLose = false;
+                        Debug.Log("勝ち");
+                        isJudgeWinOrLoseFunction = true;
+                    }
+                    else if (!PhotonNetwork.PlayerList[1].GetPlayerIsFinished() && PhotonNetwork.PlayerList[0].GetPlayerIsFinished())
+                    {
+                        isWin = false;
+                        isJudged = true;
+                        //isLose = true;
+                        Debug.Log("負け");
+                        isJudgeWinOrLoseFunction = true;
+                    }
                 }
             }
 
-            blocks.SetActive(false);
-            WinOrLoseText.SetActive(true);
-            gameOverButtons.SetActive(true);
-            AdMobBanner.bannerView.Show();
-            gameCount++;
+            if (isJudged)
+            {
+                if (isWin)
+                {
+
+                    WinOrLoseText.GetComponent<Text>().text = "YOU WIN!!!";
+                    WinOrLoseText.GetComponent<Text>().color = new Color(1.0f, 0.2f, 0.2f, 1.0f);
+
+
+                    if (!isAnimeted)
+                    {
+                        WinOrLoseText.GetComponent<RectTransform>().DOScale(1f, 0.6f).SetEase(Ease.OutBack, 5f);
+                        DOVirtual.DelayedCall(1, () => gameOverButtons.SetActive(true));
+                        isAnimeted = true;
+                        SEManager.PlayWin();
+
+                        PlayerPrefs.SetInt("wincount", winCount + 1);
+                        PlayerPrefs.Save();
+                    }
+
+                }
+                else
+                {
+                    WinOrLoseText.GetComponent<Text>().text = "YOU LOSE...";
+                    WinOrLoseText.GetComponent<Text>().color = new Color(0.2f, 0.2f, 1.0f, 1.0f);
+
+                    if (!isAnimeted)
+                    {
+                        WinOrLoseText.GetComponent<RectTransform>().DOLocalRotate(new Vector3(0, 0, -10.0f),
+                            2f, RotateMode.FastBeyond360).SetEase(Ease.OutCubic);
+                        DOVirtual.DelayedCall(1, () => gameOverButtons.SetActive(true));
+                        isAnimeted = true;
+                        SEManager.PlayLose();
+
+                        PlayerPrefs.SetInt("losecount", loseCount + 1);
+                        PlayerPrefs.Save();
+
+                    }
+                }
+
+                blocks.SetActive(false);
+                WinOrLoseText.SetActive(true);
+                //gameOverButtons.SetActive(true);
+                AdMobBanner.bannerView.Show();
+                gameCount++;
+            }
+
         }
+        
     }
 
     

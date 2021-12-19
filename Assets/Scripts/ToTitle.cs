@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
 public class ToTitle : MonoBehaviour {
+
+    
     public void OnClick() {
 
         SEManager.PlayButton();
@@ -22,6 +24,6 @@ public class ToTitle : MonoBehaviour {
             PhotonNetwork.Disconnect();
         }
         
-        FadeManager.Instance.LoadScene ("Title", 0.5f);
+        FadeManager.Instance.LoadScene ("Title", 0.7f);
     }
 }
