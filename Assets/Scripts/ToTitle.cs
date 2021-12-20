@@ -9,8 +9,8 @@ public class ToTitle : MonoBehaviour {
     
     public void OnClick() {
 
-        TitleManager.getCharacterListForTitle.Clear();
-        TitleManager.shuffledCharacterListForTitle.Clear();
+        //TitleManager.getCharacterListForTitle.Clear();
+        //TitleManager.shuffledCharacterListForTitle.Clear();
 
         SEManager.PlayButton();
 
@@ -24,9 +24,9 @@ public class ToTitle : MonoBehaviour {
             PhotonNetwork.LocalPlayer.SetPlayerIsFinished(false);
             PhotonNetwork.LocalPlayer.SetScore(0.0f);
             PhotonNetwork.LocalPlayer.SetStageClearCount(0);
-            PhotonNetwork.Disconnect();
+            
         }
         
-        FadeManager.Instance.LoadScene ("Title", 0.5f);
+        FadeManager.Instance.LoadScene ("Title", 0.3f);
     }
 }

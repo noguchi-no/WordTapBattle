@@ -5,6 +5,8 @@ using Random = UnityEngine.Random;
 using DG.Tweening;
 using TMPro;
 using UnityEngine.UI;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class TitleManager : MonoBehaviour
 {
@@ -25,8 +27,9 @@ public class TitleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //getCharacterListForTitle.Clear();
-        //shuffledCharacterListForTitle.Clear();
+        PhotonNetwork.Disconnect();
+        getCharacterListForTitle.Clear();
+        shuffledCharacterListForTitle.Clear();
 
         if(GameManager.gameCount >= 1){
             AdMobInters._interstitial.Show();
