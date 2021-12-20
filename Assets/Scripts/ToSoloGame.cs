@@ -7,6 +7,8 @@ public class ToSoloGame : MonoBehaviour {
         
         SEManager.PlayButton();
 
+        
+
         FadeManager.Instance.LoadScene ("SoloGame", 0.3f);
     }
 }

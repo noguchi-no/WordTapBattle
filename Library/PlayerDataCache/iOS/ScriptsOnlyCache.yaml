@@ -37,6 +37,7 @@ ScriptsOnlyBuild:
     - GoogleMobileAds.Common.MobileAdsEventExecutor
     GoogleMobileAds.Editor.dll:
     - GoogleMobileAds.Editor.GoogleMobileAdsSettings
+    - GoogleMobileAds.Editor.GoogleMobileAdsSettingsEditor
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -159,15 +160,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4896}
     - Class: 114
-      Script: {instanceID: 5380}
+      Script: {instanceID: 5382}
     - Class: 114
-      Script: {instanceID: 5404}
+      Script: {instanceID: 5406}
     - Class: 114
-      Script: {instanceID: 5948}
+      Script: {instanceID: 5950}
     - Class: 114
-      Script: {instanceID: 5998}
+      Script: {instanceID: 6000}
     - Class: 114
-      Script: {instanceID: 6058}
+      Script: {instanceID: 6060}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -248,9 +249,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4896}
     - Class: 114
-      Script: {instanceID: 5404}
+      Script: {instanceID: 5406}
     - Class: 114
-      Script: {instanceID: 5948}
+      Script: {instanceID: 5950}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -395,21 +396,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5088}
     - Class: 114
-      Script: {instanceID: 5200}
+      Script: {instanceID: 5202}
     - Class: 114
-      Script: {instanceID: 5234}
+      Script: {instanceID: 5236}
     - Class: 114
-      Script: {instanceID: 5420}
-    - Class: 114
-      Script: {instanceID: 5648}
+      Script: {instanceID: 5422}
     - Class: 114
       Script: {instanceID: 5650}
     - Class: 114
-      Script: {instanceID: 5844}
+      Script: {instanceID: 5652}
     - Class: 114
-      Script: {instanceID: 5998}
+      Script: {instanceID: 5846}
     - Class: 114
-      Script: {instanceID: 6304}
+      Script: {instanceID: 6000}
+    - Class: 114
+      Script: {instanceID: 6306}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1379,7 +1380,7 @@ ScriptsOnlyBuild:
     className: BoolInputField
   - hash:
       serializedVersion: 2
-      Hash: 00e434266d85ea0562746e484f093515
+      Hash: c7ae40c95349e93426720289993ffc89
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MatchingObjectsManager
@@ -1713,6 +1714,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NewRecordAni
   - hash:
       serializedVersion: 2
       Hash: 908b3077da284d11de0450423ca1808e

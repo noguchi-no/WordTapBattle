@@ -10,7 +10,9 @@ public class CountDownPlayer : MonoBehaviour {
     public GameObject matchingObj;
     private TextMeshProUGUI textMeshPro;
 
-    private CanvasGroup canvasGroup; 
+    private CanvasGroup canvasGroup;
+
+    //public GameObject startUI;
 
     private void Start()
     {
@@ -39,9 +41,15 @@ public class CountDownPlayer : MonoBehaviour {
             .Append(FadeOutText())
             .AppendCallback(() => UpdateText("START"))
             .Append(canvasGroup.DOFade(0, 0.8f))
-            .OnComplete(() => matchingObj.SetActive(true));
+            .OnComplete(() => Disap());
     }
 
+    void Disap()
+    {
+        matchingObj.SetActive(true);
+        //startUI.SetActive(false);
+
+    }
 
     void PlayCountDown() {
         var sequence = DOTween.Sequence();

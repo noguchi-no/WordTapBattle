@@ -9,8 +9,8 @@ using UnityEngine.UI;
 public class TitleManager : MonoBehaviour
 {
     static string getCharacterString;
-    public static List<string> getCharacterList = new List<string>();
-    static List<string> shuffledCharacterList = new List<string>();
+    public static List<string> getCharacterListForTitle = new List<string>();
+    public static List<string> shuffledCharacterListForTitle = new List<string>();
     public GameObject block;
     public List<GameObject> wordBlockList = new List<GameObject>();
     int index = 0;
@@ -25,6 +25,9 @@ public class TitleManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //getCharacterListForTitle.Clear();
+        //shuffledCharacterListForTitle.Clear();
+
         if(GameManager.gameCount >= 1){
             AdMobInters._interstitial.Show();
         }
@@ -41,7 +44,7 @@ public class TitleManager : MonoBehaviour
 
         for(int i = 0; i < 3*3; i++){
             char _word = getCharacterString[i];
-            getCharacterList.Add(_word.ToString());
+            getCharacterListForTitle.Add(_word.ToString());
         }
         block.GetComponent<RectTransform>().sizeDelta = new Vector2(blockWidth, blockWidth);
         
@@ -57,9 +60,9 @@ public class TitleManager : MonoBehaviour
                 wordBlockList.Add(wordBlock);
 
                 char word = shuffledCharacterString[index++];
-                shuffledCharacterList.Add(word.ToString());
+                shuffledCharacterListForTitle.Add(word.ToString());
 
-                //Debug.Log(shuffledCharacterList[indexZ++]);
+                //Debug.Log(shuffledCharacterListForTitle[indexZ++]);
                 
                 GameObject wordText = wordBlock.transform.GetChild(0).gameObject;
                 wordBlock.GetComponent<ButtonController>().SetButtonInfo(word.ToString());
@@ -85,7 +88,7 @@ public class TitleManager : MonoBehaviour
     
     public static bool CheckNumberForTitle(string _word) {
         
-        NextWordForTitle = getCharacterList[nextListNumberForTitle];
+        NextWordForTitle = getCharacterListForTitle[nextListNumberForTitle];
         
         return _word == NextWordForTitle; 
     }

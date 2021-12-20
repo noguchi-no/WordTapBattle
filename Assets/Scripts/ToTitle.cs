@@ -9,10 +9,13 @@ public class ToTitle : MonoBehaviour {
     
     public void OnClick() {
 
+        TitleManager.getCharacterListForTitle.Clear();
+        TitleManager.shuffledCharacterListForTitle.Clear();
+
         SEManager.PlayButton();
 
         if(SceneManager.GetActiveScene().name == "Game") {
-
+            
             MatchingObjectsManager.nextListNumber = 0;
             MatchingObjectsManager.getCharacterList.Clear();
 
@@ -24,6 +27,6 @@ public class ToTitle : MonoBehaviour {
             PhotonNetwork.Disconnect();
         }
         
-        FadeManager.Instance.LoadScene ("Title", 0.7f);
+        FadeManager.Instance.LoadScene ("Title", 0.5f);
     }
 }

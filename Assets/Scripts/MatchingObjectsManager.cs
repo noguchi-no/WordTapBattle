@@ -47,6 +47,7 @@ public class MatchingObjectsManager : MonoBehaviour {
     public Text BestScoreText;
     public Text newRecordText;
     static bool isNewRecordText;
+    //public GameObject startUI;
 
     // Start is called before the first frame update
     void Start() {
@@ -100,6 +101,7 @@ public class MatchingObjectsManager : MonoBehaviour {
                     if (!isClear){
                         SEManager.PlayWin();
                         soloGameCount++;
+                        AdMobBanner.bannerView.Show();
                     }
 
                     isClear = true;
@@ -110,7 +112,6 @@ public class MatchingObjectsManager : MonoBehaviour {
                     OdaiText.gameObject.SetActive(false);
                     stageNumText.gameObject.SetActive(false);
                     
-                    AdMobBanner.bannerView.Show();
                     currentTime = 0;
                     
                     

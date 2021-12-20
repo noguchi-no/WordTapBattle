@@ -10,7 +10,7 @@ public class ButtonController : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        Application.targetFrameRate = 60;
+        //Application.targetFrameRate = 60;
     }
 
     public void OnClick() {
@@ -30,9 +30,10 @@ public class ButtonController : MonoBehaviour {
                 SEManager.PlayIncorrect();
             }
         } else {
+            
             if(transform.parent.tag == "Matching") {
                 if(MatchingObjectsManager.CheckNumber(word)){
-
+                    
                     SEManager.PlayCorrect();
 
                     //正しい番号なら数字を進める

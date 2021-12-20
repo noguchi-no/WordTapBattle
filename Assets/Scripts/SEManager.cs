@@ -35,7 +35,7 @@ public class SEManager : MonoBehaviour {
     static AudioSource audioSource;
     private void Awake()
     {
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
     }
     void Start() {
         audioSource = GetComponent<AudioSource>();
