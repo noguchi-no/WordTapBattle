@@ -14,8 +14,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
         PhotonNetwork.NickName = PlayerPrefs.GetString("name", "no name");
 
     }
-    /*
-     void OnGUI() {
+    
+    /*void OnGUI() {
 
          GUI.skin.label.fontSize = 48;
 
@@ -69,7 +69,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
         // ルームが満員になったら、以降そのルームへの参加を不許可にする
         if (PhotonNetwork.CurrentRoom.PlayerCount == PhotonNetwork.CurrentRoom.MaxPlayers) {
             PhotonNetwork.CurrentRoom.IsOpen = false;
-         }
+         }else{
+            PhotonNetwork.CurrentRoom.IsOpen = true;
+        }
 
         ExitGames.Client.Photon.Hashtable customRoomProperties = PhotonNetwork.CurrentRoom.CustomProperties;
         customRoomProperties["stage1"] = (int)Random.Range(0, WordList.wordListNine.Count/2);
@@ -81,15 +83,16 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
 
     }
 
-    public override void OnDisconnected(DisconnectCause cause) {
+    public override void OnDisconnected(DisconnectCause cause){
         NetworkManager.isJoined = false;
         GameManager.isGameStart = false;
         GameManager.getCharacterList.Clear();
-
+        MatchingObjectsManager.nextListNumber = 0;
+        MatchingObjectsManager.getCharacterList.Clear();
         PhotonNetwork.LocalPlayer.SetPlayerIsFinished(false);
         PhotonNetwork.LocalPlayer.SetScore(0.0f);
         PhotonNetwork.LocalPlayer.SetStageClearCount(0);
-        FadeManager.Instance.LoadScene ("Title", 0.1f);
+        FadeManager.Instance.LoadScene("Title", 0.3f);
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer) {

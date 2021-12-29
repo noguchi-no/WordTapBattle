@@ -1280,14 +1280,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.GUIUtility
 
-	//Start Registrations for type : UnityEngine.ImageConversion
-
-		//System.Boolean UnityEngine.ImageConversion::LoadImage(UnityEngine.Texture2D,System.Byte[],System.Boolean)
-		void Register_UnityEngine_ImageConversion_LoadImage();
-		Register_UnityEngine_ImageConversion_LoadImage();
-
-	//End Registrations for type : UnityEngine.ImageConversion
-
 	//Start Registrations for type : UnityEngine.Input
 
 		//System.Boolean UnityEngine.Input::GetButton(System.String)

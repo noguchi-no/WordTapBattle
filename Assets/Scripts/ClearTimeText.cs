@@ -9,7 +9,7 @@ public class ClearTimeText : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         
-        GetComponent<Text>().text = MatchingObjectsManager.clearTime.ToString("N2") + "でクリア!!";
+        GetComponent<Text>().text = MatchingObjectsManager.clearTime.ToString("N2") + "秒でクリア!";
         GetComponent<RectTransform>().DOScale(1f, 0.6f).SetEase(Ease.OutBack, 5f);
     }
 

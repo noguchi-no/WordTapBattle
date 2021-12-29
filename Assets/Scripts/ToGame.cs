@@ -14,6 +14,7 @@ public class ToGame : MonoBehaviour
         SEManager.PlayButton();
         NetworkManager.isJoined = false;
         GameManager.isGameStart = false;
+        GameManager.isIndexOne = false;
         GameManager.getCharacterList.Clear();
         PhotonNetwork.LocalPlayer.SetPlayerIsFinished(false);
         PhotonNetwork.LocalPlayer.SetScore(0.0f);

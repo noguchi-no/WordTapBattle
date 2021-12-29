@@ -16,8 +16,11 @@ public class ToTitle : MonoBehaviour {
 
         if(SceneManager.GetActiveScene().name == "Game") {
             
+            GameManager.getCharacterList.Clear();
             MatchingObjectsManager.nextListNumber = 0;
             MatchingObjectsManager.getCharacterList.Clear();
+
+            GameManager.isIndexOne = false;
 
             NetworkManager.isJoined = false;
             GameManager.isGameStart = false;
